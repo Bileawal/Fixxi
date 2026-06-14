@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "650990252791",
+    "project_id": "fixxi-f0d1c",
+    "storage_bucket": "fixxi-f0d1c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650990252791:android:42ce9956ebc952b60e19f2",
+        "android_client_info": {
+          "package_name": "com.example.fixxi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXtxdyNwlCvcHGMFpL-l8Vbdc_0UJqQMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
