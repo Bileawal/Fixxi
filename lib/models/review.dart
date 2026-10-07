@@ -1,3 +1,5 @@
+import '../core/utils/firestore_helpers.dart';
+
 class Review {
   Review({
     required this.id,
@@ -33,7 +35,7 @@ class Review {
       comment: json['comment'] as String? ?? '',
       repairCost: (json['repairCost'] as num?)?.toDouble() ?? 0,
       actualIssue: json['actualIssue'] as String? ?? '',
-      createdAt: DateTime.tryParse(json['createdAt'] as String? ?? '') ?? DateTime.now(),
+      createdAt: parseFirestoreDate(json['createdAt']),
     );
   }
 }

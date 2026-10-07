@@ -16,6 +16,7 @@ class AdminTechnicianDetailScreen extends StatefulWidget {
 
 class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScreen> {
   Map<String, dynamic>? _data;
+  List<Map<String, dynamic>> _messages = [];
   bool _loading = true;
   bool _acting = false;
 
@@ -28,9 +29,12 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
   Future<void> _load() async {
     setState(() => _loading = true);
     try {
-      final data = await context.read<AppState>().api.adminGetTechnician(widget.profileId);
+      final api = context.read<AppState>().api;
+      final data = await api.adminGetTechnician(widget.profileId);
+      final messages = await api.adminListMessages(technicianId: widget.profileId);
       setState(() {
         _data = data;
+        _messages = messages;
         _loading = false;
       });
     } catch (e) {
@@ -65,10 +69,11 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
   }
 
   Future<void> _reject() async {
+    final api = context.read<AppState>().api;
+    final ctrl = TextEditingController();
     final reason = await showDialog<String>(
       context: context,
       builder: (ctx) {
-        final ctrl = TextEditingController();
         return AlertDialog(
           title: const Text('Reject application'),
           content: TextField(
@@ -85,16 +90,53 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
         );
       },
     );
+    ctrl.dispose();
     if (reason == null) return;
 
     setState(() => _acting = true);
     try {
-      await context.read<AppState>().api.adminReject(widget.profileId, reason: reason);
+      await api.adminReject(widget.profileId, reason: reason);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Technician rejected')),
         );
         Navigator.pop(context);
+      }
+    } catch (e) {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(e.toString())),
+        );
+      }
+    } finally {
+      if (mounted) setState(() => _acting = false);
+    }
+  }
+
+  Future<void> _resetTestTries() async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Reset test attempts?'),
+        content: const Text(
+          'This will reset the technician\'s test tries to 0 and allow them to take the test again.',
+        ),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Cancel')),
+          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Reset')),
+        ],
+      ),
+    );
+    if (confirmed != true) return;
+
+    setState(() => _acting = true);
+    try {
+      await context.read<AppState>().api.adminResetTestTries(widget.profileId);
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Test attempts reset')),
+        );
+        await _load();
       }
     } catch (e) {
       if (mounted) {
@@ -119,6 +161,8 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
     final user = _data!['user'] as Map<String, dynamic>?;
     final status = _data!['status'] as String?;
     final testScore = _data!['testScore'];
+    final testTries = _data!['testTries'] as int? ?? 0;
+    final isLocked = status == 'test_locked' || testTries >= 3;
 
     return Scaffold(
       appBar: AppBar(title: Text(user?['name'] as String? ?? 'Technician')),
@@ -134,6 +178,7 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
             _InfoTile('Skills', (_data!['skills'] as List?)?.join(', ')),
             _InfoTile('Extra skills', _data!['extraSkills']),
             _InfoTile('Status', status),
+            _InfoTile('Test tries', '$testTries / 3'),
             if (testScore != null) _InfoTile('Test score', '$testScore%'),
             if (_data!['rejectionReason'] != null)
               _InfoTile('Rejection reason', _data!['rejectionReason']),
@@ -145,6 +190,26 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
             const Text('ID Card - Back', style: TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             _IdImage(url: _data!['idCardBackUrl'] as String?),
+            if (_messages.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              const Text('Messages from technician', style: TextStyle(fontWeight: FontWeight.bold)),
+              const SizedBox(height: 8),
+              ..._messages.map(
+                (m) => Card(
+                  child: ListTile(
+                    title: Text(m['message'] as String? ?? ''),
+                    subtitle: Text(m['createdAt']?.toString() ?? ''),
+                  ),
+                ),
+              ),
+            ],
+            if (isLocked) ...[
+              const SizedBox(height: 24),
+              FilledButton(
+                onPressed: _acting ? null : _resetTestTries,
+                child: const Text('Reset test attempts'),
+              ),
+            ],
             if (status == 'pending_admin') ...[
               const SizedBox(height: 24),
               FilledButton(
@@ -157,6 +222,7 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
                 child: const Text('Reject'),
               ),
             ],
+
           ],
         ),
       ),
@@ -165,7 +231,7 @@ class _AdminTechnicianDetailScreenState extends State<AdminTechnicianDetailScree
 }
 
 class _InfoTile extends StatelessWidget {
-  _InfoTile(this.label, this.value);
+  const _InfoTile(this.label, this.value);
 
   final String label;
   final dynamic value;

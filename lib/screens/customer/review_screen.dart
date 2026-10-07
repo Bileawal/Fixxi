@@ -32,7 +32,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
   Future<void> _reportTechnician() async {
     final techId = widget.request.technicianId;
     if (techId == null) return;
-
+    
+    final api = context.read<AppState>().api;
     final reasonCtrl = TextEditingController();
     final ok = await showDialog<bool>(
       context: context,
@@ -48,7 +49,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Cancel')),
-          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Submit')),
+          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Report')),
         ],
       ),
     );
@@ -57,14 +58,14 @@ class _ReviewScreenState extends State<ReviewScreen> {
       return;
     }
     try {
-      await context.read<AppState>().api.submitReport(
+      await api.submitReport(
             reportedUserId: techId,
             reason: reasonCtrl.text.trim(),
           );
       reasonCtrl.dispose();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Report submitted')),
+          const SnackBar(content: Text('Report sent to admin')),
         );
       }
     } catch (e) {
@@ -85,6 +86,13 @@ class _ReviewScreenState extends State<ReviewScreen> {
     if (cost == null || cost < 0) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Enter total repair cost (Rs)')),
+      );
+      return;
+    }
+
+    if (_issueCtrl.text.trim().isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please enter the actual issue')),
       );
       return;
     }
@@ -165,7 +173,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
               controller: _issueCtrl,
               maxLines: 2,
               decoration: const InputDecoration(
-                labelText: 'Actual issue (optional)',
+                labelText: 'Actual issue *',
                 hintText: 'e.g. Leaking pipe under sink',
               ),
             ),

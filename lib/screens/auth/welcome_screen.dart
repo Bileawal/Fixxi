@@ -32,39 +32,12 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  if (!app.serverOnline)
-                    IconButton(
-                      icon: const Icon(Icons.cloud_off, color: Colors.orange),
-                      tooltip: 'Server offline — retry',
-                      onPressed: () async {
-                        final ok = await app.retryServerConnection();
-                        if (context.mounted) {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: Text(
-                                ok ? 'Connected: ${app.serverUrl}' : 'Still offline',
-                              ),
-                            ),
-                          );
-                        }
-                      },
-                    ),
                   IconButton(
                     icon: Icon(app.isDark ? Icons.light_mode : Icons.dark_mode),
                     onPressed: () => app.toggleTheme(),
                   ),
                 ],
               ),
-              if (!app.serverOnline)
-                Card(
-                  color: Colors.orange.shade100,
-                  margin: const EdgeInsets.only(bottom: 12),
-                  child: const ListTile(
-                    leading: Icon(Icons.warning_amber, color: Colors.orange),
-                    title: Text('Server offline'),
-                    subtitle: Text('Please start the backend server'),
-                  ),
-                ),
               const Spacer(),
               const FixxiLogo(size: 96),
               const SizedBox(height: 20),

@@ -22,6 +22,8 @@ class SelectTechnicianScreen extends StatefulWidget {
 class _SelectTechnicianScreenState extends State<SelectTechnicianScreen> {
   List<AppUser> _techs = [];
   bool _loading = true;
+  bool _relaxedFilter = false;
+  String? _error;
 
   @override
   void initState() {
@@ -29,21 +31,41 @@ class _SelectTechnicianScreenState extends State<SelectTechnicianScreen> {
     _load();
   }
 
-  Future<void> _load() async {
+  Future<void> _load({bool relaxCategory = false}) async {
+    setState(() {
+      _loading = true;
+      _error = null;
+    });
+    final api = context.read<AppState>().api;
     try {
-      final techs = await context.read<AppState>().api.nearbyTechnicians(
-            category: widget.requestBody['category'] as String?,
+      var techs = await api.nearbyTechnicians(
+            category: relaxCategory ? null : widget.requestBody['category'] as String?,
             urgentOnly: widget.isUrgent,
           );
-      setState(() {
-        _techs = techs;
-        _loading = false;
-      });
+
+      if (techs.isEmpty && !relaxCategory) {
+        techs = await api.nearbyTechnicians(
+              category: null,
+              urgentOnly: widget.isUrgent,
+            );
+        if (techs.isNotEmpty) {
+          _relaxedFilter = true;
+        }
+      }
+
+      if (mounted) {
+        setState(() {
+          _techs = techs;
+          _loading = false;
+        });
+      }
     } catch (e) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString())));
+        setState(() {
+          _error = e.toString();
+          _loading = false;
+        });
       }
-      setState(() => _loading = false);
     }
   }
 
@@ -66,38 +88,102 @@ class _SelectTechnicianScreenState extends State<SelectTechnicianScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final category = widget.requestBody['category'] as String? ?? 'All';
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.isUrgent ? 'Available technicians' : 'Nearby technicians'),
+        title: Text(widget.isUrgent ? 'Available Technicians' : 'Nearby Technicians'),
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : _techs.isEmpty
-              ? const Center(child: Text('No technicians found'))
-              : ListView.builder(
-                  padding: const EdgeInsets.all(16),
-                  itemCount: _techs.length,
-                  itemBuilder: (context, i) {
-                    final tech = _techs[i];
-                    final dist = tech.distanceKm ?? 0;
-                    return Card(
-                      child: ListTile(
-                        title: Text(tech.name),
-                        subtitle: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+          : _error != null
+              ? Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.error_outline, size: 48, color: Colors.red),
+                        const SizedBox(height: 12),
+                        Text(_error!, textAlign: TextAlign.center),
+                        const SizedBox(height: 16),
+                        FilledButton(onPressed: () => _load(), child: const Text('Retry')),
+                      ],
+                    ),
+                  ),
+                )
+              : _techs.isEmpty
+                  ? Center(
+                      child: Padding(
+                        padding: const EdgeInsets.all(24),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
                           children: [
-                            RatingStars(rating: tech.rating, size: 14),
-                            Text('${dist.toStringAsFixed(1)} km • Rs ${tech.checkFee ?? 300}'),
+                            const Icon(Icons.person_off, size: 48, color: Colors.grey),
+                            const SizedBox(height: 12),
+                            Text(
+                              widget.isUrgent
+                                  ? 'No available technicians nearby for $category right now.'
+                                  : 'No technicians found nearby.',
+                              textAlign: TextAlign.center,
+                            ),
+                            const SizedBox(height: 16),
+                            OutlinedButton(onPressed: () => _load(relaxCategory: true), child: const Text('Show all nearby')),
                           ],
                         ),
-                        trailing: FilledButton(
-                          onPressed: () => _send(tech),
-                          child: const Text('Send'),
-                        ),
                       ),
-                    );
-                  },
-                ),
+                    )
+                  : Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (_relaxedFilter)
+                          MaterialBanner(
+                            content: Text('Showing all nearby technicians ($category specialist not found).'),
+                            actions: [TextButton(onPressed: () {}, child: const Text('OK'))],
+                          ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                          child: Text(
+                            '${_techs.length} technician${_techs.length == 1 ? '' : 's'} • $category',
+                            style: TextStyle(color: Colors.grey[600], fontSize: 13),
+                          ),
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            padding: const EdgeInsets.all(16),
+                            itemCount: _techs.length,
+                            itemBuilder: (context, i) {
+                              final tech = _techs[i];
+                              final dist = tech.distanceKm ?? 0;
+                              return Card(
+                                margin: const EdgeInsets.only(bottom: 10),
+                                child: ListTile(
+                                  leading: CircleAvatar(
+                                    child: Text(tech.name.isNotEmpty ? tech.name[0].toUpperCase() : '?'),
+                                  ),
+                                  title: Text(tech.name),
+                                  subtitle: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      if (tech.skills.isNotEmpty)
+                                        Text(tech.skills.join(', '), style: const TextStyle(fontSize: 12)),
+                                      const SizedBox(height: 4),
+                                      RatingStars(rating: tech.rating, size: 14),
+                                      Text('${dist.toStringAsFixed(1)} km • Check fee Rs ${tech.checkFee ?? 300}'),
+                                    ],
+                                  ),
+                                  isThreeLine: true,
+                                  trailing: FilledButton(
+                                    onPressed: () => _send(tech),
+                                    child: const Text('Send'),
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
     );
   }
 }

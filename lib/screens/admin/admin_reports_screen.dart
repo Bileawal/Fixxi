@@ -25,7 +25,7 @@ class _AdminReportsScreenState extends State<AdminReportsScreen> {
   Future<void> _load() async {
     setState(() => _loading = true);
     try {
-      final list = await context.read<AppState>().api.adminListReports(status: 'open');
+      final list = await context.read<AppState>().api.adminListReports(status: 'pending');
       setState(() {
         _reports = list;
         _loading = false;
@@ -108,7 +108,7 @@ class _AdminReportsScreenState extends State<AdminReportsScreen> {
       return const Center(child: CircularProgressIndicator());
     }
     if (_reports.isEmpty) {
-      return const Center(child: Text('No open reports'));
+      return const Center(child: Text('No pending reports'));
     }
     return RefreshIndicator(
       onRefresh: _load,

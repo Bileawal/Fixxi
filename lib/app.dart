@@ -10,7 +10,7 @@ import 'screens/customer/customer_shell.dart';
 import 'screens/technician/technician_pending_screen.dart';
 import 'screens/technician/technician_rejected_screen.dart';
 import 'screens/technician/technician_shell.dart';
-import 'screens/technician/technician_test_screen.dart';
+import 'screens/technician/technician_test_intro_screen.dart';
 import 'widgets/common_widgets.dart';
 
 class FixxiApp extends StatelessWidget {
@@ -67,14 +67,17 @@ class _RootRouter extends StatelessWidget {
 
     if (app.isTechnician) {
       final profile = app.technicianProfile;
-      if (profile == null || profile.isPendingAdmin) {
+      if (profile == null) {
         return const TechnicianPendingScreen();
       }
       if (profile.isRejected) {
         return const TechnicianRejectedScreen();
       }
-      if (profile.needsTest) {
-        return const TechnicianTestScreen();
+      if (profile.needsTest || profile.isTestLocked) {
+        return const TechnicianTestIntroScreen();
+      }
+      if (profile.isPendingAdmin) {
+        return const TechnicianPendingScreen();
       }
       return const TechnicianShell();
     }

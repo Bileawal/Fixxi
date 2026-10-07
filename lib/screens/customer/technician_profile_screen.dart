@@ -49,6 +49,7 @@ class _TechnicianProfileScreenState extends State<TechnicianProfileScreen> {
   }
 
   Future<void> _reportTechnician() async {
+    final api = context.read<AppState>().api;
     final reasonCtrl = TextEditingController();
     final ok = await showDialog<bool>(
       context: context,
@@ -61,7 +62,7 @@ class _TechnicianProfileScreenState extends State<TechnicianProfileScreen> {
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Cancel')),
-          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Submit')),
+          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Report')),
         ],
       ),
     );
@@ -70,14 +71,14 @@ class _TechnicianProfileScreenState extends State<TechnicianProfileScreen> {
       return;
     }
     try {
-      await context.read<AppState>().api.submitReport(
+      await api.submitReport(
             reportedUserId: widget.technician.id,
             reason: reasonCtrl.text.trim(),
           );
       reasonCtrl.dispose();
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Report submitted')),
+          const SnackBar(content: Text('Report sent to admin')),
         );
       }
     } catch (e) {

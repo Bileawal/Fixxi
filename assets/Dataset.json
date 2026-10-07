@@ -1,0 +1,3325 @@
+{
+  "dataset_info": {
+    "purpose": "FIXXI AI Diagnostic Engine - Pakistani market pricing reference for parts and labor",
+    "currency": "PKR (Pakistani Rupees)",
+    "as_of": "August 2026",
+    "city_variation_note": "Rates vary +/-5-10% across cities. Karachi/Quetta run higher, Faisalabad usually cheapest, Lahore/Islamabad/Rawalpindi mid-range.",
+    "quality_tiers": {
+      "economy": "Cheapest reliable option (local/Chinese brands e.g. Waves, CHINT, local pipes) - lower lifespan",
+      "standard": "Mid-range trusted local/regional brands (PEL, Havells, Popular, Beta, Porta) - best value for most jobs",
+      "premium": "Top imported/branded (Clipsal, Schneider, ABB, Grohe, Pedrollo) - longer lifespan, higher upfront cost"
+    },
+    "confidence_flag": {
+      "verified": "Sourced directly from Pakistani market rate guides/retailers, August 2026",
+      "estimated": "No direct Pakistani retail price found in search - value is a reasoned estimate based on adjacent/similar item pricing and regional HVAC part costs. Verify locally before using for firm quotes."
+    }
+  },
+  "electrician_parts_pricing": [
+    {"item": "1-Way Switch", "economy_pkr": "120-280", "standard_pkr": "250-400", "premium_pkr": "300-600", "confidence": "verified"},
+    {"item": "2-Way Switch", "economy_pkr": "160-280", "standard_pkr": "320-500", "premium_pkr": "400-650", "confidence": "verified"},
+    {"item": "Socket 13A", "economy_pkr": "200-400", "standard_pkr": "380-550", "premium_pkr": "450-700", "confidence": "verified"},
+    {"item": "Socket 5A", "economy_pkr": "100-180", "standard_pkr": "200-350", "premium_pkr": "250-450", "confidence": "verified"},
+    {"item": "Fan Regulator/Dimmer", "economy_pkr": "300-600", "standard_pkr": "300-600", "premium_pkr": "600-1200", "confidence": "verified"},
+    {"item": "MCB (6-32A Single Pole)", "economy_pkr": "250-450", "standard_pkr": "600-900", "premium_pkr": "750-1200", "confidence": "verified"},
+    {"item": "RCCB 40A DP (30mA)", "economy_pkr": "1500-2500", "standard_pkr": "2500-3500", "premium_pkr": "3000-4500", "confidence": "verified"},
+    {"item": "Distribution Board 8-Way Single Phase", "economy_pkr": "1500-3000", "standard_pkr": "3500-5000", "premium_pkr": "4500-6500", "confidence": "verified"},
+    {"item": "Copper Wire 2.5mm2 (per 90m coil)", "economy_pkr": "6500-7200", "standard_pkr": "6800-7500", "premium_pkr": "7500-8500", "confidence": "verified"},
+    {"item": "Copper Wire 1.5mm2 (per 90m coil)", "economy_pkr": "4000-4500", "standard_pkr": "4200-4800", "premium_pkr": "4800-5500", "confidence": "verified"},
+    {"item": "Ceiling Fan Capacitor", "economy_pkr": "200-350", "standard_pkr": "300-450", "premium_pkr": "400-500", "confidence": "verified"},
+    {"item": "Ceiling Fan 56\" (complete unit)", "economy_pkr": "5000-7000", "standard_pkr": "5500-8000", "premium_pkr": "6500-9000", "confidence": "verified"},
+    {"item": "Fan Motor Rewinding (parts+material only)", "economy_pkr": "800-1500", "standard_pkr": "1200-2000", "premium_pkr": "1800-2800", "confidence": "estimated"},
+    {"item": "New Fan Motor (replacement unit)", "economy_pkr": "2500-3500", "standard_pkr": "3500-5000", "premium_pkr": "5000-7000", "confidence": "estimated"},
+    {"item": "LED Bulb 9-12W", "economy_pkr": "150-350", "standard_pkr": "250-450", "premium_pkr": "350-600", "confidence": "verified"},
+    {"item": "LED Tube Light 18-22W", "economy_pkr": "250-450", "standard_pkr": "350-550", "premium_pkr": "450-800", "confidence": "verified"},
+    {"item": "Doorbell/Chime Unit + Transformer", "economy_pkr": "300-500", "standard_pkr": "400-600", "premium_pkr": "500-800", "confidence": "estimated"},
+    {"item": "Copper Earth Rod 16mm x 4ft", "economy_pkr": "1500-2500 (GI)", "standard_pkr": "3500-5500 (Copper)", "premium_pkr": "6000-8500 (Heavy duty copper)", "confidence": "verified"},
+    {"item": "Earthing Wire 6mm2 (per meter)", "economy_pkr": "250-400 (GI 8SWG/kg)", "standard_pkr": "300-450 (Copper)", "premium_pkr": "450-600 (Copper 10mm2)", "confidence": "verified"},
+    {"item": "PVC Conduit Pipe 3/4 inch (per length)", "economy_pkr": "180-250", "standard_pkr": "250-350", "premium_pkr": "350-500", "confidence": "verified"},
+    {"item": "Extension Board (4-6 socket)", "economy_pkr": "400-700", "standard_pkr": "700-1200", "premium_pkr": "1200-2000", "confidence": "estimated"},
+    {"item": "Inverter/UPS Battery (standard)", "economy_pkr": "15000-20000", "standard_pkr": "20000-28000", "premium_pkr": "28000-40000", "confidence": "estimated"}
+  ],
+  "electrician_labor_pricing": [
+    {"service": "Diagnostic/site visit check fee", "pkr": "300-500", "unit": "per visit", "confidence": "estimated - aligns with FIXXI's own check fee model"},
+    {"service": "Switch/socket repair or replace", "pkr": "300-600", "unit": "per point", "confidence": "verified"},
+    {"service": "Wiring per point (switch/socket)", "pkr": "400-800", "unit": "per point", "confidence": "verified"},
+    {"service": "MCB/breaker replacement labor", "pkr": "300-600", "unit": "per breaker", "confidence": "estimated"},
+    {"service": "DB box installation", "pkr": "2000-5000", "unit": "per box", "confidence": "verified"},
+    {"service": "Ceiling fan installation/repair labor", "pkr": "800-1500", "unit": "per fan", "confidence": "verified"},
+    {"service": "Fan capacitor replacement labor", "pkr": "300-600", "unit": "per fan", "confidence": "estimated"},
+    {"service": "Light fixture installation", "pkr": "300-600", "unit": "per fixture", "confidence": "verified"},
+    {"service": "Earthing/grounding installation", "pkr": "3000-6000", "unit": "per earth pit", "confidence": "verified"},
+    {"service": "AC dedicated circuit wiring", "pkr": "2500-5000", "unit": "per AC", "confidence": "verified"},
+    {"service": "Short circuit/wiring fault diagnosis+fix", "pkr": "1000-3000", "unit": "per job", "confidence": "estimated"},
+    {"service": "Daily skilled electrician rate", "pkr": "1500-3000", "unit": "per day (8hrs)", "confidence": "verified"},
+    {"service": "House rewiring (per sq ft, labor only)", "pkr": "60-120", "unit": "per sq ft", "confidence": "verified"}
+  ],
+  "plumber_parts_pricing": [
+    {"item": "PVC Pipe 1/2 inch (per 20ft length)", "economy_pkr": "450-550", "standard_pkr": "500-600", "premium_pkr": "600-650", "confidence": "verified"},
+    {"item": "PPRC Pipe 1/2 inch (per 12ft length, hot/cold)", "economy_pkr": "500-600", "standard_pkr": "550-680", "premium_pkr": "650-750", "confidence": "verified"},
+    {"item": "GI Pipe 1/2 inch (per 20ft length)", "economy_pkr": "1200-1500", "standard_pkr": "1400-1650", "premium_pkr": "1600-1800", "confidence": "verified"},
+    {"item": "PVC Fitting (elbow/tee/coupling)", "economy_pkr": "15-35", "standard_pkr": "20-45", "premium_pkr": "30-60", "confidence": "verified"},
+    {"item": "PVC Ball Valve 1/2 inch", "economy_pkr": "150-220", "standard_pkr": "180-260", "premium_pkr": "220-300", "confidence": "verified"},
+    {"item": "Teflon Tape (roll)", "pkr": "50-100", "confidence": "verified"},
+    {"item": "Basin Tap (pillar type)", "economy_pkr": "1500-2200", "standard_pkr": "2000-3000", "premium_pkr": "5000-12000 (Grohe/Kohler)", "confidence": "verified"},
+    {"item": "Basin Mixer (single lever)", "economy_pkr": "3000-4000", "standard_pkr": "4000-6000", "premium_pkr": "8000-25000 (Grohe/Kohler)", "confidence": "verified"},
+    {"item": "Kitchen Sink Tap", "economy_pkr": "2500-3500", "standard_pkr": "3500-5000", "premium_pkr": "8000-15000", "confidence": "verified"},
+    {"item": "Flush Tank (PVC/plastic, complete)", "economy_pkr": "2500-3500", "standard_pkr": "3500-5000", "premium_pkr": "8000-20000 (concealed)", "confidence": "verified"},
+    {"item": "Flush Valve/Flapper kit only", "economy_pkr": "400-700", "standard_pkr": "600-900", "premium_pkr": "900-1500", "confidence": "estimated"},
+    {"item": "Float Valve (tank)", "economy_pkr": "500-800", "standard_pkr": "800-1200", "premium_pkr": "1200-1800", "confidence": "estimated"},
+    {"item": "Float Switch (auto tank fill)", "pkr": "800-1500", "confidence": "verified"},
+    {"item": "Foot Valve (brass 1 inch)", "economy_pkr": "400-600", "standard_pkr": "500-700", "premium_pkr": "600-800", "confidence": "verified"},
+    {"item": "Water Tank 1000L (Plastic 3-layer)", "economy_pkr": "12000-13500", "standard_pkr": "13500-15000", "premium_pkr": "15000-16000 (SS: 30000-45000)", "confidence": "verified"},
+    {"item": "Water Pump/Motor 1.0 HP Monoblock", "economy_pkr": "6000-10000 (local/Chinese)", "standard_pkr": "12000-15000", "premium_pkr": "15000-18000 (Pedrollo/DAB)", "confidence": "verified"},
+    {"item": "Water Pump Impeller (spare part)", "economy_pkr": "800-1500", "standard_pkr": "1200-2000", "premium_pkr": "1800-3000", "confidence": "estimated"},
+    {"item": "Gas Geyser 6L Instant", "economy_pkr": "12000-14000", "standard_pkr": "14000-16000", "premium_pkr": "16000-22000", "confidence": "verified"},
+    {"item": "Shower Set (wall mount, complete)", "economy_pkr": "3000-4000", "standard_pkr": "4000-6000", "premium_pkr": "10000-20000 (Grohe/Kohler)", "confidence": "verified"},
+    {"item": "Drain Trap / Nahani Trap (PVC)", "economy_pkr": "250-350", "standard_pkr": "300-450", "premium_pkr": "400-800 (with SS grating)", "confidence": "verified"},
+    {"item": "Gully Trap (P-trap) 4 inch", "economy_pkr": "350-450", "standard_pkr": "400-500", "premium_pkr": "450-600", "confidence": "verified"},
+    {"item": "Bottle Trap (for basin)", "economy_pkr": "300-400", "standard_pkr": "350-500", "premium_pkr": "450-600", "confidence": "verified"},
+    {"item": "RO/Water Filter Unit (basic)", "economy_pkr": "10000-15000", "standard_pkr": "15000-25000", "premium_pkr": "25000-45000", "confidence": "estimated"}
+  ],
+  "plumber_labor_pricing": [
+    {"service": "Diagnostic/site visit check fee", "pkr": "300-500", "unit": "per visit", "confidence": "estimated - aligns with FIXXI's own check fee model"},
+    {"service": "Pipe joint repair (open/visible)", "pkr": "500-1000", "unit": "per joint", "confidence": "verified"},
+    {"service": "Pipe joint repair (hidden/concealed, wall breaking)", "pkr": "1500-3000", "unit": "per joint", "confidence": "verified"},
+    {"service": "Tap/faucet repair labor", "pkr": "300-600", "unit": "per tap", "confidence": "estimated"},
+    {"service": "Drain/sewage blockage clearing", "pkr": "800-2000", "unit": "per job", "confidence": "estimated"},
+    {"service": "Bathroom fitting installation (complete)", "pkr": "8000-15000", "unit": "per bathroom", "confidence": "verified"},
+    {"service": "Water tank installation labor", "pkr": "3000-6000", "unit": "per tank", "confidence": "verified"},
+    {"service": "Pump/motor installation/repair labor", "pkr": "2500-5000", "unit": "per pump", "confidence": "verified"},
+    {"service": "Geyser installation labor", "pkr": "2000-4000", "unit": "per geyser", "confidence": "verified"},
+    {"service": "Flush tank repair labor", "pkr": "500-1200", "unit": "per job", "confidence": "estimated"},
+    {"service": "Kitchen sink fitting labor", "pkr": "1500-3000", "unit": "per sink", "confidence": "estimated"},
+    {"service": "Daily skilled plumber rate", "pkr": "2000-4000", "unit": "per day (8hrs)", "confidence": "verified"}
+  ],
+  "ac_refrigeration_parts_pricing": [
+    {"item": "Refrigerant Gas R22 (per kg)", "economy_pkr": "1500-2000", "standard_pkr": "1800-2200", "premium_pkr": "2000-2500", "confidence": "verified"},
+    {"item": "Refrigerant Gas R410A/R32 (per kg)", "economy_pkr": "2500-3000", "standard_pkr": "2800-3500", "premium_pkr": "3200-4000", "confidence": "verified"},
+    {"item": "AC Capacitor (35-50uF for 1-1.5 ton)", "economy_pkr": "300-500", "standard_pkr": "450-650", "premium_pkr": "600-900", "confidence": "estimated"},
+    {"item": "AC Compressor 1.0-1.5 Ton (part only)", "economy_pkr": "15000-22000", "standard_pkr": "22000-30000", "premium_pkr": "30000-42500", "confidence": "estimated - derived from cross-market compressor pricing, verify with local HVAC supplier"},
+    {"item": "PCB/Control Board (replacement unit)", "economy_pkr": "8000-12000", "standard_pkr": "12000-18000", "premium_pkr": "18000-25000", "confidence": "verified (based on repair-cost proxy)"},
+    {"item": "Outdoor Fan Motor", "economy_pkr": "3000-4500", "standard_pkr": "4000-5500", "premium_pkr": "5000-7000", "confidence": "estimated"},
+    {"item": "Copper Refrigerant Pipe (per foot)", "economy_pkr": "1200-1400", "standard_pkr": "1400-1600", "premium_pkr": "1600-1800", "confidence": "verified"},
+    {"item": "Brazing Rod (per rod)", "pkr": "150-300", "confidence": "estimated"},
+    {"item": "Drain Pan (indoor unit)", "economy_pkr": "1000-1800", "standard_pkr": "1500-2500", "premium_pkr": "2000-3000", "confidence": "estimated"},
+    {"item": "Temperature Sensor/Thermostat sensor", "economy_pkr": "800-1500", "standard_pkr": "1200-2000", "premium_pkr": "1800-2800", "confidence": "estimated"},
+    {"item": "Remote Control (universal/OEM)", "economy_pkr": "500-900", "standard_pkr": "900-1500", "premium_pkr": "1500-2500 (OEM)", "confidence": "estimated"},
+    {"item": "Mounting Bracket (outdoor unit)", "pkr": "1500-3000", "confidence": "estimated"}
+  ],
+  "ac_refrigeration_labor_pricing": [
+    {"service": "Diagnostic/site visit check fee", "pkr": "500-800", "unit": "per visit", "confidence": "estimated - aligns with FIXXI's own check fee model"},
+    {"service": "AC gas refill - Non-inverter (R22), full service", "pkr": "6000-9000", "unit": "per service", "confidence": "verified"},
+    {"service": "AC gas refill - Inverter (R410A/R32), full service", "pkr": "8000-12000", "unit": "per service", "confidence": "verified"},
+    {"service": "AC general service/cleaning (both units)", "pkr": "1500-3000", "unit": "per service", "confidence": "estimated"},
+    {"service": "PCB repair (labor + diagnosis, non-inverter)", "pkr": "8000-15000", "unit": "per job", "confidence": "verified"},
+    {"service": "PCB repair (labor + diagnosis, inverter)", "pkr": "12000-25000", "unit": "per job", "confidence": "verified"},
+    {"service": "AC installation (split, up to 10ft pipe)", "pkr": "6000-9000", "unit": "per unit", "confidence": "verified"},
+    {"service": "DC Inverter AC installation", "pkr": "7000-10000", "unit": "per unit", "confidence": "verified"},
+    {"service": "AC uninstallation", "pkr": "3000-5000", "unit": "per unit", "confidence": "estimated"},
+    {"service": "Additional pipe length", "pkr": "100", "unit": "per ft beyond 10ft", "confidence": "verified"},
+    {"service": "Compressor replacement labor (excl. part)", "pkr": "4000-8000", "unit": "per job", "confidence": "estimated"},
+    {"service": "Capacitor replacement labor", "pkr": "500-1000", "unit": "per job", "confidence": "estimated"},
+    {"service": "Drainage pipe unclog", "pkr": "800-1500", "unit": "per job", "confidence": "estimated"}
+  ],
+  "diagnostic_engine": {
+    "version": 2,
+    "trades": [
+      {
+        "id": "electrician",
+        "category": "Electrician",
+        "parts_key": "electrician_parts_pricing",
+        "labor_key": "electrician_labor_pricing",
+        "visit_fee_match": "Diagnostic/site visit check fee"
+      },
+      {
+        "id": "plumber",
+        "category": "Plumber",
+        "parts_key": "plumber_parts_pricing",
+        "labor_key": "plumber_labor_pricing",
+        "visit_fee_match": "Diagnostic/site visit check fee"
+      },
+      {
+        "id": "ac_refrigeration",
+        "category": "AC & Refrigerator Mechanic",
+        "parts_key": "ac_refrigeration_parts_pricing",
+        "labor_key": "ac_refrigeration_labor_pricing",
+        "visit_fee_match": "Diagnostic/site visit check fee"
+      }
+    ],
+    "legacy_note": "component_classes aur labor_to_part_hints sirf reference/provenance ke liye rakhe gaye hain — runtime engine 'normalization', 'hazards' aur 'appliances' use karta hai. Purane global_high_risk_tokens / global_low_risk_tokens hata diye gaye hain kyunki un mein 'nahi', 'off', 'switch' jaise tokens har masle ko LOW bana dete the.",
+    "normalization": {
+      "_how_it_works": [
+        "Do alag pass hote hain. appliance_synonyms pehle chalte hain (item pehchanne ke liye), symptom_synonyms appliance resolve hone ke BAAD chalte hain.",
+        "Har 'from' word-boundary regex banta hai (\\bfrom\\b) — is liye 'ni' se 'pani' kharab nahi hota.",
+        "Agar 'from' ke aakhir mein * ho to trailing boundary nahi lagti (prefix match), e.g. 'tapak*' se 'tapakta' bhi match hoga.",
+        "Spaces \\s+ ban jate hain, is liye extra spaces se farq nahi padta.",
+        "Order maayne rakhta hai: spelling fixes pehle, phir phrases."
+      ],
+      "appliance_synonyms": {
+        "a.c": "ac",
+        "a/c": "ac",
+        "aircon": "ac",
+        "airconditioner": "ac",
+        "air conditioner": "ac",
+        "air conditioning": "ac",
+        "room ac": "ac",
+        "split ac": "ac",
+        "inverter ac": "ac",
+        "dc inverter ac": "ac",
+        "refrigerator": "fridge",
+        "freezer": "fridge",
+        "deep freezer": "fridge",
+        "pankha": "fan",
+        "pankhay": "fan",
+        "pankhe": "fan",
+        "pankhaa": "fan",
+        "batti": "light",
+        "tubelight": "tube light",
+        "nalka": "tap",
+        "nalkay": "tap",
+        "tuti": "tap",
+        "toti": "tap",
+        "geezer": "geyser",
+        "gizer": "geyser",
+        "gyser": "geyser",
+        "gaiser": "geyser",
+        "nahani": "drain",
+        "naali": "nali",
+        "commode": "toilet",
+        "kapre dhone wali machine": "washing machine",
+        "washing machin*": "washing machine",
+        "ro plant": "ro",
+        "water filter": "water filter"
+      },
+      "symptom_synonyms": {
+        "nhi": "nahi",
+        "nhin": "nahi",
+        "nahin": "nahi",
+        "nai": "nahi",
+        "ni": "nahi",
+        "awaaz": "noise",
+        "aawaz": "noise",
+        "awaz": "noise",
+        "shor": "noise",
+        "khat khat": "noise",
+        "kharkhara*": "noise",
+        "dhuwa*": "smoke",
+        "dhuan": "smoke",
+        "dhooan": "smoke",
+        "dhua": "smoke",
+        "chingari*": "spark",
+        "jhatka": "shock",
+        "karant": "shock",
+        "current lag*": "shock",
+        "bijli lag*": "shock",
+        "aag": "fire",
+        "jalne ki bu": "burning smell",
+        "jalne ki boo": "burning smell",
+        "jalne ki smell": "burning smell",
+        "jali hui bu": "burning smell",
+        "jal rahi": "burning",
+        "jal raha": "burning",
+        "tapak*": "leak",
+        "riss*": "leak",
+        "leakage": "leak",
+        "seepage": "leak",
+        "phat gaya": "burst",
+        "phat gai": "burst",
+        "thandi hawa nahi": "cooling weak",
+        "hawa thandi nahi": "cooling weak",
+        "thanda nahi": "cooling weak",
+        "thandi nahi": "cooling weak",
+        "cool nahi": "cooling weak",
+        "cooling nahi": "cooling weak",
+        "garam hawa": "cooling weak",
+        "hawa garam": "cooling weak",
+        "thanda kam": "cooling weak",
+        "cooling kam": "cooling weak",
+        "garam pani nahi": "not heating",
+        "pani garam nahi": "not heating",
+        "hawa nahi aa rah*": "weak",
+        "hawa kam aa rah*": "weak",
+        "pani band nahi ho*": "overflow",
+        "pani nahi aa rah*": "no water",
+        "pani nahi ata": "no water",
+        "pani band hai": "no water",
+        "pani band ho gaya": "no water",
+        "nali band": "nali blocked",
+        "band nali": "blocked drain",
+        "chal nahi rah*": "not working",
+        "nahi chal rah*": "not working",
+        "chalta nahi": "not working",
+        "chalti nahi": "not working",
+        "nahi chalta": "not working",
+        "nahi chalti": "not working",
+        "start nahi ho*": "not working",
+        "on nahi ho*": "not working",
+        "kaam nahi kar*": "not working",
+        "nahi kaam kar*": "not working",
+        "band ho gaya": "not working",
+        "band ho gai": "not working",
+        "band hai": "not working",
+        "dead hai": "not working",
+        "aahista": "slow",
+        "ahista": "slow",
+        "dheere": "slow",
+        "halka": "weak",
+        "jam ho*": "blocked",
+        "jam hai": "blocked",
+        "block ho*": "blocked",
+        "choke ho*": "blocked",
+        "ruk gaya": "blocked",
+        "ruk gai": "blocked",
+        "bohat garam": "overheat",
+        "bahut garam": "overheat",
+        "zyada garam": "overheat",
+        "garam ho jata": "overheat",
+        "badbu": "smell",
+        "boo": "smell",
+        "gas ki bu": "gas smell",
+        "gas ki boo": "gas smell",
+        "gas ki smell": "gas smell",
+        "trip ho*": "trip",
+        "bhar gaya": "overflow",
+        "bahne lag*": "overflow",
+        "barf jam*": "ice forming",
+        "barf": "ice",
+        "hil rah*": "wobble",
+        "hilta": "wobble",
+        "jhool": "wobble"
+      }
+    },
+    "hazards": [
+      {
+        "id": "smoke",
+        "label": "Dhuwa (smoke)",
+        "patterns": ["\\bsmoke\\b", "\\bsmoking\\b", "\\bdhuw?a\\w*", "\\bdhuan\\b", "\\bdhooan\\b"],
+        "safety": [
+          "🔴 Us cheez ka MCB / main switch FORAN band karein.",
+          "🔴 Switch off hone ke baad plug nikaal dein — haath bilkul sookhe hon.",
+          "🔴 Kamra ventilate karein (khirki/darwaza kholein) aur appliance ke qareeb na khare hon.",
+          "🔴 Dobara ON KABHI mat karein — pehle technician check kare.",
+          "🔴 Paas mein fire extinguisher ya sookhi ret rakhein. Pani electrical par mat dalein."
+        ]
+      },
+      {
+        "id": "fire",
+        "label": "Aag / jalna (fire)",
+        "patterns": ["\\bfire\\b", "\\baag\\b", "\\bjal\\s?rah\\w*", "\\bburning\\b", "\\bburnt\\b", "\\bburn\\b"],
+        "safety": [
+          "🔴 Main switch band karein aur ghar walon ko us kamre se bahar nikaalein.",
+          "🔴 Electrical aag par PANI mat dalein — CO2/DCP extinguisher ya sookhi ret use karein.",
+          "🔴 Aag qabu mein na aaye to Rescue 1122 ko foran call karein.",
+          "🔴 Wapas ON karne ki koshish mat karein."
+        ]
+      },
+      {
+        "id": "burning_smell",
+        "label": "Jalne ki smell",
+        "patterns": ["burning smell", "jalne ki (bu|boo|smell)", "plastic jal\\w*", "\\bcarbon\\b"],
+        "safety": [
+          "🔴 Foran band karein — jalne ki smell insulation ya winding jalne ki nishani hai.",
+          "🔴 Us point/circuit par koi doosra appliance bhi mat lagayein.",
+          "🔴 Technician aane tak istemaal band rakhein."
+        ]
+      },
+      {
+        "id": "spark",
+        "label": "Chingari / short circuit",
+        "patterns": ["\\bspark\\w*", "\\bchingari\\w*", "short circuit", "\\bshort ho\\w*"],
+        "safety": [
+          "🔴 Us circuit ka MCB band karein — chingari short circuit ki nishani hai.",
+          "🔴 Us socket/switch ko dobara use mat karein, bachon ko door rakhein.",
+          "🔴 Geeli jagah ya geele haath se bilkul mat chhuein."
+        ]
+      },
+      {
+        "id": "shock",
+        "label": "Bijli ka jhatka (electric shock)",
+        "patterns": ["\\bshock\\w*", "\\bkarant\\b", "\\bjhatka\\b", "current aa\\w*", "live wire"],
+        "safety": [
+          "🔴 Main MCB band karein — body par current aana earthing fail hone ki nishani hai.",
+          "🔴 Jab tak electrician check na kare, us appliance ko haath mat lagayein.",
+          "🔴 Kisi ko shock lag jaye to pehle supply off karein, phir usay chhuein.",
+          "🔴 Technician se RCCB (30mA) lagwane ka mashwara zaroor lein."
+        ]
+      },
+      {
+        "id": "gas_leak",
+        "label": "Gas leak",
+        "patterns": ["gas\\s+leak\\w*", "gas\\s+smell", "\\blpg\\b", "gas\\s+aa\\s+rah\\w*", "gas\\s+nikal"],
+        "safety": [
+          "🔴 Gas valve FORAN band karein aur khirkiyan kholein.",
+          "🔴 Koi switch, light ya mobile ON/OFF mat karein — chingari se blast ho sakta hai.",
+          "🔴 Maachis/lighter bilkul na jalayein. Ghar se bahar nikal jayein.",
+          "🔴 Sui Gas emergency (1199) aur certified technician ko call karein."
+        ]
+      },
+      {
+        "id": "water_on_power",
+        "label": "Pani + bijli ka mel",
+        "patterns": ["pani[^.]{0,30}(socket|switch|wiring|board|meter)", "(socket|switch|board|wiring)[^.]{0,30}pani", "water[^.]{0,30}(socket|switch|wiring)"],
+        "safety": [
+          "🔴 Us hisse ka MCB foran band karein — pani aur bijli ka mel jaanleva hai.",
+          "🔴 Geele farsh par nange paun mat chalein.",
+          "🔴 Pani ka source band karein (valve/tank) phir hi safai karein."
+        ]
+      },
+      {
+        "id": "burst_flood",
+        "label": "Pipe burst / flooding",
+        "patterns": ["\\bburst\\b", "\\bphat\\s?g\\w*", "\\bflood\\w*", "pani\\s+bhar\\s+g\\w*", "fountain"],
+        "safety": [
+          "🔴 Ghar ka main water valve aur tank ka valve FORAN band karein.",
+          "🔴 Pump/motor ka switch band karein.",
+          "🔴 Pani ke qareeb wale sockets aur extension boards ka MCB band karein.",
+          "🔴 Emergency plumber bulayein — pani ka nuksan har minute barhta hai."
+        ]
+      },
+      {
+        "id": "overheat",
+        "label": "Bohat zyada garam",
+        "patterns": ["\\boverheat\\w*", "chhu nahi sakte", "haath nahi lag", "bohat garam", "bahut garam"],
+        "safety": [
+          "🔴 Band karein aur thanda hone dein — zyada garam hona load ya fault ki nishani hai.",
+          "🔴 Us par kapra/cover mat dalein, hawa lagne dein.",
+          "🔴 Baar baar garam ho raha ho to istemaal band karke technician se check karwayein."
+        ]
+      },
+      {
+        "id": "repeated_trip",
+        "label": "MCB baar baar trip",
+        "patterns": ["baar\\s+baar\\s+trip", "bar\\s+bar\\s+trip", "repeatedly trip", "trip\\s+hota\\s+reh\\w*"],
+        "safety": [
+          "🔴 MCB ko baar baar wapas ON MAT karein — yeh fault ka signal hai, isay ignore karna aag ki wajah ban sakta hai.",
+          "🔴 Us circuit ke saare appliances unplug karein.",
+          "🔴 Licensed electrician se DB check karwayein — khud DB mat kholein."
+        ]
+      }
+    ],
+    "hazard_default_checks": [
+      "Appliance ka istemaal FORAN band kar dein — aage koi bhi test khud na karein.",
+      "Uska MCB / switch off karein aur plug nikaal dein (haath sookhe hon).",
+      "Ghar walon, khaas taur par bachon ko us jagah se door rakhein.",
+      "Door se photo/video bana lein taake technician ko dikha sakein — qareeb na jayein.",
+      "Technician aane tak dobara ON KABHI na karein."
+    ],
+    "appliances": [
+      {
+        "id": "ac",
+        "label": "AC / Air Conditioner",
+        "category": "AC & Refrigerator Mechanic",
+        "trade_id": "ac_refrigeration",
+        "priority": 10,
+        "nouns": ["\\bac\\b", "\\ba\\.c\\b", "air condition\\w*", "\\bsplit unit\\b", "indoor unit", "outdoor unit"],
+        "hints": ["cooling", "thanda", "gas refill", "r22", "r410", "r32", "compressor", "pcb", "ton", "remote", "inverter", "grill", "filter", "blower"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "AC ka MCB / isolator band karein pehle — AC 220V par chalta hai.",
+          "Indoor ya outdoor panel khud mat kholein — andar capacitor charge rehta hai.",
+          "Outdoor unit chhat/deewar par ho to bina safety ke us tak mat charhein."
+        ],
+        "faults": [
+          {
+            "symptom": "cooling_weak",
+            "label": "Thanda nahi kar raha / cooling weak",
+            "match": ["cooling weak", "cooling kam", "thoda thanda", "weak cooling", "\\bcooling\\b", "\\bheat\\b"],
+            "risk": "low",
+            "checks": [
+              "Indoor filter nikaal kar pani se dhoein aur sukha kar wapas lagayein — gandi filter cooling 30–40% tak gira deti hai.",
+              "Remote COOL mode par ho (FAN/DRY par nahi) aur temperature 18–22°C set karein.",
+              "Fan speed HIGH par rakhein aur 'Turbo/Powerful' on karein.",
+              "Outdoor unit ke aage-peeche kam az kam 1 foot jagah clear karein — kapra, gamla ya deewar hawa block na kare.",
+              "Outdoor unit ka fan ghoom raha hai? Na ghoome to compressor load nahi le raha — foran band karein.",
+              "Kamre ke darwaze/khirkiyan band karke 20 minute chalayein, phir grill se nikalne wali hawa check karein."
+            ],
+            "safety": [
+              "Gas refill KHUD kabhi mat karein — yeh sirf certified HVAC technician ka kaam hai.",
+              "Outdoor unit par cover chadha kar AC mat chalayein."
+            ],
+            "issues": [
+              {
+                "title": "Filter/Coil gandi — General Service",
+                "cause": "indoor aur outdoor coil par mitti jam gai hai, is liye heat bahar nahi nikal rahi",
+                "labor_row": "AC general service/cleaning (both units)"
+              },
+              {
+                "title": "Gas kam ho gai — Refill (Non-inverter R22)",
+                "cause": "refrigerant level gir gaya hai ya koi slow leak hai",
+                "labor_row": "AC gas refill - Non-inverter (R22), full service"
+              },
+              {
+                "title": "Gas kam ho gai — Refill (Inverter R410A/R32)",
+                "cause": "inverter AC hai to gas aur charging dono mehngi parti hain",
+                "labor_row": "AC gas refill - Inverter (R410A/R32), full service"
+              },
+              {
+                "title": "Compressor weak / kharab",
+                "cause": "compressor pressure hi nahi bana raha — yeh sab se mehnga case hai",
+                "part_row": "AC Compressor 1.0-1.5 Ton (part only)",
+                "labor_row": "Compressor replacement labor (excl. part)"
+              }
+            ]
+          },
+          {
+            "symptom": "dead",
+            "label": "Bilkul chal nahi raha",
+            "match": ["not working", "\\bdead\\b", "koi response", "on nahi", "light nahi jal"],
+            "risk": "low",
+            "checks": [
+              "AC wala MCB / isolator ON hai? DB board par jaa kar confirm karein.",
+              "Remote mein naye cell daal kar dekhein — display aata hai ya nahi?",
+              "Us socket mein koi doosra appliance laga kar test karein ke point mein current hai.",
+              "Stabilizer laga ho to usay bypass karke direct try karein.",
+              "Indoor unit se koi beep ya blinking light aaye to uska pattern note karein — yeh error code hota hai."
+            ],
+            "issues": [
+              {
+                "title": "AC ka point / socket kharab",
+                "cause": "AC ka dedicated point ya socket fault hai, unit tak supply hi nahi pohanch rahi",
+                "trade_id": "electrician",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Capacitor kharab",
+                "cause": "start capacitor fail ho gaya hai, is liye compressor start hi nahi ho raha",
+                "part_row": "AC Capacitor (35-50uF for 1-1.5 ton)",
+                "labor_row": "Capacitor replacement labor"
+              },
+              {
+                "title": "PCB / Control board dead",
+                "cause": "control board hi kaam nahi kar raha, unit koi command nahi le rahi",
+                "part_row": "PCB/Control Board (replacement unit)",
+                "labor_row": "PCB repair (labor + diagnosis, non-inverter)"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Indoor unit se pani tapak raha hai",
+            "match": ["\\bleak\\b", "pani gir", "water drip", "\\bdrip\\b", "pani nikal"],
+            "risk": "low",
+            "checks": [
+              "Drain pipe ka bahar wala sira dekhein — pani aa raha hai ya bilkul ruk gaya hai?",
+              "Drain pipe ko halka pressure/blow de kar saaf karein — 90% cases mein blockage hi wajah hoti hai.",
+              "Indoor unit seedhi (level) lagi hai? Tedhi hone se pani galat side gir jata hai.",
+              "Coil par barf jami hai? Yeh gandi filter ya kam gas ki nishani hai.",
+              "Pani kisi socket, switch board ya extension ke qareeb gir raha ho to us hisse ka MCB foran band karein."
+            ],
+            "safety": ["Tapakne wale pani ke neeche baalti rakhein aur farsh sukha rakhein — phisalne ka khatra hai."],
+            "issues": [
+              {
+                "title": "Drain pipe blockage",
+                "cause": "nikaas wali pipe mein mitti/algae jam gai hai is liye pani wapas indoor mein aa raha hai",
+                "labor_row": "Drainage pipe unclog"
+              },
+              {
+                "title": "Drain pan crack / choke",
+                "cause": "pani jama karne wali tray tooti ya choke ho gai hai",
+                "part_row": "Drain Pan (indoor unit)",
+                "labor_row": "AC general service/cleaning (both units)"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz / vibration aa rahi hai",
+            "match": ["\\bnoise\\b", "vibration", "\\bkhat\\b", "ghar ghar", "\\brattle\\b"],
+            "risk": "low",
+            "checks": [
+              "Awaz indoor se aa rahi hai ya outdoor se — pehle yeh confirm karein.",
+              "Outdoor unit ke fan ke aas paas patte, kachra ya koi cheez phansi hai? Band karke dekhein.",
+              "Outdoor unit ka bracket/stand hil raha hai? Screws dheele ho sakte hain.",
+              "Indoor blower se 'khat khat' aaye to blower wheel par jama mitti wajah hoti hai.",
+              "Awaz ke saath jalne ki smell bhi ho to AC foran band karein aur khud kuch mat karein."
+            ],
+            "issues": [
+              {
+                "title": "Outdoor unit ka bracket dheela",
+                "cause": "mounting bracket dheela hone se poora unit vibrate kar raha hai",
+                "part_row": "Mounting Bracket (outdoor unit)",
+                "labor_row": "AC general service/cleaning (both units)"
+              },
+              {
+                "title": "Outdoor fan motor kharab",
+                "cause": "fan motor ki bearing kharab hai, is liye ghoomte waqt awaz aa rahi hai",
+                "part_row": "Outdoor Fan Motor",
+                "labor_row": "AC general service/cleaning (both units)"
+              }
+            ]
+          },
+          {
+            "symptom": "error_code",
+            "label": "Error code / blinking light",
+            "match": ["error code", "\\berror\\b", "\\bE\\d\\b", "\\bblink\\w*", "\\bbeep\\w*", "display par", "\\bF\\d\\b"],
+            "risk": "high",
+            "checks": [
+              "Blinking pattern ya display par likha code note karein — technician isi se fault pakarta hai.",
+              "MCB 2 minute off karke ek dafa power cycle karein.",
+              "Remote ke cell badal kar dekhein.",
+              "Code phir bhi aaye to AC chalana band karein — PCB/sensor fault hai."
+            ],
+            "issues": [
+              {
+                "title": "Temperature sensor kharab",
+                "cause": "sensor galat reading de raha hai is liye board error dikha raha hai",
+                "part_row": "Temperature Sensor/Thermostat sensor",
+                "labor_row": "PCB repair (labor + diagnosis, non-inverter)"
+              },
+              {
+                "title": "PCB / Control board fault",
+                "cause": "main control board mein fault hai, repair ya replacement chahiye",
+                "part_row": "PCB/Control Board (replacement unit)",
+                "labor_row": "PCB repair (labor + diagnosis, inverter)"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / spark",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "\\bfire\\b"],
+            "risk": "high",
+            "checks": [
+              "AC aur uska MCB foran band karein — dobara ON na karein.",
+              "Smell/dhuwa indoor se hai ya outdoor se, door se dekh kar note karein.",
+              "Us circuit par doosra bhaari appliance bhi na lagayein."
+            ],
+            "issues": [
+              {
+                "title": "Capacitor jal gaya",
+                "cause": "capacitor phat ya jal gaya hai — is se dhuwa aur smell aati hai",
+                "part_row": "AC Capacitor (35-50uF for 1-1.5 ton)",
+                "labor_row": "Capacitor replacement labor"
+              },
+              {
+                "title": "PCB jal gaya",
+                "cause": "control board par carbon/jalne ke nishan hain",
+                "part_row": "PCB/Control Board (replacement unit)",
+                "labor_row": "PCB repair (labor + diagnosis, non-inverter)"
+              },
+              {
+                "title": "Compressor winding jal gai",
+                "cause": "compressor ki winding short ho gai hai — sab se bara nuksan",
+                "part_row": "AC Compressor 1.0-1.5 Ton (part only)",
+                "labor_row": "Compressor replacement labor (excl. part)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fridge",
+        "label": "Fridge / Freezer",
+        "category": "AC & Refrigerator Mechanic",
+        "trade_id": "ac_refrigeration",
+        "priority": 9,
+        "nouns": ["\\bfridge\\b", "\\brefrigerat\\w*", "\\bfreezer\\b", "\\bchiller\\b"],
+        "hints": ["cooling", "thanda", "ice", "barf", "compressor", "gas", "freezer", "deep", "door", "gasket", "thermostat"],
+        "default_symptom": "cooling_weak",
+        "common_safety": [
+          "Fridge ka plug nikaal kar hi peechay ya andar koi cheez check karein.",
+          "Peechay lagi black coil (condenser) garam hoti hai — chhote bachon ko door rakhein.",
+          "Fridge ko deewar se 4–6 inch door rakhein warna compressor par load barhta hai."
+        ],
+        "faults": [
+          {
+            "symptom": "cooling_weak",
+            "label": "Thanda nahi kar raha",
+            "match": ["cooling weak", "cooling kam", "\\bcooling\\b", "thoda thanda", "\\bheat\\b"],
+            "risk": "low",
+            "checks": [
+              "Thermostat/temperature knob check karein — kahin 0 ya 'min' par set na ho.",
+              "Freezer thanda hai magar neeche wala hissa nahi? To yeh fan/air-flow ka masla hai, gas ka nahi.",
+              "Door ki rubber (gasket) check karein — kaghaz darwaze mein daba kar kheenchein, aasani se nikal jaye to gasket dheeli hai.",
+              "Peechay lagi coil aur fan par jami mitti saaf karein (plug nikaal kar).",
+              "Fridge zaroorat se zyada bhara hua hai? Andar hawa ka guzar hona zaroori hai.",
+              "Plug nikaal kar 4 ghante band rakhein (defrost), phir chala kar 6–8 ghante baad dobara check karein."
+            ],
+            "issues": [
+              {
+                "title": "Coil safai + general service",
+                "cause": "condenser coil aur fan par jami mitti se cooling gir jati hai",
+                "labor_row": "AC general service/cleaning (both units)"
+              },
+              {
+                "title": "Gas kam ho gai — Refill",
+                "cause": "refrigerant kam hai ya line mein slow leak hai",
+                "labor_row": "AC gas refill - Non-inverter (R22), full service"
+              },
+              {
+                "title": "Thermostat / sensor kharab",
+                "cause": "thermostat compressor ko chalne ka signal theek se nahi de raha",
+                "part_row": "Temperature Sensor/Thermostat sensor",
+                "labor_row": "Capacitor replacement labor"
+              },
+              {
+                "title": "Compressor weak / kharab",
+                "cause": "compressor pressure nahi bana raha — sab se mehnga case",
+                "part_row": "AC Compressor 1.0-1.5 Ton (part only)",
+                "labor_row": "Compressor replacement labor (excl. part)"
+              }
+            ]
+          },
+          {
+            "symptom": "dead",
+            "label": "Bilkul chal nahi raha",
+            "match": ["not working", "\\bdead\\b", "light nahi jal", "on nahi", "koi awaz nahi"],
+            "risk": "low",
+            "checks": [
+              "Socket mein doosra appliance laga kar dekhein ke point mein current hai.",
+              "Fridge ka plug aur wire kahin jala ya pighla hua nahi?",
+              "Andar ki light jal rahi hai magar compressor nahi chal raha? To supply theek hai, fault andar hai.",
+              "Stabilizer laga ho to usay bypass karke direct socket par try karein."
+            ],
+            "issues": [
+              {
+                "title": "Socket / point kharab",
+                "cause": "jis socket par fridge laga hai wahan supply nahi aa rahi",
+                "trade_id": "electrician",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Relay / capacitor kharab",
+                "cause": "compressor ka starting relay ya capacitor fail ho gaya hai",
+                "part_row": "AC Capacitor (35-50uF for 1-1.5 ton)",
+                "labor_row": "Capacitor replacement labor"
+              },
+              {
+                "title": "Compressor seize ho gaya",
+                "cause": "compressor jam ho gaya hai, sirf hum ki awaz aati hai",
+                "part_row": "AC Compressor 1.0-1.5 Ton (part only)",
+                "labor_row": "Compressor replacement labor (excl. part)"
+              }
+            ]
+          },
+          {
+            "symptom": "ice_forming",
+            "label": "Zyada barf jam rahi hai",
+            "match": ["ice forming", "\\bice\\b", "barf jam", "\\bfrost\\b"],
+            "risk": "low",
+            "checks": [
+              "Plug nikaal kar poori barf pighalne dein (manual defrost) — barf khurchne ke liye chaqu/screwdriver KABHI istemaal na karein.",
+              "Door gasket theek band ho raha hai? Garam nam hawa andar aaye to barf zyada jamti hai.",
+              "Freezer mein garam khana ya khuli cheezain rakhna barf barha deta hai.",
+              "Defrost ke baad bhi 24 ghante mein wapas barf jame to defrost system ka fault hai."
+            ],
+            "issues": [
+              {
+                "title": "Defrost timer / heater kharab",
+                "cause": "auto-defrost system kaam nahi kar raha is liye barf jamti ja rahi hai",
+                "part_row": "Temperature Sensor/Thermostat sensor",
+                "labor_row": "AC general service/cleaning (both units)"
+              },
+              {
+                "title": "Door gasket replace",
+                "cause": "darwaze ki rubber dheeli hone se nam hawa andar aa rahi hai",
+                "labor_row": "AC general service/cleaning (both units)"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Fridge se pani nikal raha hai",
+            "match": ["\\bleak\\b", "pani gir", "pani nikal", "\\bdrip\\b"],
+            "risk": "low",
+            "checks": [
+              "Fridge ke andar peechay neeche wala drain hole check karein — usmein barf ya kachra jam jata hai.",
+              "Peechay neeche rakhi drip tray bhari hui ya darari wali hai?",
+              "Pani farsh par bijli ke socket ya extension ke paas jama ho to us hisse ka MCB band karein.",
+              "Fridge level (seedha) khara hai? Tedha hone se pani ghalat side behta hai."
+            ],
+            "issues": [
+              {
+                "title": "Drain line blockage",
+                "cause": "defrost ka pani nikalne wali line barf/kachre se band hai",
+                "labor_row": "Drainage pipe unclog"
+              },
+              {
+                "title": "Drip tray crack / replace",
+                "cause": "pani jama karne wali tray toot gai hai",
+                "part_row": "Drain Pan (indoor unit)",
+                "labor_row": "AC general service/cleaning (both units)"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz aa rahi hai",
+            "match": ["\\bnoise\\b", "vibration", "\\bkhat\\b", "\\brattle\\b", "hum kar"],
+            "risk": "low",
+            "checks": [
+              "Fridge ke chaar paun barabar farsh par hain? Tedha hone se vibration hoti hai.",
+              "Peechay compressor ke rubber mounts dheele ho sakte hain — plug nikaal kar dekhein.",
+              "Freezer ke andar fan se 'khat khat' aa rahi ho to blade par barf lagi hoti hai.",
+              "Fridge deewar se rag raha ho to 4–6 inch door karein."
+            ],
+            "issues": [
+              {
+                "title": "Compressor mounts / general service",
+                "cause": "compressor ke rubber mounts ghis gaye hain",
+                "labor_row": "AC general service/cleaning (both units)"
+              },
+              {
+                "title": "Freezer fan motor kharab",
+                "cause": "andar wale fan ki bearing kharab hai",
+                "part_row": "Outdoor Fan Motor",
+                "labor_row": "AC general service/cleaning (both units)"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*"],
+            "risk": "high",
+            "checks": [
+              "Plug foran nikaal dein aur us socket ka MCB band karein.",
+              "Fridge dobara ON na karein — khana doosri jagah shift kar lein.",
+              "Peechay ke hisse ko haath na lagayein, garam ho sakta hai."
+            ],
+            "issues": [
+              {
+                "title": "Relay / capacitor jal gaya",
+                "cause": "starting relay ya capacitor short ho kar jal gaya hai",
+                "part_row": "AC Capacitor (35-50uF for 1-1.5 ton)",
+                "labor_row": "Capacitor replacement labor"
+              },
+              {
+                "title": "Compressor winding jal gai",
+                "cause": "compressor ki winding short ho gai hai",
+                "part_row": "AC Compressor 1.0-1.5 Ton (part only)",
+                "labor_row": "Compressor replacement labor (excl. part)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fan",
+        "label": "Ceiling Fan / Pankha",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 3,
+        "nouns": ["\\bfan\\b", "ceiling fan", "\\bpankh\\w*", "bracket fan", "pedestal fan"],
+        "skip_if": ["\\bac\\b", "air condition", "indoor unit", "outdoor unit"],
+        "hints": ["regulator", "dimmer", "capacitor", "blade", "patti", "speed", "rewinding", "motor", "bearing", "down rod", "ghoom"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Fan ka switch aur uska MCB dono band karein — sirf regulator off karna kaafi nahi.",
+          "Chhat wala fan check karne ke liye mazboot seerhi aur kisi doosre banday ki madad lein.",
+          "Fan ghoomte waqt blade ke qareeb haath ya jharoo mat le jayein."
+        ],
+        "faults": [
+          {
+            "symptom": "slow",
+            "label": "Slow chal raha hai / speed kam hai",
+            "match": ["\\bslow\\b", "\\bweak\\b", "speed kam", "\\bspeed\\b", "hawa kam"],
+            "risk": "low",
+            "checks": [
+              "Regulator ko full par karke dekhein — kya speed mein koi farq aata hai?",
+              "Blade par jami mitti geele kapre se saaf karein — bhaari mitti se speed ganti hai.",
+              "Fan ke center (motor) ko haath laga kar dekhein — zyada garam hai to motor par load hai.",
+              "Ghar ke doosre fan bhi slow hain? To yeh voltage ka masla hai, fan ka nahi.",
+              "Fan ko haath se ghumayein (switch OFF karke) — free na ghoome to bearing jam ho rahi hai.",
+              "Fan start hone mein waqt le raha hai ya hum karta hai? Yeh capacitor weak hone ki classic nishani hai."
+            ],
+            "issues": [
+              {
+                "title": "Bearing dry — oiling / servicing",
+                "cause": "motor ki bearing sookh gai hai is liye motor poori speed nahi utha raha",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Capacitor weak / kharab",
+                "cause": "starting capacitor ki value gir gai hai — sab se aam wajah",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Regulator / Dimmer kharab",
+                "cause": "regulator andar se kharab hai is liye poora voltage pass nahi kar raha",
+                "part_row": "Fan Regulator/Dimmer",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Motor rewinding",
+                "cause": "motor ki winding weak ho gai hai, dobara winding karwani paregi",
+                "part_row": "Fan Motor Rewinding (parts+material only)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "dead",
+            "label": "Bilkul nahi ghoom raha",
+            "match": ["not working", "\\bdead\\b", "ghoom nahi", "hilta nahi", "on nahi"],
+            "risk": "low",
+            "checks": [
+              "Deewar ka switch aur regulator dono ON hain? Ek ek karke check karein.",
+              "Ussi board ka doosra switch (light) kaam kar raha hai? Nahi to poora point dead hai.",
+              "Switch OFF karke fan ko haath se ghumayein — jam hai ya free ghoomta hai?",
+              "Fan se hum ki halki awaz aati hai magar ghoomta nahi? To capacitor gaya hua hai.",
+              "MCB check karein — kahin fan wala circuit trip na ho gaya ho."
+            ],
+            "issues": [
+              {
+                "title": "Capacitor kharab",
+                "cause": "capacitor fail hone se motor ko starting torque nahi mil raha",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Switch / point kharab",
+                "cause": "deewar ka switch ya point fault hai, fan tak supply nahi pohanch rahi",
+                "part_row": "1-Way Switch",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Motor jam / replace",
+                "cause": "motor seize ho gaya hai, naya motor lagana paregi",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Poora fan replace",
+                "cause": "fan purana hai, repair se zyada nayi unit behtar rahegi",
+                "part_row": "Ceiling Fan 56\" (complete unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz aa rahi hai",
+            "match": ["\\bnoise\\b", "\\bkhat\\b", "vibration", "\\brattle\\b", "chuun"],
+            "risk": "low",
+            "checks": [
+              "Awaz motor se aa rahi hai ya blade/bracket se? Fan slow speed par chala kar suno.",
+              "Blade ke screws aur bracket ke nuts tight karein (fan band karke).",
+              "Blade ke kinare kisi cheez se rag rahe hain? Chhat/light shade se clearance dekhein.",
+              "'Chuun chuun' jaisi awaz bearing sookhne ki nishani hai.",
+              "Awaz ke saath jalne ki smell bhi aaye to fan foran band karein."
+            ],
+            "issues": [
+              {
+                "title": "Bearing oiling / tightening",
+                "cause": "bearing sookhi hui hai ya screws dheele hain",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Motor bearing replace",
+                "cause": "bearing ghis chuki hai, motor unit badalni paregi",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "wobble",
+            "label": "Hil raha hai / jhool raha hai",
+            "match": ["\\bwobble\\b", "hil rah", "\\bjhool\\w*", "\\bshake\\b", "\\bdance\\b"],
+            "risk": "low",
+            "checks": [
+              "Fan band karke chaaron blade ke screws tight karein.",
+              "Har blade ka chhat se faasla naapein — koi blade neeche/ooper ho to usay halka mod kar barabar karein.",
+              "Down-rod aur canopy ke nuts check karein — hook par fan dheela na latka ho.",
+              "Blade ek ek kar ke saaf karein — ek blade par zyada mitti bhi wobble karti hai.",
+              "Chhat ka hook ya bracket hilta mehsoos ho to fan foran band karein — girne ka khatra hai."
+            ],
+            "safety": ["Zyada jhoolne wale fan ke neeche na baithein aur usay band rakhein jab tak theek na ho."],
+            "issues": [
+              {
+                "title": "Blade balancing + tightening",
+                "cause": "blade barabar nahi hain ya screws dheele hain",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Down-rod / bracket ki dobara fitting",
+                "cause": "chhat ka bracket ya down-rod dheela hai — girne ka khatra",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / spark",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "\\bfire\\b"],
+            "risk": "high",
+            "checks": [
+              "Fan ka switch aur uska MCB dono foran band karein.",
+              "Fan dobara ON na karein, chahe smell chali jaye.",
+              "Deewar ka switch board bhi garam ya kala pad gaya hai? Us circuit ka MCB band rakhein."
+            ],
+            "issues": [
+              {
+                "title": "Capacitor jal gaya",
+                "cause": "capacitor short ho kar jal gaya hai — dhuwa aur smell ki aam wajah",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Motor winding jal gai — Rewinding",
+                "cause": "motor ki winding short ho gai hai",
+                "part_row": "Fan Motor Rewinding (parts+material only)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Point ki wiring jal gai",
+                "cause": "fan ke point ki wiring overheat ho kar jal gai hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "exhaust_fan",
+        "label": "Exhaust Fan",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 4,
+        "nouns": ["\\bexhaust\\b", "exhaust fan", "\\bchimney fan\\b", "roshan dan"],
+        "hints": ["kitchen", "bathroom", "ghusalkhana", "hawa", "shutter", "louver", "smell", "bhaap"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Exhaust fan ka switch aur MCB band karke hi haath lagayein.",
+          "Bathroom/kitchen mein namee hoti hai — geele haath se switch mat chhuein.",
+          "Bahar wali side chhat/deewar par ho to bina safety us tak mat pohanchein."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Bilkul chal nahi raha",
+            "match": ["not working", "\\bdead\\b", "ghoom nahi", "on nahi"],
+            "risk": "low",
+            "checks": [
+              "Uska switch ON hai? Bathroom mein aksar light ke saath ka doosra switch hota hai.",
+              "Switch OFF karke blade ko haath se ghumayein — namee se bearing jam ho jati hai.",
+              "Blade aur shutter par jama chikni mitti/grease saaf karein.",
+              "Ussi board ke doosre switch kaam kar rahe hain? Nahi to point dead hai."
+            ],
+            "issues": [
+              {
+                "title": "Switch / point kharab",
+                "cause": "switch ya point fault hai, fan tak supply nahi ja rahi",
+                "part_row": "1-Way Switch",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Capacitor kharab",
+                "cause": "capacitor fail hone se motor start nahi ho raha",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Motor jam / replace",
+                "cause": "namee se motor jam ho gaya hai, nayi unit chahiye",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "weak",
+            "label": "Hawa kam kheench raha hai",
+            "match": ["\\bweak\\b", "\\bslow\\b", "hawa kam", "\\bsmell\\b", "\\bbhaap\\b"],
+            "risk": "low",
+            "checks": [
+              "Blade aur jaali par jami grease/mitti detergent se saaf karein — yeh sab se bari wajah hai.",
+              "Bahar wale shutter/louver khul rahe hain? Aksar wo jam ho jate hain.",
+              "Fan ka rukh sahi hai? Ghalat direction par laga fan hawa andar kheenchta hai.",
+              "Kamre ka darwaza thora khula rakhein — hawa aane ka raasta na ho to exhaust kaam nahi karta."
+            ],
+            "issues": [
+              {
+                "title": "Safai + shutter servicing",
+                "cause": "blade aur shutter par grease jam gai hai",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Capacitor weak",
+                "cause": "capacitor weak hone se speed gir gai hai",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz aa rahi hai",
+            "match": ["\\bnoise\\b", "\\bkhat\\b", "vibration", "\\brattle\\b"],
+            "risk": "low",
+            "checks": [
+              "Fan band karke frame ke screws tight karein.",
+              "Blade kisi taraf frame se rag raha hai? Ghumakar dekhein.",
+              "Shutter hawa se 'khat khat' kar raha ho to usay halka tight karein.",
+              "Awaz motor se ho aur saath garmi/smell ho to foran band karein."
+            ],
+            "issues": [
+              {
+                "title": "Frame tightening / servicing",
+                "cause": "frame ya blade dheele hain",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Motor bearing replace",
+                "cause": "bearing ghis chuki hai",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*"],
+            "risk": "high",
+            "checks": [
+              "Switch aur MCB foran band karein.",
+              "Dobara chalu na karein — motor short ho sakta hai.",
+              "Namee wali jagah hai, is liye khud wiring ko haath na lagayein."
+            ],
+            "issues": [
+              {
+                "title": "Capacitor jal gaya",
+                "cause": "capacitor short ho gaya hai",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Motor jal gaya — replace",
+                "cause": "motor winding short ho gai hai",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "air_cooler",
+        "label": "Air Cooler",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 5,
+        "nouns": ["air cooler", "\\bcooler\\b", "lahori cooler", "room cooler"],
+        "hints": ["pad", "grass", "honeycomb", "pani ki motor", "water pump", "tank", "hawa", "thanda", "blower"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Cooler mein pani aur bijli saath hoti hai — plug nikaal kar hi pani daalein ya safai karein.",
+          "Cooler ka plug 3-pin earthed socket mein hi lagayein.",
+          "Geele haath se cooler ka switch ya plug kabhi na chhuein."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Bilkul chal nahi raha",
+            "match": ["not working", "\\bdead\\b", "ghoom nahi", "on nahi"],
+            "risk": "low",
+            "checks": [
+              "Socket mein doosra appliance laga kar dekhein ke current aa raha hai.",
+              "Cooler ka wire aur plug kahin kata ya jala hua nahi?",
+              "Plug nikaal kar blower/fan ko haath se ghumayein — jam ho sakta hai.",
+              "Cooler ke apne switch (fan + pump alag hote hain) dono check karein."
+            ],
+            "issues": [
+              {
+                "title": "Plug / wire / socket kharab",
+                "cause": "supply hi cooler tak nahi pohanch rahi",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Capacitor kharab",
+                "cause": "capacitor fail hone se blower motor start nahi ho raha",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Blower motor kharab",
+                "cause": "motor jam ya jal gaya hai",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "cooling_weak",
+            "label": "Thandi hawa nahi de raha",
+            "match": ["cooling weak", "cooling kam", "\\bcooling\\b", "thanda nahi", "hawa garam", "\\bweak\\b", "hawa kam"],
+            "risk": "low",
+            "checks": [
+              "Tank mein pani poora hai? Kam pani par pump hawa kheenchne lagta hai.",
+              "Pads (grass/honeycomb) geele ho rahe hain? Sookhe pads bilkul cooling nahi dete.",
+              "Pani ki chhoti motor chal rahi hai? Uski halki hum ki awaz sunein.",
+              "Pads par jama safed calcium/mitti saaf karein ya pads badlein.",
+              "Cooler khirki ke paas rakhein — band kamre mein cooler kaam nahi karta."
+            ],
+            "issues": [
+              {
+                "title": "Pads safai / replace + servicing",
+                "cause": "pads par calcium jam gaya hai ya pads purane ho gaye hain",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Pani ki chhoti motor (pump) kharab",
+                "cause": "cooler ka water pump pani ooper nahi pohancha raha",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani gir", "pani nikal", "\\boverflow\\b"],
+            "risk": "high",
+            "checks": [
+              "Cooler ka plug FORAN nikaal dein — pani aur bijli ka combination khatarnak hai.",
+              "Pani socket, extension ya wire ke qareeb pohancha hai? Us circuit ka MCB band karein.",
+              "Tank ke neeche ya kinare par darar dekhein.",
+              "Farsh sukha karein — phisalne aur current dono ka khatra hai."
+            ],
+            "issues": [
+              {
+                "title": "Tank / body leak repair",
+                "cause": "tank ya joint se pani ris raha hai",
+                "visit_only": true
+              },
+              {
+                "title": "Socket / point ka nuqsan",
+                "cause": "pani socket tak pohanchne se point kharab ho sakta hai",
+                "part_row": "Socket 13A",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz aa rahi hai",
+            "match": ["\\bnoise\\b", "\\bkhat\\b", "vibration", "\\brattle\\b"],
+            "risk": "low",
+            "checks": [
+              "Plug nikaal kar blower wheel ke aas paas koi cheez phansi hai, check karein.",
+              "Cooler barabar farsh par khara hai? Tedha hone se vibration hoti hai.",
+              "Body ke screws tight karein.",
+              "Awaz ke saath jalne ki smell aaye to plug foran nikaalein."
+            ],
+            "issues": [
+              {
+                "title": "Body tightening / servicing",
+                "cause": "screws dheele hain ya blower mein kachra hai",
+                "labor_row": "Ceiling fan installation/repair labor"
+              },
+              {
+                "title": "Blower motor bearing",
+                "cause": "motor ki bearing ghis chuki hai",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Ceiling fan installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "shock",
+            "label": "Current / shock lag raha hai",
+            "match": ["\\bshock\\b", "current lag", "\\bkarant\\b", "\\bjhatka\\b"],
+            "risk": "high",
+            "checks": [
+              "Cooler ko haath na lagayein — pehle us circuit ka MCB band karein, phir plug nikaalein.",
+              "Cooler ko khud chalane ki koshish na karein.",
+              "Ghar mein earthing aur RCCB hai ya nahi, technician se zaroor puchein."
+            ],
+            "issues": [
+              {
+                "title": "Earthing na hona",
+                "cause": "cooler ki body leakage current le rahi hai aur earthing nahi hai",
+                "part_row": "Copper Earth Rod 16mm x 4ft",
+                "labor_row": "Earthing/grounding installation"
+              },
+              {
+                "title": "RCCB / safety breaker lagana",
+                "cause": "leakage current par supply kaatne wala protection mojood nahi",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "Motor winding leakage",
+                "cause": "motor ki winding body ko touch kar rahi hai",
+                "part_row": "New Fan Motor (replacement unit)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "light",
+        "label": "Light / Bulb / Tube Light",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 2,
+        "nouns": ["\\blight\\b", "\\bbulb\\b", "tube light", "\\bled\\b", "\\blamp\\b", "\\bchandelier\\b", "panel light", "\\bqumqumah\\b"],
+        "hints": ["holder", "starter", "choke", "driver", "flicker", "jhilmil", "watt", "roshni", "fitting", "shade"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Bulb ya tube badalne se pehle deewar ka switch AUR us kamre ka MCB dono band karein.",
+          "Holder ke andar dhaat wale hisse ko ungli se mat chhuein, chahe switch off ho.",
+          "Seerhi mazboot jagah par rakhein — chhat ki light akele khare ho kar mat badlein."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Jal nahi rahi",
+            "match": ["not working", "\\bdead\\b", "jal nahi", "roshni nahi", "on nahi"],
+            "risk": "low",
+            "checks": [
+              "Wahi bulb kisi doosre holder mein laga kar dekhein — bulb kharab hai ya point?",
+              "Us board ka doosra switch (fan) kaam kar raha hai? Nahi to poora point dead hai.",
+              "Holder ke andar kaala/jala nishan ya dheela contact nazar aata hai? (switch OFF karke dekhein)",
+              "Tube light hai to uske sire kaale pad gaye hain? Yeh tube khatam hone ki nishani hai.",
+              "MCB board check karein — kahin light wala circuit trip na ho."
+            ],
+            "issues": [
+              {
+                "title": "Bulb / Tube khatam — replace",
+                "cause": "bulb ya tube ki life poori ho gai hai",
+                "part_row": "LED Bulb 9-12W",
+                "labor_row": "Light fixture installation"
+              },
+              {
+                "title": "Tube light unit replace",
+                "cause": "tube ke saath driver/choke bhi kaam nahi kar raha",
+                "part_row": "LED Tube Light 18-22W",
+                "labor_row": "Light fixture installation"
+              },
+              {
+                "title": "Switch kharab",
+                "cause": "deewar ka switch andar se kharab hai",
+                "part_row": "1-Way Switch",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Point ki wiring kharab",
+                "cause": "light ke point ki wiring kat gai hai ya joint khul gaya hai",
+                "part_row": "Copper Wire 1.5mm2 (per 90m coil)",
+                "labor_row": "Wiring per point (switch/socket)"
+              }
+            ]
+          },
+          {
+            "symptom": "flicker",
+            "label": "Jhilmila rahi hai / baar baar bujhti hai",
+            "match": ["\\bflicker\\w*", "jhilmil\\w*", "\\bblink\\w*", "baar baar bujh", "\\bintermittent\\b"],
+            "risk": "low",
+            "checks": [
+              "Bulb ko holder mein halka tight karein (switch OFF karke) — dheela contact sab se aam wajah hai.",
+              "Ghar ki baqi lights bhi jhilmila rahi hain? To yeh voltage ka masla hai.",
+              "Ek naya bulb laga kar test karein.",
+              "Switch dabate waqt light ka behaviour badalta hai? To switch ka contact ghis gaya hai.",
+              "Jhilmilane ke saath 'tik tik' ki awaz ya jalne ki smell ho to us circuit ka MCB band karein."
+            ],
+            "issues": [
+              {
+                "title": "Bulb / holder replace",
+                "cause": "bulb weak hai ya holder ka contact dheela hai",
+                "part_row": "LED Bulb 9-12W",
+                "labor_row": "Light fixture installation"
+              },
+              {
+                "title": "Switch replace",
+                "cause": "switch ka andar ka contact ghis gaya hai",
+                "part_row": "1-Way Switch",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Point ka loose connection",
+                "cause": "point ke joint dheele hain — yeh aage chal kar spark bhi kar sakta hai",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          },
+          {
+            "symptom": "weak",
+            "label": "Roshni kam ho gai hai",
+            "match": ["\\bweak\\b", "\\bdim\\b", "roshni kam", "halki roshni", "\\bslow\\b"],
+            "risk": "low",
+            "checks": [
+              "Bulb aur shade par jami mitti saaf karein — 20–30% roshni wapas aa jati hai.",
+              "Bulb ka watt kam hai? Kamre ke size ke hisab se 12–18W LED behtar hai.",
+              "Purana LED hai to uske andar ka driver weak ho jata hai — naya bulb laga kar compare karein.",
+              "Ghar ki saari lights dim hain? To voltage/supply ka masla hai."
+            ],
+            "issues": [
+              {
+                "title": "Bulb replace (zyada watt)",
+                "cause": "bulb purana ya kam watt ka hai",
+                "part_row": "LED Bulb 9-12W",
+                "labor_row": "Light fixture installation"
+              },
+              {
+                "title": "Tube light unit replace",
+                "cause": "tube light ka driver weak ho gaya hai",
+                "part_row": "LED Tube Light 18-22W",
+                "labor_row": "Light fixture installation"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / spark",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "\\bfire\\b"],
+            "risk": "high",
+            "checks": [
+              "Us kamre ka MCB foran band karein — switch off karna kaafi nahi.",
+              "Light dobara ON na karein.",
+              "Holder ya board ke qareeb koi kapra/parda ho to hata dein."
+            ],
+            "issues": [
+              {
+                "title": "Holder / fitting jal gai",
+                "cause": "holder ke andar carbon jam gaya hai aur short ho raha hai",
+                "part_row": "LED Bulb 9-12W",
+                "labor_row": "Light fixture installation"
+              },
+              {
+                "title": "Point ki wiring jal gai",
+                "cause": "point ki wiring overheat ho kar jal gai hai",
+                "part_row": "Copper Wire 1.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "switch_socket",
+        "label": "Switch / Socket / Point",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 1,
+        "nouns": ["\\bswitch\\b", "\\bsocket\\b", "switch board", "\\bboard\\b", "\\bpoint\\b", "\\bplug\\b", "\\bextension\\b", "\\bcharging point\\b"],
+        "hints": ["13a", "5a", "3 pin", "two pin", "loose", "dheela", "garam", "kaala", "spark", "chingari"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Kisi bhi switch/socket par kaam se pehle us circuit ka MCB band karein — switch off karna kaafi nahi hota.",
+          "Geele haath se socket ya switch kabhi na chhuein.",
+          "Socket mein kaali ya jali nishani ho to usmein koi appliance na lagayein."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Kaam nahi kar raha / current nahi aa raha",
+            "match": ["not working", "\\bdead\\b", "current nahi", "supply nahi", "on nahi"],
+            "risk": "low",
+            "checks": [
+              "Us socket mein koi doosra appliance laga kar confirm karein ke masla socket ka hai.",
+              "Ussi board ke baqi switch kaam kar rahe hain? Nahi to poore board ka feed gaya hua hai.",
+              "MCB board check karein — us kamre ka MCB trip na ho.",
+              "Socket mein plug dheela lag raha hai? To andar ke contacts ghis chuke hain.",
+              "Plate par kaala nishan ya pighla plastic dikhe to us circuit ka MCB band rakhein."
+            ],
+            "issues": [
+              {
+                "title": "Switch replace",
+                "cause": "switch andar se kharab ho gaya hai",
+                "part_row": "1-Way Switch",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Socket replace",
+                "cause": "socket ke andar ke contacts ghis chuke hain",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Point ki wiring dobara",
+                "cause": "board tak aane wali wiring ya joint kharab hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Wiring per point (switch/socket)"
+              }
+            ]
+          },
+          {
+            "symptom": "spark",
+            "label": "Spark / chingari nikal rahi hai",
+            "match": ["\\bspark\\w*", "\\bchingari\\w*", "\\bflash\\b", "\\bsmoke\\b", "burning"],
+            "risk": "high",
+            "checks": [
+              "Us circuit ka MCB FORAN band karein — socket ko haath na lagayein.",
+              "Us socket mein laga appliance MCB band karne ke baad hi nikaalein.",
+              "Plate kaali ya pighli hui hai? Photo bana lein, technician ko dikhayein.",
+              "Us point ko istemaal karna bilkul band kar dein."
+            ],
+            "issues": [
+              {
+                "title": "Socket replace",
+                "cause": "socket ke contacts jal chuke hain is liye arc ho raha hai",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Loose connection / short circuit fix",
+                "cause": "board ke andar joint dheela hai jis se arcing ho rahi hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "RCCB safety breaker lagana",
+                "cause": "aisi fault par supply kaatne wala protection mojood nahi",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "MCB/breaker replacement labor"
+              }
+            ]
+          },
+          {
+            "symptom": "overheat",
+            "label": "Garam ho raha hai / pighal raha hai",
+            "match": ["\\boverheat\\w*", "garam ho", "bohat garam", "\\bmelt\\w*", "pighal"],
+            "risk": "high",
+            "checks": [
+              "Us circuit ka MCB band karein aur laga hua appliance hata dein.",
+              "Us socket par AC, geyser, motor jaisa bhaari load laga hua tha? Wo dobara na lagayein.",
+              "Socket ya plug ka plastic pighla hua hai to usay istemaal na karein."
+            ],
+            "issues": [
+              {
+                "title": "Socket replace (heavy duty)",
+                "cause": "socket load bardaasht nahi kar raha, contacts garam ho rahe hain",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Motai wali wiring dobara",
+                "cause": "point ki wire load ke hisab se patli hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Wiring per point (switch/socket)"
+              },
+              {
+                "title": "Alag dedicated circuit",
+                "cause": "bhaari appliance ke liye alag circuit banwana zaroori hai",
+                "part_row": "MCB (6-32A Single Pole)",
+                "labor_row": "AC dedicated circuit wiring"
+              }
+            ]
+          },
+          {
+            "symptom": "shock",
+            "label": "Current / shock lag raha hai",
+            "match": ["\\bshock\\b", "current lag", "\\bkarant\\b", "\\bjhatka\\b"],
+            "risk": "high",
+            "checks": [
+              "Us circuit ka MCB foran band karein — board ko haath na lagayein.",
+              "Ghar mein RCCB (safety breaker) laga hai ya nahi, yeh technician se zaroor puchein.",
+              "Bachon ko us jagah se door rakhein aur socket par tape/cover laga dein."
+            ],
+            "issues": [
+              {
+                "title": "Earthing na hona / kharab earthing",
+                "cause": "earthing na hone se leakage current body tak aa raha hai",
+                "part_row": "Copper Earth Rod 16mm x 4ft",
+                "labor_row": "Earthing/grounding installation"
+              },
+              {
+                "title": "RCCB lagana",
+                "cause": "leakage par supply kaatne wala protection mojood nahi",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "Wiring leakage fix",
+                "cause": "wire ki insulation kharab hai aur live wire deewar/box ko touch kar raha hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "wiring",
+        "label": "Wiring / MCB / DB Board",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 6,
+        "nouns": ["\\bwiring\\b", "\\bwire\\b", "\\bmcb\\b", "\\bbreaker\\b", "\\bdb\\b", "distribution board", "\\bfuse\\b", "\\bearthing\\b", "short circuit", "\\brccb\\b", "\\bmeter\\b"],
+        "hints": ["trip", "load", "phase", "neutral", "earth", "concealed", "conduit", "circuit", "220v", "bijli", "supply"],
+        "default_symptom": "tripping",
+        "common_safety": [
+          "DB board ka main switch band karke hi koi kaam karein — aur ho sake to poora meter side isolate karein.",
+          "DB board ka cover khud mat kholein — andar live busbar hoti hai.",
+          "Kabhi bhi MCB ki jagah taar ya keel (fuse jumper) mat lagayein — yeh aag ki seedhi wajah banti hai."
+        ],
+        "faults": [
+          {
+            "symptom": "tripping",
+            "label": "MCB / breaker trip ho raha hai",
+            "match": ["\\btrip\\w*", "\\bbreaker\\b", "\\bmcb\\b", "bijli chali jati", "baar baar band"],
+            "risk": "high",
+            "checks": [
+              "Note karein: trip kis waqt hota hai — kisi khaas appliance ke on karte waqt?",
+              "Ek ek appliance nikaal kar MCB dobara chadhayein taake culprit pakra jaye.",
+              "Trip foran hota hai ya kuch minute chal kar? Foran = short circuit, kuch der baad = overload.",
+              "Ek hi MCB baar baar trip ho raha hai to usay zabardasti bar bar ON na karein.",
+              "MCB ke saath jalne ki smell ya awaz aaye to main switch band karein."
+            ],
+            "issues": [
+              {
+                "title": "Overload — MCB rating theek karna",
+                "cause": "circuit par load zyada hai, MCB apna kaam kar raha hai",
+                "part_row": "MCB (6-32A Single Pole)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "MCB khud kharab",
+                "cause": "MCB purana ho kar weak ho gaya hai aur bina load bhi trip karta hai",
+                "part_row": "MCB (6-32A Single Pole)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "Short circuit dhoondna aur theek karna",
+                "cause": "kisi point ya appliance mein short hai — usay dhoondna paregi",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "Bhaari appliance ke liye alag circuit",
+                "cause": "AC/motor jaisa load usi purane circuit par hai",
+                "part_row": "MCB (6-32A Single Pole)",
+                "labor_row": "AC dedicated circuit wiring"
+              }
+            ]
+          },
+          {
+            "symptom": "short_circuit",
+            "label": "Short circuit ho gaya hai",
+            "match": ["short circuit", "\\bshort\\b", "\\bspark\\w*", "dhamaka", "\\bflash\\b"],
+            "risk": "high",
+            "checks": [
+              "Main switch FORAN band karein aur us waqt tak ON na karein jab tak technician na dekhe.",
+              "Jahan se awaz/spark aayi thi us jagah ko yaad rakhein — technician ko batayein.",
+              "Us hisse mein koi appliance dobara na lagayein.",
+              "Jalne ki smell ho to kamra ventilate karein aur pani se aag bujhane ki koshish na karein."
+            ],
+            "issues": [
+              {
+                "title": "Short circuit diagnosis + repair",
+                "cause": "phase aur neutral kahin milne lage hain",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "Jali hui wiring replace (per point)",
+                "cause": "us point ki wiring jal chuki hai, nayi daalni paregi",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Wiring per point (switch/socket)"
+              },
+              {
+                "title": "MCB + RCCB dobara lagana",
+                "cause": "protection devices bhi is fault se kharab ho jate hain",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "MCB/breaker replacement labor"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Wire / DB jal raha hai — dhuwa ya smell",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bfire\\b", "pighal"],
+            "risk": "high",
+            "checks": [
+              "Ghar ka MAIN switch foran band karein.",
+              "Aag lag rahi ho to pani NA daalein — bijli ki aag par pani khatarnak hai; ghar khali karein aur 16 par call karein.",
+              "DB board ke qareeb kaghaz, kapra ya plastic ho to door karein.",
+              "Poora circuit tab tak band rakhein jab tak technician na aaye."
+            ],
+            "issues": [
+              {
+                "title": "Jali hui wiring replace",
+                "cause": "wire ki insulation pighal chuki hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "DB board replace",
+                "cause": "DB board ke andar busbar/terminals jal chuke hain",
+                "part_row": "Distribution Board 8-Way Single Phase",
+                "labor_row": "DB box installation"
+              },
+              {
+                "title": "Ghar ki rewiring (us hisse ki)",
+                "cause": "purani wiring poori load nahi utha rahi",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "House rewiring (per sq ft, labor only)"
+              }
+            ]
+          },
+          {
+            "symptom": "shock",
+            "label": "Deewar / nal / body se current aa raha hai",
+            "match": ["\\bshock\\b", "current lag", "\\bkarant\\b", "\\bjhatka\\b", "\\bleakage current\\b"],
+            "risk": "high",
+            "checks": [
+              "Main switch band karein — jis cheez se current aa raha hai usay haath na lagayein.",
+              "Bathroom/kitchen mein ho to us hisse ka paani istemaal na karein aur bachon ko door rakhein.",
+              "Ghar mein earthing aur RCCB hai ya nahi, technician se pehli baat yeh puchein.",
+              "Yeh jaan lewa fault hai — khud tester/screwdriver se check karne ki koshish na karein."
+            ],
+            "issues": [
+              {
+                "title": "Earthing system lagana",
+                "cause": "ghar mein proper earthing mojood nahi",
+                "part_row": "Copper Earth Rod 16mm x 4ft",
+                "labor_row": "Earthing/grounding installation"
+              },
+              {
+                "title": "RCCB (safety breaker) lagana",
+                "cause": "leakage current par supply kaatne wala device nahi laga",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "Leakage wali wiring dhoond kar theek karna",
+                "cause": "kahin live wire deewar ki namee ya pipe ko touch kar raha hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              }
+            ]
+          },
+          {
+            "symptom": "no_power",
+            "label": "Ghar / kamre mein bijli nahi aa rahi",
+            "match": ["not working", "bijli nahi", "supply nahi", "light nahi aa", "\\bdead\\b"],
+            "risk": "low",
+            "checks": [
+              "Pehle confirm karein ke load-shedding nahi hai — parosi ke ghar bijli hai?",
+              "DB board par dekhein koi MCB neeche (OFF) position par hai — usay poora neeche kar ke phir ooper karein.",
+              "Sirf ek kamra affected hai ya poora ghar?",
+              "Meter par light/display aa rahi hai?",
+              "MCB ooper karte hi wapas neeche gir jata hai to zabardasti na karein — short circuit hai."
+            ],
+            "issues": [
+              {
+                "title": "MCB replace",
+                "cause": "MCB kharab ho gaya hai aur supply pass nahi kar raha",
+                "part_row": "MCB (6-32A Single Pole)",
+                "labor_row": "MCB/breaker replacement labor"
+              },
+              {
+                "title": "Main feed / joint fault",
+                "cause": "main supply ka joint ya wire kat gaya hai",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "DB board repair / replace",
+                "cause": "DB board ke andar terminal dheela ya jala hua hai",
+                "part_row": "Distribution Board 8-Way Single Phase",
+                "labor_row": "DB box installation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ups",
+        "label": "UPS / Inverter / Battery",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 7,
+        "nouns": ["\\bups\\b", "\\binverter\\b", "\\bbattery\\b", "\\bbatery\\b", "backup system"],
+        "hints": ["backup", "charging", "charge", "beep", "alarm", "load", "ampere", "distilled", "pani", "terminal", "acid"],
+        "default_symptom": "no_backup",
+        "common_safety": [
+          "Battery ke terminals par kabhi dono taraf ek saath dhaat (screwdriver/spanner) mat rakhein — spark hota hai.",
+          "Battery se nikalne wali gas jalne wali hoti hai — us ke paas maachis/lighter na jalayein.",
+          "UPS ka input MCB band karke hi wiring ko haath lagayein — UPS output bhi 220V hota hai."
+        ],
+        "faults": [
+          {
+            "symptom": "no_backup",
+            "label": "Backup nahi de raha / jaldi khatam ho jata hai",
+            "match": ["backup nahi", "no backup", "jaldi khatam", "\\bweak\\b", "not working", "\\bdead\\b"],
+            "risk": "low",
+            "checks": [
+              "Battery kitni purani hai? 2–3 saal se zyada purani battery ka backup aadha reh jata hai.",
+              "Battery ke terminals par safed/neela powder (corrosion) jama hai? Garam pani se saaf karein (UPS off karke).",
+              "Terminals dheele hain? Halka tight karein — dheela terminal backup kha jata hai.",
+              "Battery ka pani (distilled water) level plates se ooper hai? Kam ho to distilled water daalein, nal ka pani NAHI.",
+              "UPS par kitna load laga hai? 2 fan + 3 light se zyada load choti UPS nahi utha sakti.",
+              "Bijli aane par UPS charging kar raha hai? Charging light/display check karein."
+            ],
+            "issues": [
+              {
+                "title": "Terminal safai + service",
+                "cause": "corrosion aur dheele terminal ki wajah se current pass nahi ho raha",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "Battery khatam — replace",
+                "cause": "battery ki life poori ho gai hai, cells charge nahi rakh rahe",
+                "part_row": "Inverter/UPS Battery (standard)",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "UPS ka charging section kharab",
+                "cause": "UPS battery ko charge hi nahi kar raha — board ka fault hai",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "not_charging",
+            "label": "Charge nahi ho raha",
+            "match": ["charge nahi", "charging nahi", "not charging", "\\bcharging\\b"],
+            "risk": "low",
+            "checks": [
+              "UPS ka input plug/socket check karein — usmein current aa raha hai?",
+              "UPS ka input MCB ON hai?",
+              "UPS ki display/LED par charging ka indication aata hai?",
+              "Battery ke terminals tight aur saaf hain?",
+              "Battery bohat garam ho rahi ho to UPS foran band kar dein."
+            ],
+            "issues": [
+              {
+                "title": "Input socket / point kharab",
+                "cause": "UPS tak input supply hi nahi pohanch rahi",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Battery dead — replace",
+                "cause": "battery itni gir chuki hai ke charge lena band kar diya",
+                "part_row": "Inverter/UPS Battery (standard)",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "UPS board repair",
+                "cause": "UPS ka charging circuit kharab hai",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Beep / alarm baj raha hai",
+            "match": ["\\bbeep\\w*", "\\balarm\\b", "\\bnoise\\b", "awaz kar", "\\bhum\\b"],
+            "risk": "low",
+            "checks": [
+              "Beep ka pattern note karein — mustaqil beep aksar 'low battery' ya 'overload' hota hai.",
+              "Load kam karein (extra fan/light band karein) aur dekhein beep rukti hai.",
+              "Battery ke terminals check karein.",
+              "Beep ke saath UPS garam ho ya smell aaye to foran band karein."
+            ],
+            "issues": [
+              {
+                "title": "Overload — load kam karna / service",
+                "cause": "UPS apni capacity se zyada load utha raha hai",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "Battery weak — replace",
+                "cause": "low battery alarm baj raha hai kyunke battery charge nahi rakh rahi",
+                "part_row": "Inverter/UPS Battery (standard)",
+                "labor_row": "Diagnostic/site visit check fee"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / battery phool gai",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "phool g", "\\bswell\\w*", "\\bacid\\b"],
+            "risk": "high",
+            "checks": [
+              "UPS ka input MCB foran band karein aur battery ke terminals ko haath na lagayein.",
+              "Kamra ventilate karein — battery se nikli gas jalne wali hoti hai, koi shola/cigarette na ho.",
+              "Battery phool gai hai ya acid bahar aa raha hai to us ke paas na jayein.",
+              "UPS dobara ON na karein."
+            ],
+            "issues": [
+              {
+                "title": "Battery phool gai / short — replace",
+                "cause": "battery ke cells short ho kar phool gaye hain — yeh phatne ka khatra hai",
+                "part_row": "Inverter/UPS Battery (standard)",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "UPS ki wiring jal gai",
+                "cause": "battery ki motai wali wire overheat ho kar jal gai hai",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "UPS unit jal gai",
+                "cause": "UPS ka andar ka board jal chuka hai",
+                "visit_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "washing_machine",
+        "label": "Washing Machine",
+        "category": "Electrician",
+        "trade_id": "electrician",
+        "priority": 6,
+        "nouns": ["washing machine", "\\bwasher\\b", "\\bspinner\\b", "\\bdryer\\b", "kapre dhone wali"],
+        "hints": ["drum", "spin", "wash", "kapre", "dhulai", "timer", "knob", "belt", "gearbox", "pani", "drain"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Machine ka plug nikaal kar hi koi cheez check karein — pani aur bijli saath hain.",
+          "Machine ka plug 3-pin earthed socket mein hona chahiye; extension par bhaari machine na lagayein.",
+          "Drum ghoomte waqt usmein haath na daalein, chahe halka lag raha ho."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Bilkul chal nahi rahi",
+            "match": ["not working", "\\bdead\\b", "on nahi", "start nahi", "koi response"],
+            "risk": "low",
+            "checks": [
+              "Socket mein doosra appliance laga kar dekhein ke current aa raha hai.",
+              "Machine ka plug aur wire kahin kata ya jala hua nahi?",
+              "Darwaza/lid theek band hai? Kai machines lid band na hone par start nahi hoti.",
+              "Timer/knob ghumakar dekhein — purani machines mein timer aksar kharab hota hai.",
+              "Machine ka apna fuse (peechay) check karwayein."
+            ],
+            "issues": [
+              {
+                "title": "Socket / plug kharab",
+                "cause": "machine tak supply nahi pohanch rahi",
+                "part_row": "Socket 13A",
+                "labor_row": "Switch/socket repair or replace"
+              },
+              {
+                "title": "Timer / knob kharab",
+                "cause": "timer switch andar se kharab ho gaya hai",
+                "visit_only": true
+              },
+              {
+                "title": "Motor / capacitor kharab",
+                "cause": "wash motor ya uska capacitor fail ho gaya hai",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              }
+            ]
+          },
+          {
+            "symptom": "no_water",
+            "label": "Pani nahi bhar rahi / nikal nahi raha",
+            "match": ["no water", "pani nahi", "pani band", "\\bdrain\\b", "\\bblocked\\b", "khali nahi ho"],
+            "risk": "low",
+            "checks": [
+              "Machine ka inlet nal (tap) poora khula hai? Aur us mein pressure hai?",
+              "Inlet pipe ka filter/jaali nikaal kar saaf karein — usmein mitti jam jati hai.",
+              "Drain pipe zameen par mor ke rakhi hai? Usay seedha aur neeche karein.",
+              "Drain pipe ka sira nali mein bohat andar ghusa hua ho to bahar kheenchein.",
+              "Nali khud jam hai? Bucket se pani daal kar dekhein ke nikaas ho raha hai."
+            ],
+            "issues": [
+              {
+                "title": "Nali / drain blockage clearing",
+                "cause": "jis nali mein machine ka pani jata hai wo band hai",
+                "trade_id": "plumber",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Inlet nal / connection repair",
+                "cause": "machine ko pani dene wala nal ya connection kharab hai",
+                "trade_id": "plumber",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Drain pump / valve kharab",
+                "cause": "machine ka apna drain pump ya inlet valve kaam nahi kar raha",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani gir", "pani nikal", "farsh par pani"],
+            "risk": "high",
+            "checks": [
+              "Machine ka plug FORAN nikaalein — pani socket ya extension tak pohancha ho to pehle MCB band karein.",
+              "Leak inlet pipe se hai, drain pipe se, ya machine ke neeche se? Kapre se poonch kar dekhein.",
+              "Inlet pipe ke dono sire haath se tight karein.",
+              "Farsh sukha karein — phisalne aur current dono ka khatra hai."
+            ],
+            "issues": [
+              {
+                "title": "Inlet / drain pipe joint repair",
+                "cause": "pipe ka joint dheela ya crack hai",
+                "trade_id": "plumber",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Machine ke andar se leak (tub/seal)",
+                "cause": "drum ki seal ya tub crack ho gaya hai",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz / vibration bohat hai",
+            "match": ["\\bnoise\\b", "vibration", "\\bkhat\\b", "\\brattle\\b", "hilti hai"],
+            "risk": "low",
+            "checks": [
+              "Machine barabar farsh par khari hai? Tedhi machine bohat vibrate karti hai.",
+              "Kapre ek taraf jama ho gaye hain? Unhein barabar phailayein.",
+              "Drum mein sikka, keel ya button gir gaya hai? Plug nikaal kar drum ghumakar dekhein.",
+              "Awaz belt/gearbox se aa rahi ho to yeh mechanical fault hai.",
+              "Awaz ke saath jalne ki smell aaye to plug foran nikaalein."
+            ],
+            "issues": [
+              {
+                "title": "Leveling + servicing",
+                "cause": "machine tedhi hai ya load barabar nahi",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "Belt / gearbox / bearing repair",
+                "cause": "belt dheeli hai ya bearing ghis chuki hai",
+                "visit_only": true
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / shock",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "\\bshock\\b", "current lag"],
+            "risk": "high",
+            "checks": [
+              "Us socket ka MCB band karein, PHIR plug nikaalein — machine ko geele haath se na chhuein.",
+              "Machine dobara ON na karein.",
+              "Machine ke aas paas pani ho to usay sukhayein magar machine ko haath na lagayein."
+            ],
+            "issues": [
+              {
+                "title": "Motor / capacitor jal gaya",
+                "cause": "wash motor ya capacitor short ho gaya hai",
+                "part_row": "Ceiling Fan Capacitor",
+                "labor_row": "Fan capacitor replacement labor"
+              },
+              {
+                "title": "Earthing / leakage protection",
+                "cause": "body mein current aa raha hai aur earthing/RCCB nahi hai",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "Earthing/grounding installation"
+              },
+              {
+                "title": "Machine ki internal wiring jal gai",
+                "cause": "andar ki wiring ya board jal chuka hai",
+                "visit_only": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "geyser",
+        "label": "Geyser / Water Heater",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 8,
+        "nouns": ["\\bgeyser\\b", "water heater", "\\bboiler\\b", "instant geyser"],
+        "hints": ["gas", "garam pani", "thermostat", "pilot", "burner", "flame", "element", "tank", "ignition", "knob", "chimney"],
+        "default_symptom": "not_heating",
+        "common_safety": [
+          "Gas geyser hai to kaam se pehle gas ka valve band karein.",
+          "Electric geyser hai to uska MCB band karein — pani aur 220V ka combination jaan lewa hai.",
+          "Bathroom mein gas geyser ho to darwaza/roshan dan khula rakhein — band bathroom mein gas geyser dam ghutne ki wajah banta hai.",
+          "Gas ki smell aane par bijli ka koi switch (on ya off) NA karein — spark se dhamaka ho sakta hai."
+        ],
+        "faults": [
+          {
+            "symptom": "not_heating",
+            "label": "Pani garam nahi kar raha",
+            "match": ["not heating", "garam nahi", "thanda pani", "heat nahi", "not working", "\\bdead\\b"],
+            "risk": "low",
+            "checks": [
+              "Gas geyser hai to gas ka valve poora khula hai? Aur gas pressure theek hai (chulha jala kar dekhein)?",
+              "Pilot flame jal rahi hai? Bujhi hui ho to instructions ke mutabiq dobara jalayein — agar gas ki smell ho to bilkul mat jalayein.",
+              "Thermostat/knob temperature poora barha kar 30–40 minute intezaar karein.",
+              "Electric geyser hai to uska MCB ON hai? Indicator light jal rahi hai?",
+              "Nal se garam pani bilkul nahi aa raha ya thora garam aata hai? Thora garam = element/burner weak.",
+              "Geyser ke tank par safed calcium ki tehh (scale) ki shikayat purane geyser mein aam hai."
+            ],
+            "issues": [
+              {
+                "title": "Servicing + scale safai",
+                "cause": "tank aur burner par calcium/scale jam gaya hai is liye heating slow hai",
+                "labor_row": "Geyser installation labor"
+              },
+              {
+                "title": "Thermostat / element replace",
+                "cause": "thermostat ya heating element kaam nahi kar raha",
+                "visit_only": true
+              },
+              {
+                "title": "Poora geyser replace (6L instant)",
+                "cause": "geyser purana ho chuka hai, repair se zyada replace behtar hai",
+                "part_row": "Gas Geyser 6L Instant",
+                "labor_row": "Geyser installation labor"
+              }
+            ]
+          },
+          {
+            "symptom": "gas_smell",
+            "label": "Gas ki smell aa rahi hai",
+            "match": ["gas smell", "gas ki", "\\bgas\\b", "\\bsmell\\b", "\\bleak\\b", "\\blpg\\b"],
+            "risk": "high",
+            "checks": [
+              "Gas ka valve FORAN band karein.",
+              "Bijli ka koi switch, light ya exhaust fan ON ya OFF na karein — spark khatarnak hai.",
+              "Darwaze aur khirkiyan khol dein aur ghar walon ko us hisse se hata dein.",
+              "Maachis, lighter ya cigarette bilkul na jalayein.",
+              "Smell tez ho to ghar se bahar nikal jayein aur bahar se Sui Gas emergency (1199) par call karein."
+            ],
+            "issues": [
+              {
+                "title": "Gas pipe / joint leak repair",
+                "cause": "gas line ka joint ya pipe leak kar raha hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Geyser ka gas valve / burner assembly",
+                "cause": "geyser ka gas valve ya burner ka connection leak kar raha hai",
+                "visit_only": true
+              },
+              {
+                "title": "Geyser replace",
+                "cause": "purana geyser leak kar raha hai, naya lagana behtar hai",
+                "part_row": "Gas Geyser 6L Instant",
+                "labor_row": "Geyser installation labor"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Geyser se pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani gir", "pani ris", "pani tapak", "\\bdrip\\b"],
+            "risk": "low",
+            "checks": [
+              "Leak pipe ke joint se hai ya tank ki body se? Kapra bandh kar 10 minute baad dekhein.",
+              "Electric geyser ke neeche pani gir raha hai to uska MCB foran band karein.",
+              "Inlet/outlet ke nuts haath se halka tight karein (pani band kar ke).",
+              "Safety/pressure valve se thora pani tapakna normal hota hai — magar mustaqil behna nahi.",
+              "Tank ki body se pani aa raha hai to tank khud gal gaya hai — repair nahi hota."
+            ],
+            "issues": [
+              {
+                "title": "Joint / connection repair",
+                "cause": "inlet ya outlet ka joint dheela hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Hot water pipe replace",
+                "cause": "garam pani wali PPRC pipe crack ho gai hai",
+                "part_row": "PPRC Pipe 1/2 inch (per 12ft length, hot/cold)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Tank gal gaya — geyser replace",
+                "cause": "tank ke andar se rust ho kar sooraakh ho gaya hai",
+                "part_row": "Gas Geyser 6L Instant",
+                "labor_row": "Geyser installation labor"
+              }
+            ]
+          },
+          {
+            "symptom": "overheat",
+            "label": "Pani bohat zyada garam / pressure ban raha hai",
+            "match": ["\\boverheat\\w*", "bohat garam", "zyada garam", "\\bpressure\\b", "awaz kar", "\\bboil\\w*"],
+            "risk": "high",
+            "checks": [
+              "Gas valve ya MCB foran band karein aur geyser ko thanda hone dein.",
+              "Garam pani ka nal khol kar pressure release karein (haath door rakhein, bhaap se jal sakte hain).",
+              "Geyser se 'ubalne' ya khatakne ki awaz aana pressure banne ki nishani hai — yeh phatne ka khatra hai.",
+              "Geyser dobara ON na karein."
+            ],
+            "issues": [
+              {
+                "title": "Safety / pressure valve replace",
+                "cause": "safety valve jam ho gaya hai is liye pressure release nahi ho raha",
+                "part_row": "PVC Ball Valve 1/2 inch",
+                "labor_row": "Geyser installation labor"
+              },
+              {
+                "title": "Thermostat kharab",
+                "cause": "thermostat cut-off nahi kar raha is liye pani ubal raha hai",
+                "visit_only": true
+              },
+              {
+                "title": "Geyser replace",
+                "cause": "geyser ka pressure system fail ho chuka hai",
+                "part_row": "Gas Geyser 6L Instant",
+                "labor_row": "Geyser installation labor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "water_pump",
+        "label": "Water Pump / Motor",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 5,
+        "nouns": ["water pump", "\\bpump\\b", "\\bmotor\\b", "\\bmonoblock\\b", "donkey pump", "suction pump"],
+        "hints": ["suction", "impeller", "foot valve", "priming", "hp", "boring", "underground", "tank", "pani chadha", "khench"],
+        "default_symptom": "dead",
+        "common_safety": [
+          "Pump ka MCB ya plug band karke hi haath lagayein — pump ke paas pani hota hai.",
+          "Pump ki body se current mehsoos ho to bilkul haath na lagayein, pehle MCB band karein.",
+          "Pump ko khali (bina pani) der tak na chalayein — seal jal jati hai."
+        ],
+        "faults": [
+          {
+            "symptom": "dead",
+            "label": "Pump chal nahi raha",
+            "match": ["not working", "\\bdead\\b", "chalta nahi", "on nahi", "start nahi"],
+            "risk": "low",
+            "checks": [
+              "Pump ka MCB / switch ON hai? Us point mein current hai (doosra appliance laga kar check karein)?",
+              "Pump se 'hum' ki awaz aati hai magar ghoomta nahi? To capacitor ya jam impeller ka masla hai.",
+              "MCB band karke pump ka fan/shaft haath se ghumayein — jam hai ya free?",
+              "Pump ki body bohat garam hai? Thanda hone dein — thermal cut-off ho sakta hai.",
+              "Pump ka MCB baar baar trip kar raha hai to zabardasti ON na karein."
+            ],
+            "issues": [
+              {
+                "title": "Capacitor / starting fault",
+                "cause": "capacitor kharab hone se motor start nahi ho raha",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Impeller jam / replace",
+                "cause": "impeller mein mitti jam gai hai ya toot gaya hai",
+                "part_row": "Water Pump Impeller (spare part)",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Poora pump replace (1.0 HP)",
+                "cause": "motor winding jal chuki hai, naya pump behtar rahega",
+                "part_row": "Water Pump/Motor 1.0 HP Monoblock",
+                "labor_row": "Pump/motor installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "no_water",
+            "label": "Chalta hai magar pani nahi kheench raha",
+            "match": ["no water", "pani nahi", "pani nahi chadha", "suction nahi", "\\bweak\\b", "pressure kam"],
+            "risk": "low",
+            "checks": [
+              "Underground tank ya boring mein pani mojood hai? Pehle yeh confirm karein.",
+              "Pump ke ooper wale plug se pump mein pani bharein (priming) aur phir chalayein.",
+              "Suction line ke joints se hawa aa rahi hai? Hawa aane se pump pani nahi kheenchta.",
+              "Suction pipe ka jaali/strainer mitti se band ho sakta hai — nikaal kar saaf karein.",
+              "Delivery valve poora khula hai?",
+              "Pump ki awaz normal hai magar pani nahi? Yeh foot valve ya impeller ki nishani hai."
+            ],
+            "issues": [
+              {
+                "title": "Priming + suction joint sealing",
+                "cause": "suction line se hawa aa rahi hai is liye pump vacuum nahi bana raha",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Foot valve replace",
+                "cause": "neeche laga foot valve kharab hai is liye pani wapas gir jata hai",
+                "part_row": "Foot Valve (brass 1 inch)",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Impeller ghis gaya — replace",
+                "cause": "impeller ghis chuka hai is liye pressure nahi ban raha",
+                "part_row": "Water Pump Impeller (spare part)",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Suction pipe replace",
+                "cause": "suction wali pipe crack hai ya usmein sooraakh hai",
+                "part_row": "PVC Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              }
+            ]
+          },
+          {
+            "symptom": "noise",
+            "label": "Awaz / vibration aa rahi hai",
+            "match": ["\\bnoise\\b", "vibration", "\\bkhat\\b", "\\brattle\\b", "hum kar"],
+            "risk": "low",
+            "checks": [
+              "Pump apne base par tight hai? Dheele bolts se poora pump vibrate karta hai.",
+              "Pani ke saath hawa aa rahi hai (khat khat ki awaz)? To suction line leak kar rahi hai.",
+              "MCB band karke shaft haath se ghumayein — 'garrr' ki awaz bearing ki nishani hai.",
+              "Awaz ke saath pump bohat garam ho ya smell aaye to foran band karein."
+            ],
+            "issues": [
+              {
+                "title": "Base tightening + servicing",
+                "cause": "pump ke bolts dheele hain ya alignment theek nahi",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Bearing / impeller replace",
+                "cause": "bearing ya impeller ghis chuka hai",
+                "part_row": "Water Pump Impeller (spare part)",
+                "labor_row": "Pump/motor installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Pump se pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani ris", "pani gir", "pani tapak", "\\bdrip\\b"],
+            "risk": "low",
+            "checks": [
+              "Leak shaft ke paas se hai (seal) ya pipe ke joint se? Kapre se poonch kar dekhein.",
+              "Joints ko halka tight karein (pump band kar ke).",
+              "Pani pump ke motor wale hisse par ja raha ho to MCB band karein — shock ka khatra hai.",
+              "Bohat pani beh raha ho to pump ka valve band karein."
+            ],
+            "issues": [
+              {
+                "title": "Joint / fitting repair",
+                "cause": "pipe ka joint dheela ya crack hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Mechanical seal replace",
+                "cause": "shaft ki seal ghis gai hai is liye pani bahar aa raha hai",
+                "labor_row": "Pump/motor installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "burnt",
+            "label": "Dhuwa / jalne ki smell / shock",
+            "match": ["\\bsmoke\\b", "burning", "\\bburnt\\b", "burning smell", "\\bspark\\w*", "\\bshock\\b", "current lag"],
+            "risk": "high",
+            "checks": [
+              "Pump ka MCB FORAN band karein — pump ko haath na lagayein.",
+              "Pump dobara chalane ki koshish na karein.",
+              "Pump ke aas paas pani ho to us mein qadam na rakhein jab tak MCB band na ho.",
+              "Ghar mein RCCB laga hai ya nahi, technician se puchein."
+            ],
+            "issues": [
+              {
+                "title": "Motor winding jal gai — pump replace",
+                "cause": "motor ki winding jal chuki hai",
+                "part_row": "Water Pump/Motor 1.0 HP Monoblock",
+                "labor_row": "Pump/motor installation/repair labor"
+              },
+              {
+                "title": "Pump ki wiring / earthing fix",
+                "cause": "wiring jal gai hai aur body mein leakage aa gai hai",
+                "trade_id": "electrician",
+                "part_row": "Copper Wire 2.5mm2 (per 90m coil)",
+                "labor_row": "Short circuit/wiring fault diagnosis+fix"
+              },
+              {
+                "title": "RCCB / earthing lagana",
+                "cause": "pani wale appliance par leakage protection zaroori hai",
+                "trade_id": "electrician",
+                "part_row": "RCCB 40A DP (30mA)",
+                "labor_row": "Earthing/grounding installation"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "water_tank",
+        "label": "Water Tank / Float Valve",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 3,
+        "nouns": ["water tank", "\\btank\\b", "\\btanki\\b", "overhead tank", "underground tank", "\\bhoudi\\b"],
+        "hints": ["float", "ball valve", "overflow", "bhar", "level", "safai", "kai", "algae", "chhat", "1000"],
+        "default_symptom": "overflow",
+        "common_safety": [
+          "Chhat par tank check karne jayein to mazboot seerhi aur kisi ki madad lein — geeli chhat phisalti hai.",
+          "Underground tank mein KABHI na utrein — andar oxygen kam aur gas hoti hai, yeh jaan lewa hai.",
+          "Tank ke paas koi bijli ka point ho to us ka MCB pehle band karein."
+        ],
+        "faults": [
+          {
+            "symptom": "overflow",
+            "label": "Tank bahta rehta hai / pani zaya ho raha hai",
+            "match": ["\\boverflow\\b", "bah raha", "bahta", "bhar gaya", "pani zaya", "band nahi ho"],
+            "risk": "low",
+            "checks": [
+              "Float (ball) valve ko haath se ooper uthayein — pani ruk jata hai? Ruk jaye to valve ka arm/adjustment theek karna hai.",
+              "Float ball mein pani bhar gaya hai? Hilakar dekhein — bhari lage to ball khud kharab hai.",
+              "Float valve ke aage safed calcium jam gaya hai? Usay saaf karein.",
+              "Auto motor system laga hai to uska switch check karein.",
+              "Filhaal zaya rokne ke liye tank ka inlet valve manually band kar dein."
+            ],
+            "issues": [
+              {
+                "title": "Float valve replace",
+                "cause": "float (ball) valve pani band nahi kar raha",
+                "part_row": "Float Valve (tank)",
+                "labor_row": "Water tank installation labor"
+              },
+              {
+                "title": "Auto float switch lagana",
+                "cause": "tank bharne par motor ko khud band karne wala switch chahiye",
+                "part_row": "Float Switch (auto tank fill)",
+                "labor_row": "Water tank installation labor"
+              },
+              {
+                "title": "Inlet ball valve replace",
+                "cause": "inlet ka valve poora band nahi ho raha",
+                "part_row": "PVC Ball Valve 1/2 inch",
+                "labor_row": "Pipe joint repair (open/visible)"
+              }
+            ]
+          },
+          {
+            "symptom": "no_water",
+            "label": "Tank mein pani nahi bhar raha",
+            "match": ["no water", "pani nahi", "khali hai", "bhar nahi", "pani band"],
+            "risk": "low",
+            "checks": [
+              "Main supply / boring mein pani hai? Ground floor ke nal se check karein.",
+              "Pump chal raha hai magar tank khali hai? To masla pump ya suction ka hai.",
+              "Tank ke inlet valve poore khule hain?",
+              "Float valve jam ho kar band position mein atak gaya hai? Haath se hilakar dekhein.",
+              "Inlet pipe kahin choke ho sakti hai — pump se tank tak ka raasta check karwayein."
+            ],
+            "issues": [
+              {
+                "title": "Float valve jam — replace",
+                "cause": "float valve band position par atak gaya hai",
+                "part_row": "Float Valve (tank)",
+                "labor_row": "Water tank installation labor"
+              },
+              {
+                "title": "Inlet pipe / valve chok",
+                "cause": "tank tak jane wali pipe ya valve band hai",
+                "part_row": "PVC Ball Valve 1/2 inch",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Pump / suction ka masla",
+                "cause": "pump pani ooper nahi pohancha raha",
+                "labor_row": "Pump/motor installation/repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Tank leak kar raha hai",
+            "match": ["\\bleak\\b", "pani ris", "pani tapak", "\\bcrack\\b", "seepage"],
+            "risk": "low",
+            "checks": [
+              "Leak tank ki body se hai ya outlet/inlet ke joint se? Tank ko poonch kar 15 minute dekhein.",
+              "Joint se ho to nuts halka tight karein (pani band kar ke).",
+              "Chhat par pani jama ho raha hai to seepage se deewar/chhat kharab hoti hai — jaldi karwayein.",
+              "Neeche bijli ka koi point ya wiring geeli ho rahi ho to us circuit ka MCB band karein.",
+              "Plastic tank ki body crack ho to wo repair nahi hoti, replace hoti hai."
+            ],
+            "issues": [
+              {
+                "title": "Inlet / outlet joint repair",
+                "cause": "tank ke connection ka joint dheela ya crack hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Tank replace (1000L)",
+                "cause": "tank ki body crack ho chuki hai, repair mumkin nahi",
+                "part_row": "Water Tank 1000L (Plastic 3-layer)",
+                "labor_row": "Water tank installation labor"
+              }
+            ]
+          },
+          {
+            "symptom": "smell",
+            "label": "Pani ganda / boo aa rahi hai",
+            "match": ["\\bsmell\\b", "\\bganda\\b", "\\bkai\\b", "\\balgae\\b", "\\bmitti\\b", "\\bcolor\\b", "\\bpeela\\b"],
+            "risk": "low",
+            "checks": [
+              "Tank ka cover theek band hai? Khula tank sab se bari wajah hoti hai.",
+              "Tank ke andar deewaron par kai (green/black) jami hai? Chhat par nazar daalein (andar na utrein).",
+              "Tank ki safai kab hui thi? Har 4–6 mahine mein safai zaroori hai.",
+              "Sirf ek nal ka pani ganda hai ya sab? Ek nal = us line ka masla.",
+              "Sewerage ki boo aaye to yeh khatarnak hai — us pani ko peene ke liye istemaal na karein."
+            ],
+            "issues": [
+              {
+                "title": "Tank ki safai (cleaning + disinfect)",
+                "cause": "tank mein kai aur mitti jam gai hai",
+                "labor_row": "Water tank installation labor"
+              },
+              {
+                "title": "Tank cover / lid theek karna",
+                "cause": "cover khula hone se kachra aur keere andar ja rahe hain",
+                "labor_row": "Diagnostic/site visit check fee"
+              },
+              {
+                "title": "RO / water filter lagana",
+                "cause": "peene ke pani ke liye filter lagana behtar hoga",
+                "part_row": "RO/Water Filter Unit (basic)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tap",
+        "label": "Tap / Faucet / Shower",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 2,
+        "nouns": ["\\btap\\b", "\\bfaucet\\b", "\\bshower\\b", "\\bbasin\\b", "\\bsink\\b", "\\bmixer\\b", "\\bnal\\b", "\\bwash basin\\b"],
+        "hints": ["washer", "gasket", "handle", "cartridge", "pressure", "pillar", "kitchen", "bathroom", "garam", "thanda", "spanner"],
+        "default_symptom": "water_leak",
+        "common_safety": [
+          "Kaam se pehle us line ka valve ya main supply band karein.",
+          "Purane nal ko zyada zor se na kholein — chuda hua thread pipe ko tor deta hai.",
+          "Basin ke neeche kaam karte waqt neeche baalti rakhein aur farsh sukha rakhein."
+        ],
+        "faults": [
+          {
+            "symptom": "water_leak",
+            "label": "Nal se pani tapak raha hai",
+            "match": ["\\bleak\\b", "pani tapak", "\\bdrip\\b", "band nahi ho", "\\boverflow\\b", "pani ris"],
+            "risk": "low",
+            "checks": [
+              "Pani nal ki tonti se tapak raha hai ya handle/joint ke neeche se? Dono ka ilaj alag hai.",
+              "Nal ko poora band kar ke halka aur tight karein — magar zor na lagayein.",
+              "Tonti se tapak raha ho to andar ki rubber washer ghis gai hai (sab se aam wajah).",
+              "Deewar ke joint se ris raha ho to teflon tape dobara lagani paregi.",
+              "Filhaal us line ka valve band karke pani zaya hona rok dein."
+            ],
+            "issues": [
+              {
+                "title": "Washer / cartridge repair",
+                "cause": "nal ke andar ki washer ya cartridge ghis gai hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Basin tap replace (pillar type)",
+                "cause": "nal purana ho chuka hai, repair par barbar leak karega",
+                "part_row": "Basin Tap (pillar type)",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Mixer tap replace (single lever)",
+                "cause": "garam/thanda mixer ka cartridge kharab hai",
+                "part_row": "Basin Mixer (single lever)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              }
+            ]
+          },
+          {
+            "symptom": "no_water",
+            "label": "Pani nahi aa raha / pressure kam hai",
+            "match": ["no water", "pani nahi", "pressure kam", "\\bweak\\b", "\\bslow\\b", "pani band"],
+            "risk": "low",
+            "checks": [
+              "Ghar ke baqi nal se pani aa raha hai? Sirf ek nal = us nal ka masla; sab band = tank/pump ka masla.",
+              "Tank mein pani hai? Chhat par check karein.",
+              "Nal ki tonti ke aage lagi jaali (aerator) khol kar saaf karein — usmein mitti jam jati hai.",
+              "Us line ka valve poora khula hai?",
+              "Garam pani nahi aa raha to yeh geyser ka masla hai, nal ka nahi."
+            ],
+            "issues": [
+              {
+                "title": "Aerator / nal safai + repair",
+                "cause": "nal ke andar mitti ya calcium jam gaya hai",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Line valve replace",
+                "cause": "us line ka ball valve jam ho gaya hai",
+                "part_row": "PVC Ball Valve 1/2 inch",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Nal replace",
+                "cause": "nal andar se choke ho chuka hai",
+                "part_row": "Kitchen Sink Tap",
+                "labor_row": "Kitchen sink fitting labor"
+              }
+            ]
+          },
+          {
+            "symptom": "blocked",
+            "label": "Nal jam ho gaya hai / ghoomta nahi",
+            "match": ["\\bblocked\\b", "\\bjam\\b", "ghoomta nahi", "\\bstuck\\b", "\\btight\\b", "khulta nahi"],
+            "risk": "low",
+            "checks": [
+              "Handle par zyada zor mat lagayein — thread toot sakti hai aur bara kaam ban jayega.",
+              "Halka WD-40 ya sarson ka tel lagakar 10 minute chhorein, phir narmi se ghumayein.",
+              "Handle ke screw ke ooper lagi cap nikaal kar screw tight/dheela karein.",
+              "Nal ke around jama calcium ko sirke wale pani se saaf karein."
+            ],
+            "issues": [
+              {
+                "title": "Nal servicing (khol kar safai)",
+                "cause": "andar calcium jam gaya hai is liye spindle nahi ghoom raha",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Nal replace",
+                "cause": "spindle/thread khatam ho gai hai",
+                "part_row": "Basin Tap (pillar type)",
+                "labor_row": "Tap/faucet repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "broken",
+            "label": "Nal / shower toot gaya hai",
+            "match": ["toot g", "\\bbroken\\b", "\\bcrack\\b", "\\bnikal g\\w*", "\\bukhar\\w*"],
+            "risk": "low",
+            "checks": [
+              "Pani zaya ho raha ho to us line ka valve ya main supply FORAN band karein.",
+              "Toota hua hissa deewar ke andar hi reh gaya hai? Usay zabardasti na nikaalein.",
+              "Tooti dhaat ke kinare tez hote hain — bachon ko door rakhein.",
+              "Farsh sukha rakhein."
+            ],
+            "issues": [
+              {
+                "title": "Nal replace",
+                "cause": "nal ki body toot gai hai",
+                "part_row": "Basin Tap (pillar type)",
+                "labor_row": "Tap/faucet repair labor"
+              },
+              {
+                "title": "Shower set replace (complete)",
+                "cause": "shower ka arm ya head toot gaya hai",
+                "part_row": "Shower Set (wall mount, complete)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Deewar ke andar ki thread repair",
+                "cause": "deewar ke andar wali fitting kharab ho gai hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (hidden/concealed, wall breaking)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pipe",
+        "label": "Pipe / Joint / Leakage",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 3,
+        "nouns": ["\\bpipe\\b", "\\bpipeline\\b", "\\bjoint\\b", "\\bpprc\\b", "gi pipe", "\\bpaip\\b"],
+        "hints": ["leak", "seepage", "deewar", "concealed", "chupi", "elbow", "coupling", "burst", "namee", "chhat", "farsh"],
+        "default_symptom": "water_leak",
+        "common_safety": [
+          "Pehle us line ka valve ya ghar ki main supply band karein.",
+          "Pani deewar ke andar bijli ki wiring tak pohanch sakta hai — us hisse ka MCB band rakhein.",
+          "Deewar todne wala kaam khud na karein — andar gas ya bijli ki line bhi ho sakti hai."
+        ],
+        "faults": [
+          {
+            "symptom": "water_leak",
+            "label": "Pipe se pani leak / ris raha hai",
+            "match": ["\\bleak\\b", "pani tapak", "pani ris", "seepage", "\\bdrip\\b", "namee"],
+            "risk": "low",
+            "checks": [
+              "Leak nazar aa rahi pipe se hai ya deewar/farsh se namee aa rahi hai? Chupi (concealed) leak mehnga kaam hoti hai.",
+              "Us line ka valve band karke pani zaya hona rok dein.",
+              "Joint se ris raha ho to teflon tape ya clamp arzi hal de sakta hai.",
+              "Deewar par gili patch ka size roz badal raha hai? Photo bana kar note karein.",
+              "Pani bijli ke board, socket ya wiring ke qareeb hai to us circuit ka MCB foran band karein."
+            ],
+            "issues": [
+              {
+                "title": "Khula joint repair",
+                "cause": "nazar aane wale joint se pani ris raha hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Fitting / elbow replace",
+                "cause": "elbow ya coupling crack ho gaya hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Pipe ka hissa replace",
+                "cause": "pipe khud crack ho gai hai, us hisse ko badalna paregi",
+                "part_row": "PVC Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Chupi (concealed) leak — deewar tor kar repair",
+                "cause": "leak deewar ke andar hai, is liye deewar todni paregi",
+                "part_row": "PPRC Pipe 1/2 inch (per 12ft length, hot/cold)",
+                "labor_row": "Pipe joint repair (hidden/concealed, wall breaking)"
+              }
+            ]
+          },
+          {
+            "symptom": "burst",
+            "label": "Pipe phat gai hai / pani bhar gaya",
+            "match": ["\\bburst\\b", "phat g", "\\bflood\\w*", "pani bhar", "tez pani"],
+            "risk": "high",
+            "checks": [
+              "Ghar ki MAIN water supply aur motor FORAN band karein.",
+              "Us hisse ki bijli ka MCB band karein — farsh par pani aur bijli ka combination jaan lewa hai.",
+              "Qeemti saman aur electrical items pani se hata dein.",
+              "Pani nikaalne ki koshish karein magar geele farsh par bijli ke appliance istemaal na karein.",
+              "Pipe ko khud jorne ki koshish na karein — pressure line ka kaam technician ka hai."
+            ],
+            "issues": [
+              {
+                "title": "Phati pipe ka hissa replace",
+                "cause": "pipe pressure se phat gai hai",
+                "part_row": "PVC Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "GI / PPRC pipe replace",
+                "cause": "purani GI pipe rust se gal kar phat gai hai",
+                "part_row": "GI Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Deewar ke andar ki line replace",
+                "cause": "phati pipe concealed hai, deewar tor kar nayi line daalni paregi",
+                "part_row": "PPRC Pipe 1/2 inch (per 12ft length, hot/cold)",
+                "labor_row": "Pipe joint repair (hidden/concealed, wall breaking)"
+              }
+            ]
+          },
+          {
+            "symptom": "blocked",
+            "label": "Pipe band / choke ho gai hai",
+            "match": ["\\bblocked\\b", "\\bjam\\b", "\\bchoke\\b", "band ho", "pani nahi guzar"],
+            "risk": "low",
+            "checks": [
+              "Blockage ek hi nal/nikaas par hai ya poore ghar mein? Ek jagah = local blockage.",
+              "Nal ki jaali (aerator) aur valve khol kar saaf karein.",
+              "Purani GI pipe hai to andar rust jam jata hai — pani ke saath bhoora rang aata hai?",
+              "Zyada kemikal (acid) khud na daalein — pipe ko nuqsan aur gas se aankhon ko khatra hai."
+            ],
+            "issues": [
+              {
+                "title": "Line flushing / valve safai",
+                "cause": "valve ya nal ke aage mitti jam gai hai",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Choke pipe ka hissa replace",
+                "cause": "pipe andar se rust/scale se band ho chuki hai",
+                "part_row": "GI Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              }
+            ]
+          },
+          {
+            "symptom": "weak",
+            "label": "Pani ka pressure kam ho gaya hai",
+            "match": ["pressure kam", "\\bweak\\b", "\\bslow\\b", "halka pani", "pani kam"],
+            "risk": "low",
+            "checks": [
+              "Tank mein pani ka level poora hai?",
+              "Poore ghar mein pressure kam hai ya sirf ek nal par?",
+              "Ghar ke saare valve poore khule hain?",
+              "Chhat ka tank neeche laga hai? Kam height se pressure kam hota hai.",
+              "Purani GI line andar se choke ho sakti hai — is ki tabdeeli hi permanent hal hai."
+            ],
+            "issues": [
+              {
+                "title": "Valve / line safai",
+                "cause": "valve poora nahi khul raha ya line mein mitti hai",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Purani line replace",
+                "cause": "purani pipe andar se choke ho chuki hai",
+                "part_row": "PPRC Pipe 1/2 inch (per 12ft length, hot/cold)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Pressure pump lagana",
+                "cause": "supply pressure kam hai, booster pump se hal hoga",
+                "part_row": "Water Pump/Motor 1.0 HP Monoblock",
+                "labor_row": "Pump/motor installation/repair labor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "drain",
+        "label": "Drain / Nali / Blockage",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 3,
+        "nouns": ["\\bdrain\\b", "\\bnali\\b", "\\bsewage\\b", "\\bsewerage\\b", "\\bgutter\\b", "nahani trap", "\\bmanhole\\b", "\\bnikaas\\b"],
+        "hints": ["blocked", "jam", "choke", "badbu", "smell", "ubal", "wapas", "trap", "gully", "bathroom", "kitchen"],
+        "default_symptom": "blocked",
+        "common_safety": [
+          "Sewerage ke pani mein bemari ke jarasim hote hain — dastane pehnein aur baad mein haath sabun se dhoein.",
+          "Manhole ka dhakkan khol kar andar KABHI na jhukein aur na utrein — gas se behoshi ho jati hai.",
+          "Tezaab (acid) khud na daalein — chhinta aankhon aur jild ke liye khatarnak hai aur pipe bhi gal jati hai."
+        ],
+        "faults": [
+          {
+            "symptom": "blocked",
+            "label": "Nali band ho gai hai / pani nahi nikal raha",
+            "match": ["\\bblocked\\b", "\\bjam\\b", "\\bchoke\\b", "band ho", "pani nahi nikal", "\\bslow\\b"],
+            "risk": "low",
+            "checks": [
+              "Nali ke ooper lagi jaali nikaal kar baal, kachra aur chikni mail nikaalein — 70% cases yahin theek ho jate hain.",
+              "Ek baalti garam (khaulta hua nahi) pani tez raftaar se daalein — chiknai pighal jati hai.",
+              "Baking soda + sirka daal kar 20 minute chhorein, phir garam pani daalein.",
+              "Rubber plunger se 10–15 dafa pump karein.",
+              "Blockage sirf ek jagah hai ya poore ghar ki nikaas slow hai? Poora ghar = main line block.",
+              "Kitchen mein tel/ghee nali mein daalna band karein — yahi jamta hai."
+            ],
+            "issues": [
+              {
+                "title": "Nali blockage clearing",
+                "cause": "nali mein baal, mail ya chiknai jam gai hai",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Nahani trap replace",
+                "cause": "bathroom ka trap andar se choke aur toot chuka hai",
+                "part_row": "Drain Trap / Nahani Trap (PVC)",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Basin ka bottle trap replace",
+                "cause": "basin ke neeche wala trap mail se band hai",
+                "part_row": "Bottle Trap (for basin)",
+                "labor_row": "Kitchen sink fitting labor"
+              },
+              {
+                "title": "Main line / gully trap clearing",
+                "cause": "bahar wali main line ya gully trap block hai",
+                "part_row": "Gully Trap (P-trap) 4 inch",
+                "labor_row": "Drain/sewage blockage clearing"
+              }
+            ]
+          },
+          {
+            "symptom": "smell",
+            "label": "Nali se badbu aa rahi hai",
+            "match": ["\\bsmell\\b", "\\bbadbu\\b", "\\bboo\\b", "\\bganda\\b", "\\bstink\\w*"],
+            "risk": "low",
+            "checks": [
+              "Nali mein pani daal kar dekhein — trap sookh gaya ho to gas seedhi ooper aati hai (aksar kam istemaal wale bathroom mein).",
+              "Nali ki jaali ke neeche jama mail nikaal kar saaf karein.",
+              "Bathroom/kitchen ka exhaust fan chala kar hawa nikaalein.",
+              "Sewerage jaisi tez badbu ho to yeh sehat ke liye nuqsan deh hai — jaldi karwayein.",
+              "Gas (LPG/sui gas) jaisi smell ho to yeh nali ka masla NAHI — gas valve band karein aur koi switch na chhuein."
+            ],
+            "issues": [
+              {
+                "title": "Nali safai + trap mein pani",
+                "cause": "trap sookha hai ya mail jama hai is liye gas ooper aa rahi hai",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Nahani trap replace",
+                "cause": "trap ki water-seal kaam nahi kar rahi",
+                "part_row": "Drain Trap / Nahani Trap (PVC)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Gully trap lagana / theek karna",
+                "cause": "bahar wale gully trap ki seal kharab hai",
+                "part_row": "Gully Trap (P-trap) 4 inch",
+                "labor_row": "Drain/sewage blockage clearing"
+              }
+            ]
+          },
+          {
+            "symptom": "overflow",
+            "label": "Gandha pani wapas aa raha hai / bah raha hai",
+            "match": ["\\boverflow\\b", "wapas aa", "ubal", "bah raha", "bhar gaya", "ghar mein pani"],
+            "risk": "high",
+            "checks": [
+              "Us bathroom/kitchen ka pani istemaal FORAN band karein — jitna pani daalenge utna wapas aayega.",
+              "Flush bilkul na chalayein.",
+              "Gandha pani bijli ke socket ya extension tak pohanch raha ho to us circuit ka MCB band karein.",
+              "Bachon aur khane peene ki cheezon ko us hisse se door rakhein.",
+              "Ghar walon ko batayein ke us bathroom ka istemaal band hai."
+            ],
+            "issues": [
+              {
+                "title": "Main sewerage line clearing",
+                "cause": "ghar ki main line block hai is liye pani wapas aa raha hai",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Gully trap / manhole clearing",
+                "cause": "bahar wala trap ya manhole bhar chuka hai",
+                "part_row": "Gully Trap (P-trap) 4 inch",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Sewerage pipe replace",
+                "cause": "sewerage ki pipe toot ya baith gai hai",
+                "part_row": "PVC Pipe 1/2 inch (per 20ft length)",
+                "labor_row": "Pipe joint repair (hidden/concealed, wall breaking)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "flush_tank",
+        "label": "Flush Tank / Toilet",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 4,
+        "nouns": ["flush tank", "\\bflush\\b", "\\bcistern\\b", "\\btoilet\\b", "\\blatrine\\b", "\\bWC\\b", "\\bseat\\b"],
+        "hints": ["flapper", "valve", "button", "handle", "chain", "bhar", "chalta rehta", "bathroom", "float"],
+        "default_symptom": "not_flushing",
+        "common_safety": [
+          "Flush tank ka cover dono haathon se seedha ooper uthayein — porcelain cover bhaari aur nazuk hota hai.",
+          "Tank ka inlet valve band karke hi andar haath daalein.",
+          "Toilet ka pani gandha hota hai — kaam ke baad haath sabun se dhoein."
+        ],
+        "faults": [
+          {
+            "symptom": "not_flushing",
+            "label": "Flush kaam nahi kar raha",
+            "match": ["not working", "flush nahi", "\\bdead\\b", "kaam nahi", "chalta nahi"],
+            "risk": "low",
+            "checks": [
+              "Tank mein pani bhar raha hai? Bilkul khali ho to masla inlet ka hai.",
+              "Cover uthakar dekhein: button/handle ka link ya chain toot kar utar gai hai?",
+              "Flapper (neeche wali rubber) seedhi baithi hai? Tedhi ho to haath se seedha karein.",
+              "Float ball dabakar dekhein ke pani aata hai — inlet valve jam ho sakta hai.",
+              "Poora pani bharne mein kitna waqt lagta hai? 5 minute se zyada = inlet weak."
+            ],
+            "issues": [
+              {
+                "title": "Flush valve / flapper kit replace",
+                "cause": "flapper ya flush mechanism kharab ho gaya hai",
+                "part_row": "Flush Valve/Flapper kit only",
+                "labor_row": "Flush tank repair labor"
+              },
+              {
+                "title": "Float valve replace",
+                "cause": "tank mein pani bharne wala valve jam ho gaya hai",
+                "part_row": "Float Valve (tank)",
+                "labor_row": "Flush tank repair labor"
+              },
+              {
+                "title": "Poora flush tank replace",
+                "cause": "tank aur uska mechanism purana ho chuka hai",
+                "part_row": "Flush Tank (PVC/plastic, complete)",
+                "labor_row": "Flush tank repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "overflow",
+            "label": "Pani mustaqil behta rehta hai",
+            "match": ["\\boverflow\\b", "band nahi ho", "behta rehta", "chalta rehta", "pani zaya", "bahta"],
+            "risk": "low",
+            "checks": [
+              "Awaz mustaqil aa rahi hai? Yeh mahine mein hazaron litre pani zaya karti hai.",
+              "Cover uthakar float ball ko haath se ooper karein — pani ruk jata hai to valve adjust karna hai.",
+              "Flapper ke neeche mail ya calcium jama hai? Usay saaf karein.",
+              "Overflow pipe se pani ja raha hai to float valve band nahi ho raha.",
+              "Filhaal tank ka inlet valve band kar dein."
+            ],
+            "issues": [
+              {
+                "title": "Flapper safai / replace",
+                "cause": "flapper theek seal nahi kar rahi is liye pani leak ho raha hai",
+                "part_row": "Flush Valve/Flapper kit only",
+                "labor_row": "Flush tank repair labor"
+              },
+              {
+                "title": "Float valve replace",
+                "cause": "float valve pani band nahi kar raha",
+                "part_row": "Float Valve (tank)",
+                "labor_row": "Flush tank repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Flush tank se pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani tapak", "pani ris", "\\bdrip\\b", "farsh par pani"],
+            "risk": "low",
+            "checks": [
+              "Leak tank ke neeche joint se hai ya body/crack se? Poonch kar 15 minute dekhein.",
+              "Inlet pipe ka nut halka tight karein (valve band kar ke).",
+              "Deewar par lagi tank ke bracket check karein.",
+              "Farsh sukha rakhein — bathroom mein phisalne ka khatra hai.",
+              "Body crack ho to repair nahi hoti, tank replace hota hai."
+            ],
+            "issues": [
+              {
+                "title": "Joint / washer repair",
+                "cause": "inlet ya outlet ka washer ghis gaya hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Flush tank repair labor"
+              },
+              {
+                "title": "Flush tank replace",
+                "cause": "tank ki body crack ho gai hai",
+                "part_row": "Flush Tank (PVC/plastic, complete)",
+                "labor_row": "Flush tank repair labor"
+              }
+            ]
+          },
+          {
+            "symptom": "blocked",
+            "label": "Commode band / pani wapas aa raha hai",
+            "match": ["\\bblocked\\b", "\\bjam\\b", "\\bchoke\\b", "band ho", "wapas aa", "pani nahi ja"],
+            "risk": "low",
+            "checks": [
+              "Flush baar baar na chalayein — pani bahar aa jayega.",
+              "Rubber plunger se 10–15 dafa zor se pump karein.",
+              "Ek baalti garam (khaulta nahi) pani ooper se tez daalein.",
+              "Kya koi cheez (kapra, wipes, khilona) gir gai thi? Batayein — yeh mechanical blockage hoti hai.",
+              "Ghar ke doosre bathroom bhi block hain? To main line ka masla hai.",
+              "Tezaab khud na daalein — porcelain aur pipe dono ko nuqsan hota hai."
+            ],
+            "issues": [
+              {
+                "title": "Commode blockage clearing",
+                "cause": "commode ke trap mein kachra phansa hua hai",
+                "labor_row": "Drain/sewage blockage clearing"
+              },
+              {
+                "title": "Main sewerage line clearing",
+                "cause": "ghar ki main sewerage line block hai",
+                "part_row": "Gully Trap (P-trap) 4 inch",
+                "labor_row": "Drain/sewage blockage clearing"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "water_filter",
+        "label": "RO / Water Filter",
+        "category": "Plumber",
+        "trade_id": "plumber",
+        "priority": 4,
+        "nouns": ["water filter", "\\bro\\b", "ro plant", "\\bpurifier\\b", "filter plant", "\\bmembrane\\b"],
+        "hints": ["cartridge", "candle", "tds", "peene", "housing", "sediment", "carbon", "meetha", "taste", "stage"],
+        "default_symptom": "no_water",
+        "common_safety": [
+          "Filter kholne se pehle uska inlet valve band karein aur electric RO ho to plug nikaalein.",
+          "Cartridge badalte waqt haath saaf hon — ganda haath naye filter ko kharab kar deta hai.",
+          "Filter ke aas paas pani jama na hone dein, khaas tor par agar qareeb bijli ka point ho."
+        ],
+        "faults": [
+          {
+            "symptom": "no_water",
+            "label": "Pani nahi aa raha / bohat slow hai",
+            "match": ["no water", "pani nahi", "\\bslow\\b", "pressure kam", "\\bweak\\b", "band ho"],
+            "risk": "low",
+            "checks": [
+              "Inlet valve poora khula hai? Aur main supply mein pressure hai?",
+              "Pehla (sediment) cartridge nikaal kar dekhein — bhoora/kaala ho gaya ho to chok hai.",
+              "Cartridge kitne mahine purane hain? 6–12 mahine se zyada purane ho to change zaroori hai.",
+              "Electric RO hai to uski chhoti motor chal rahi hai (halki awaz)?",
+              "Storage tank khali hai to bharne mein 1–2 ghante lagte hain — intezaar karein."
+            ],
+            "issues": [
+              {
+                "title": "Cartridge / candle replace + service",
+                "cause": "filter cartridge choke ho gaye hain",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Inlet fitting / valve repair",
+                "cause": "filter tak pani laane wali fitting choke hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Poora RO unit replace",
+                "cause": "membrane aur housing dono khatam ho chuke hain",
+                "part_row": "RO/Water Filter Unit (basic)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              }
+            ]
+          },
+          {
+            "symptom": "smell",
+            "label": "Pani ka taste / smell theek nahi",
+            "match": ["\\bsmell\\b", "\\bbadbu\\b", "\\btaste\\b", "\\bganda\\b", "\\bboo\\b", "\\bcolor\\b"],
+            "risk": "low",
+            "checks": [
+              "Cartridge kab badle the? Purana carbon filter ulta boo paida karta hai.",
+              "Housing khol kar andar dekhein — kai (slime) jami hai?",
+              "Storage tank khali kar ke saaf karein.",
+              "Filter se pehle wala pani (direct nal) bhi kharab hai? To masla tank/supply ka hai, filter ka nahi.",
+              "Aisa pani peene ke liye istemaal na karein jab tak theek na ho jaye."
+            ],
+            "issues": [
+              {
+                "title": "Cartridge replace + housing safai",
+                "cause": "carbon cartridge khatam ho gaya hai aur housing mein kai hai",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Membrane replace / unit replace",
+                "cause": "RO membrane apni life poori kar chuka hai",
+                "part_row": "RO/Water Filter Unit (basic)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Tank ki safai bhi zaroori",
+                "cause": "ghar ke water tank se hi ganda pani aa raha hai",
+                "labor_row": "Water tank installation labor"
+              }
+            ]
+          },
+          {
+            "symptom": "water_leak",
+            "label": "Filter se pani leak ho raha hai",
+            "match": ["\\bleak\\b", "pani tapak", "pani ris", "\\bdrip\\b"],
+            "risk": "low",
+            "checks": [
+              "Inlet valve band karein taake pani zaya na ho.",
+              "Leak housing ke dhaage se hai ya pipe ke joint se? Poonch kar dekhein.",
+              "Housing haath se halka tight karein — zyada zor se plastic chatak jata hai.",
+              "Electric RO ho aur pani motor/plug ke qareeb ho to plug nikaalein (haath sukha rakh kar).",
+              "O-ring (rubber ring) apni jagah par seedhi baithi hai?"
+            ],
+            "issues": [
+              {
+                "title": "O-ring / housing sealing",
+                "cause": "housing ki rubber O-ring ghis gai hai",
+                "part_row": "Teflon Tape (roll)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              },
+              {
+                "title": "Fitting / tubing replace",
+                "cause": "filter ki chhoti pipe ya fitting crack hai",
+                "part_row": "PVC Fitting (elbow/tee/coupling)",
+                "labor_row": "Pipe joint repair (open/visible)"
+              },
+              {
+                "title": "Poora unit replace",
+                "cause": "housing crack ho chuki hai",
+                "part_row": "RO/Water Filter Unit (basic)",
+                "labor_row": "Bathroom fitting installation (complete)"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "component_classes": {
+      "switch_socket": {
+        "detect_in": ["switch", "socket", "regulator", "dimmer", "extension board"],
+        "symptom_tokens": ["switch", "socket", "button", "on", "off", "working", "nahi", "point", "plug"],
+        "risk": "low",
+        "checks": [
+          "Confirm main MCB/isolator is ON at the distribution board.",
+          "Test the switch/socket with another small appliance (e.g. phone charger).",
+          "Check for loose faceplate screws or burnt marks on the switch.",
+          "If multiple points fail on one circuit, suspect MCB or wiring — not just the switch."
+        ],
+        "safety": ["Turn OFF the relevant MCB before opening any switch plate.", "Never touch bare wires.", "Dry hands only."]
+      },
+      "wiring_protection": {
+        "detect_in": ["mcb", "rccb", "distribution board", "wire", "wiring", "conduit", "earthing", "earth rod", "short circuit"],
+        "symptom_tokens": ["trip", "breaker", "mcb", "wire", "wiring", "short", "spark", "power", "bijli", "circuit"],
+        "risk": "high",
+        "checks": [
+          "Note which MCB trips and when (all loads vs single appliance).",
+          "Unplug recently added devices on that circuit.",
+          "Do NOT repeatedly reset a tripping breaker — it indicates a fault."
+        ],
+        "safety": ["Repeated tripping can cause fire — stop using the circuit.", "Only a licensed electrician should open the DB."]
+      },
+      "fan_system": {
+        "detect_in": ["ceiling fan", "fan capacitor", "fan motor", "fan regulator", "fan rewinding", "56\"", "per fan"],
+        "trade_id": "electrician",
+        "symptom_tokens": ["ceiling fan", "fan", "slow", "speed", "spin", "humming", "ghoom", "regulator", "pankha"],
+        "risk": "low",
+        "checks": [
+          "Verify wall switch and regulator are ON and set to maximum.",
+          "Listen for humming without blade movement — typical weak capacitor sign (see dataset: Ceiling Fan Capacitor).",
+          "Check blade screws are tight if wobbling is reported.",
+          "If motor smells burnt or grinds loudly, stop use — motor/rewinding may be needed."
+        ],
+        "safety": ["Switch OFF MCB before opening fan canopy.", "Capacitor stores charge — never touch terminals.", "Use stable ladder."]
+      },
+      "lighting": {
+        "detect_in": ["led", "bulb", "tube", "light", "doorbell", "chime"],
+        "symptom_tokens": ["light", "bulb", "tube", "flicker", "dim", "off", "doorbell"],
+        "risk": "low",
+        "checks": [
+          "Replace bulb/tube with a known working one first.",
+          "Check switch and holder contacts for corrosion.",
+          "For tube lights, check starter/chock if fitted."
+        ],
+        "safety": ["Switch OFF before replacing bulbs or opening holders."]
+      },
+      "power_backup": {
+        "detect_in": ["ups", "inverter", "battery"],
+        "symptom_tokens": ["ups", "inverter", "battery", "backup", "load shedding"],
+        "risk": "high",
+        "checks": [
+          "Check battery age — typical UPS battery life 1-2 years in Pakistan heat.",
+          "Verify input power reaches the UPS when grid is available.",
+          "Burning smell from UPS = disconnect immediately."
+        ],
+        "safety": ["Battery acid and charging circuits are hazardous.", "Ventilate battery area."]
+      },
+      "plumbing_pipe": {
+        "detect_in": ["pipe", "pvc", "pprc", "gi", "fitting", "ball valve", "joint"],
+        "symptom_tokens": ["pipe", "leak", "joint", "crack", "burst", "phat", "water", "pressure"],
+        "risk": "high",
+        "checks": [
+          "Shut nearest isolation valve immediately for any active leak.",
+          "Visible joints: check tightening and Teflon tape on threads.",
+          "Concealed/hidden leaks need wall access — see dataset labor: hidden/concealed pipe repair."
+        ],
+        "safety": ["Water near electrical points is dangerous — isolate power nearby.", "Main valve off for major leaks."]
+      },
+      "plumbing_tap": {
+        "detect_in": ["tap", "faucet", "mixer", "basin", "kitchen sink", "shower"],
+        "symptom_tokens": ["tap", "drip", "leak", "faucet", "nalka", "sink", "shower", "flow"],
+        "risk": "low",
+        "checks": [
+          "Close isolation valve under basin/sink.",
+          "Do not over-tighten handle — washer damage worsens drip.",
+          "Check aerator/shower head for blockage if flow is weak."
+        ],
+        "safety": ["Place bucket to limit water damage.", "Turn off overhead tank valve if leak is heavy."]
+      },
+      "plumbing_drain": {
+        "detect_in": ["drain", "trap", "nahani", "gully", "bottle trap", "blockage", "sewage", "flush"],
+        "symptom_tokens": ["block", "clog", "drain", "overflow", "flush", "slow drain", "smell"],
+        "risk": "low",
+        "checks": [
+          "Check visible trap/grating for hair/debris blockage.",
+          "Flush tank: verify fill valve and flapper if water runs continuously.",
+          "Outdoor gully cover — remove surface blockage first."
+        ],
+        "safety": ["Wear gloves for sewage blockages.", "Avoid chemical drain cleaners on old PVC."]
+      },
+      "pump_tank": {
+        "detect_in": ["water pump", "pump", "impeller", "water tank", "float", "foot valve", "monoblock"],
+        "trade_id": "plumber",
+        "symptom_tokens": ["pump", "tank", "water", "pressure", "fill", "float", "impeller", "motor", "pani"],
+        "risk": "low",
+        "checks": [
+          "Confirm tank has water — dry-run protection stops many pumps.",
+          "Check float switch position in overhead tank.",
+          "Humming without flow may indicate capacitor or impeller jam (see dataset parts).",
+          "Verify suction foot valve if pump loses prime."
+        ],
+        "safety": ["Never run pump dry more than a few seconds.", "Power OFF before impeller inspection."]
+      },
+      "geyser": {
+        "detect_in": ["geyser", "gas geyser"],
+        "symptom_tokens": ["geyser", "hot water", "garam pani", "heater", "gas"],
+        "risk": "high",
+        "checks": [
+          "Gas geyser: check pilot/flame and ventilation.",
+          "No hot water: verify gas supply and water inlet valve.",
+          "Any gas smell — ventilate, do not operate switches."
+        ],
+        "safety": ["Gas leaks are life-threatening — call certified technician.", "Do not bypass safety thermostat."]
+      },
+      "water_filter": {
+        "detect_in": ["ro", "water filter"],
+        "symptom_tokens": ["filter", "ro", "purifier", "taste", "smell", "flow slow"],
+        "risk": "low",
+        "checks": [
+          "Check filter cartridge replacement schedule.",
+          "Verify inlet water pressure meets RO requirement.",
+          "Storage tank valve open."
+        ],
+        "safety": ["Sanitize lines after cartridge change per manufacturer guide."]
+      },
+      "ac_gas_cooling": {
+        "detect_in": ["refrigerant", "gas refill", "r22", "r410", "r32", "general service", "cleaning"],
+        "trade_id": "ac_refrigeration",
+        "symptom_tokens": ["cooling", "cooling weak", "cool", "thanda", "gas", "refill", "warm air", "weak", "ac"],
+        "risk": "low",
+        "checks": [
+          "Clean indoor filters first — cheapest fix (see AC general service in dataset).",
+          "Set remote to COOL mode 18-22°C.",
+          "Outdoor unit airflow clear.",
+          "Persistent weak cooling after filter clean → gas refill may be required (dataset: AC gas refill services)."
+        ],
+        "safety": ["Gas refill requires certified HVAC technician — not DIY.", "Do not run AC with covers on outdoor unit."]
+      },
+      "ac_compressor": {
+        "detect_in": ["compressor"],
+        "trade_id": "ac_refrigeration",
+        "symptom_tokens": ["compressor", "trip", "hard start", "noise outdoor", "unit dead", "ac"],
+        "risk": "high",
+        "checks": [
+          "Turn OFF AC and MCB if breaker trips on AC start.",
+          "Note burning smell at outdoor unit.",
+          "Do not keep resetting breaker."
+        ],
+        "safety": ["Compressor replacement is major work — professional only.", "High voltage at outdoor unit."]
+      },
+      "ac_electrical": {
+        "detect_in": ["pcb", "control board", "ac capacitor", "sensor", "thermostat", "remote"],
+        "trade_id": "ac_refrigeration",
+        "symptom_tokens": ["pcb", "board", "error code", "beep", "display", "sensor", "remote", "ac capacitor", "ac"],
+        "risk": "high",
+        "checks": [
+          "Power cycle indoor unit once (MCB off 2 min).",
+          "Check remote batteries.",
+          "Persistent fault codes → PCB diagnosis (see dataset PCB repair labor)."
+        ],
+        "safety": ["Do not open indoor PCB cover unless qualified.", "Capacitors hold charge."]
+      },
+      "ac_mechanical": {
+        "detect_in": ["outdoor fan motor", "drain pan", "mounting bracket", "brazing", "refrigerant pipe", "ac installation", "uninstallation", "unclog"],
+        "trade_id": "ac_refrigeration",
+        "symptom_tokens": ["water drip indoor", "outdoor", "indoor unit", "vibration", "install", "service", "clean", "drain", "ac"],
+        "risk": "low",
+        "checks": [
+          "Indoor water dripping: check drain pipe blockage (dataset: Drainage pipe unclog).",
+          "Outdoor fan noise: debris in fan blade path.",
+          "Annual service improves cooling efficiency."
+        ],
+        "safety": ["Isolate power before cleaning indoor unit.", "Secure outdoor unit bracket before monsoon."]
+      }
+    },
+    "labor_to_part_hints": {
+      "Fan capacitor replacement labor": "Ceiling Fan Capacitor",
+      "Ceiling fan installation/repair labor": "Ceiling Fan 56\" (complete unit)",
+      "Switch/socket repair or replace": "1-Way Switch",
+      "MCB/breaker replacement labor": "MCB (6-32A Single Pole)",
+      "Tap/faucet repair labor": "Basin Tap (pillar type)",
+      "Pump/motor installation/repair labor": "Water Pump/Motor 1.0 HP Monoblock",
+      "AC gas refill - Inverter (R410A/R32), full service": "Refrigerant Gas R410A/R32 (per kg)",
+      "AC gas refill - Non-inverter (R22), full service": "Refrigerant Gas R22 (per kg)",
+      "Capacitor replacement labor": "AC Capacitor (35-50uF for 1-1.5 ton)",
+      "Compressor replacement labor (excl. part)": "AC Compressor 1.0-1.5 Ton (part only)",
+      "PCB repair (labor + diagnosis, inverter)": "PCB/Control Board (replacement unit)",
+      "Flush tank repair labor": "Flush Valve/Flapper kit only",
+      "Drain/sewage blockage clearing": "Drain Trap / Nahani Trap (PVC)",
+      "Geyser installation labor": "Gas Geyser 6L Instant"
+    }
+  }
+}

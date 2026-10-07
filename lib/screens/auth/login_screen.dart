@@ -28,20 +28,42 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
+  Future<void> _forgotPassword() async {
+    final email = _emailCtrl.text.trim();
+    if (email.isEmpty || !email.contains('@')) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Enter your registered email first')),
+      );
+      return;
+    }
+
+    setState(() => _loading = true);
+    try {
+      await context.read<AppState>().api.sendPasswordResetEmail(
+            email,
+            role: widget.role,
+          );
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Password reset link sent. Check your email inbox.'),
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(friendlyApiError(e))),
+      );
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
   Future<void> _login() async {
     if (!_formKey.currentState!.validate()) return;
     setState(() => _loading = true);
     try {
       final app = context.read<AppState>();
-      if (!app.serverOnline) {
-        final ok = await app.retryServerConnection();
-        if (!ok && mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Backend server is not running.')),
-          );
-          return;
-        }
-      }
       final result = await app.api.login(
         _emailCtrl.text.trim(),
         _passCtrl.text,
@@ -97,7 +119,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 validator: (v) =>
                     v == null || v.length < 6 ? 'Min 6 characters' : null,
               ),
-              const SizedBox(height: 28),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: _loading ? null : _forgotPassword,
+                  child: const Text('Forgot password?'),
+                ),
+              ),
+              const SizedBox(height: 8),
               FilledButton(
                 onPressed: _loading ? null : _login,
                 child: _loading

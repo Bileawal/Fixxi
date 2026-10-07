@@ -9,9 +9,18 @@ import '../../providers/app_state.dart';
 import 'select_technician_screen.dart';
 
 class CreateRequestScreen extends StatefulWidget {
-  const CreateRequestScreen({super.key, this.preselectedTechnician});
+  const CreateRequestScreen({
+    super.key,
+    this.preselectedTechnician,
+    this.initialCategory,
+    this.initialDescription,
+    this.initialType,
+  });
 
   final AppUser? preselectedTechnician;
+  final String? initialCategory;
+  final String? initialDescription;
+  final RequestType? initialType;
 
   @override
   State<CreateRequestScreen> createState() => _CreateRequestScreenState();
@@ -32,6 +41,15 @@ class _CreateRequestScreenState extends State<CreateRequestScreen> {
   @override
   void initState() {
     super.initState();
+    if (widget.initialCategory != null) {
+      _category = widget.initialCategory!;
+    }
+    if (widget.initialDescription != null) {
+      _descCtrl.text = widget.initialDescription!;
+    }
+    if (widget.initialType != null) {
+      _type = widget.initialType!;
+    }
     if (_scheduleOnly) {
       _type = RequestType.scheduled;
     }

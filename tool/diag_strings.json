@@ -1,0 +1,3938 @@
+[
+  {
+    "k": "hazard.smoke.label",
+    "ru": "Dhuwa (smoke)"
+  },
+  {
+    "k": "hazard.smoke.safety.0",
+    "ru": "🔴 Us cheez ka MCB / main switch FORAN band karein."
+  },
+  {
+    "k": "hazard.smoke.safety.1",
+    "ru": "🔴 Switch off hone ke baad plug nikaal dein — haath bilkul sookhe hon."
+  },
+  {
+    "k": "hazard.smoke.safety.2",
+    "ru": "🔴 Kamra ventilate karein (khirki/darwaza kholein) aur appliance ke qareeb na khare hon."
+  },
+  {
+    "k": "hazard.smoke.safety.3",
+    "ru": "🔴 Dobara ON KABHI mat karein — pehle technician check kare."
+  },
+  {
+    "k": "hazard.smoke.safety.4",
+    "ru": "🔴 Paas mein fire extinguisher ya sookhi ret rakhein. Pani electrical par mat dalein."
+  },
+  {
+    "k": "hazard.fire.label",
+    "ru": "Aag / jalna (fire)"
+  },
+  {
+    "k": "hazard.fire.safety.0",
+    "ru": "🔴 Main switch band karein aur ghar walon ko us kamre se bahar nikaalein."
+  },
+  {
+    "k": "hazard.fire.safety.1",
+    "ru": "🔴 Electrical aag par PANI mat dalein — CO2/DCP extinguisher ya sookhi ret use karein."
+  },
+  {
+    "k": "hazard.fire.safety.2",
+    "ru": "🔴 Aag qabu mein na aaye to Rescue 1122 ko foran call karein."
+  },
+  {
+    "k": "hazard.fire.safety.3",
+    "ru": "🔴 Wapas ON karne ki koshish mat karein."
+  },
+  {
+    "k": "hazard.burning_smell.label",
+    "ru": "Jalne ki smell"
+  },
+  {
+    "k": "hazard.burning_smell.safety.0",
+    "ru": "🔴 Foran band karein — jalne ki smell insulation ya winding jalne ki nishani hai."
+  },
+  {
+    "k": "hazard.burning_smell.safety.1",
+    "ru": "🔴 Us point/circuit par koi doosra appliance bhi mat lagayein."
+  },
+  {
+    "k": "hazard.burning_smell.safety.2",
+    "ru": "🔴 Technician aane tak istemaal band rakhein."
+  },
+  {
+    "k": "hazard.spark.label",
+    "ru": "Chingari / short circuit"
+  },
+  {
+    "k": "hazard.spark.safety.0",
+    "ru": "🔴 Us circuit ka MCB band karein — chingari short circuit ki nishani hai."
+  },
+  {
+    "k": "hazard.spark.safety.1",
+    "ru": "🔴 Us socket/switch ko dobara use mat karein, bachon ko door rakhein."
+  },
+  {
+    "k": "hazard.spark.safety.2",
+    "ru": "🔴 Geeli jagah ya geele haath se bilkul mat chhuein."
+  },
+  {
+    "k": "hazard.shock.label",
+    "ru": "Bijli ka jhatka (electric shock)"
+  },
+  {
+    "k": "hazard.shock.safety.0",
+    "ru": "🔴 Main MCB band karein — body par current aana earthing fail hone ki nishani hai."
+  },
+  {
+    "k": "hazard.shock.safety.1",
+    "ru": "🔴 Jab tak electrician check na kare, us appliance ko haath mat lagayein."
+  },
+  {
+    "k": "hazard.shock.safety.2",
+    "ru": "🔴 Kisi ko shock lag jaye to pehle supply off karein, phir usay chhuein."
+  },
+  {
+    "k": "hazard.shock.safety.3",
+    "ru": "🔴 Technician se RCCB (30mA) lagwane ka mashwara zaroor lein."
+  },
+  {
+    "k": "hazard.gas_leak.label",
+    "ru": "Gas leak"
+  },
+  {
+    "k": "hazard.gas_leak.safety.0",
+    "ru": "🔴 Gas valve FORAN band karein aur khirkiyan kholein."
+  },
+  {
+    "k": "hazard.gas_leak.safety.1",
+    "ru": "🔴 Koi switch, light ya mobile ON/OFF mat karein — chingari se blast ho sakta hai."
+  },
+  {
+    "k": "hazard.gas_leak.safety.2",
+    "ru": "🔴 Maachis/lighter bilkul na jalayein. Ghar se bahar nikal jayein."
+  },
+  {
+    "k": "hazard.gas_leak.safety.3",
+    "ru": "🔴 Sui Gas emergency (1199) aur certified technician ko call karein."
+  },
+  {
+    "k": "hazard.water_on_power.label",
+    "ru": "Pani + bijli ka mel"
+  },
+  {
+    "k": "hazard.water_on_power.safety.0",
+    "ru": "🔴 Us hisse ka MCB foran band karein — pani aur bijli ka mel jaanleva hai."
+  },
+  {
+    "k": "hazard.water_on_power.safety.1",
+    "ru": "🔴 Geele farsh par nange paun mat chalein."
+  },
+  {
+    "k": "hazard.water_on_power.safety.2",
+    "ru": "🔴 Pani ka source band karein (valve/tank) phir hi safai karein."
+  },
+  {
+    "k": "hazard.burst_flood.label",
+    "ru": "Pipe burst / flooding"
+  },
+  {
+    "k": "hazard.burst_flood.safety.0",
+    "ru": "🔴 Ghar ka main water valve aur tank ka valve FORAN band karein."
+  },
+  {
+    "k": "hazard.burst_flood.safety.1",
+    "ru": "🔴 Pump/motor ka switch band karein."
+  },
+  {
+    "k": "hazard.burst_flood.safety.2",
+    "ru": "🔴 Pani ke qareeb wale sockets aur extension boards ka MCB band karein."
+  },
+  {
+    "k": "hazard.burst_flood.safety.3",
+    "ru": "🔴 Emergency plumber bulayein — pani ka nuksan har minute barhta hai."
+  },
+  {
+    "k": "hazard.overheat.label",
+    "ru": "Bohat zyada garam"
+  },
+  {
+    "k": "hazard.overheat.safety.0",
+    "ru": "🔴 Band karein aur thanda hone dein — zyada garam hona load ya fault ki nishani hai."
+  },
+  {
+    "k": "hazard.overheat.safety.1",
+    "ru": "🔴 Us par kapra/cover mat dalein, hawa lagne dein."
+  },
+  {
+    "k": "hazard.overheat.safety.2",
+    "ru": "🔴 Baar baar garam ho raha ho to istemaal band karke technician se check karwayein."
+  },
+  {
+    "k": "hazard.repeated_trip.label",
+    "ru": "MCB baar baar trip"
+  },
+  {
+    "k": "hazard.repeated_trip.safety.0",
+    "ru": "🔴 MCB ko baar baar wapas ON MAT karein — yeh fault ka signal hai, isay ignore karna aag ki wajah ban sakta hai."
+  },
+  {
+    "k": "hazard.repeated_trip.safety.1",
+    "ru": "🔴 Us circuit ke saare appliances unplug karein."
+  },
+  {
+    "k": "hazard.repeated_trip.safety.2",
+    "ru": "🔴 Licensed electrician se DB check karwayein — khud DB mat kholein."
+  },
+  {
+    "k": "hazard_default_checks.0",
+    "ru": "Appliance ka istemaal FORAN band kar dein — aage koi bhi test khud na karein."
+  },
+  {
+    "k": "hazard_default_checks.1",
+    "ru": "Uska MCB / switch off karein aur plug nikaal dein (haath sookhe hon)."
+  },
+  {
+    "k": "hazard_default_checks.2",
+    "ru": "Ghar walon, khaas taur par bachon ko us jagah se door rakhein."
+  },
+  {
+    "k": "hazard_default_checks.3",
+    "ru": "Door se photo/video bana lein taake technician ko dikha sakein — qareeb na jayein."
+  },
+  {
+    "k": "hazard_default_checks.4",
+    "ru": "Technician aane tak dobara ON KABHI na karein."
+  },
+  {
+    "k": "ac.common_safety.0",
+    "ru": "AC ka MCB / isolator band karein pehle — AC 220V par chalta hai."
+  },
+  {
+    "k": "ac.common_safety.1",
+    "ru": "Indoor ya outdoor panel khud mat kholein — andar capacitor charge rehta hai."
+  },
+  {
+    "k": "ac.common_safety.2",
+    "ru": "Outdoor unit chhat/deewar par ho to bina safety ke us tak mat charhein."
+  },
+  {
+    "k": "ac.cooling_weak.label",
+    "ru": "Thanda nahi kar raha / cooling weak"
+  },
+  {
+    "k": "ac.cooling_weak.checks.0",
+    "ru": "Indoor filter nikaal kar pani se dhoein aur sukha kar wapas lagayein — gandi filter cooling 30–40% tak gira deti hai."
+  },
+  {
+    "k": "ac.cooling_weak.checks.1",
+    "ru": "Remote COOL mode par ho (FAN/DRY par nahi) aur temperature 18–22°C set karein."
+  },
+  {
+    "k": "ac.cooling_weak.checks.2",
+    "ru": "Fan speed HIGH par rakhein aur 'Turbo/Powerful' on karein."
+  },
+  {
+    "k": "ac.cooling_weak.checks.3",
+    "ru": "Outdoor unit ke aage-peeche kam az kam 1 foot jagah clear karein — kapra, gamla ya deewar hawa block na kare."
+  },
+  {
+    "k": "ac.cooling_weak.checks.4",
+    "ru": "Outdoor unit ka fan ghoom raha hai? Na ghoome to compressor load nahi le raha — foran band karein."
+  },
+  {
+    "k": "ac.cooling_weak.checks.5",
+    "ru": "Kamre ke darwaze/khirkiyan band karke 20 minute chalayein, phir grill se nikalne wali hawa check karein."
+  },
+  {
+    "k": "ac.cooling_weak.safety.0",
+    "ru": "Gas refill KHUD kabhi mat karein — yeh sirf certified HVAC technician ka kaam hai."
+  },
+  {
+    "k": "ac.cooling_weak.safety.1",
+    "ru": "Outdoor unit par cover chadha kar AC mat chalayein."
+  },
+  {
+    "k": "ac.cooling_weak.issue.0.title",
+    "ru": "Filter/Coil gandi — General Service"
+  },
+  {
+    "k": "ac.cooling_weak.issue.0.cause",
+    "ru": "indoor aur outdoor coil par mitti jam gai hai, is liye heat bahar nahi nikal rahi"
+  },
+  {
+    "k": "ac.cooling_weak.issue.1.title",
+    "ru": "Gas kam ho gai — Refill (Non-inverter R22)"
+  },
+  {
+    "k": "ac.cooling_weak.issue.1.cause",
+    "ru": "refrigerant level gir gaya hai ya koi slow leak hai"
+  },
+  {
+    "k": "ac.cooling_weak.issue.2.title",
+    "ru": "Gas kam ho gai — Refill (Inverter R410A/R32)"
+  },
+  {
+    "k": "ac.cooling_weak.issue.2.cause",
+    "ru": "inverter AC hai to gas aur charging dono mehngi parti hain"
+  },
+  {
+    "k": "ac.cooling_weak.issue.3.title",
+    "ru": "Compressor weak / kharab"
+  },
+  {
+    "k": "ac.cooling_weak.issue.3.cause",
+    "ru": "compressor pressure hi nahi bana raha — yeh sab se mehnga case hai"
+  },
+  {
+    "k": "ac.dead.label",
+    "ru": "Bilkul chal nahi raha"
+  },
+  {
+    "k": "ac.dead.checks.0",
+    "ru": "AC wala MCB / isolator ON hai? DB board par jaa kar confirm karein."
+  },
+  {
+    "k": "ac.dead.checks.1",
+    "ru": "Remote mein naye cell daal kar dekhein — display aata hai ya nahi?"
+  },
+  {
+    "k": "ac.dead.checks.2",
+    "ru": "Us socket mein koi doosra appliance laga kar test karein ke point mein current hai."
+  },
+  {
+    "k": "ac.dead.checks.3",
+    "ru": "Stabilizer laga ho to usay bypass karke direct try karein."
+  },
+  {
+    "k": "ac.dead.checks.4",
+    "ru": "Indoor unit se koi beep ya blinking light aaye to uska pattern note karein — yeh error code hota hai."
+  },
+  {
+    "k": "ac.dead.issue.0.title",
+    "ru": "AC ka point / socket kharab"
+  },
+  {
+    "k": "ac.dead.issue.0.cause",
+    "ru": "AC ka dedicated point ya socket fault hai, unit tak supply hi nahi pohanch rahi"
+  },
+  {
+    "k": "ac.dead.issue.1.title",
+    "ru": "Capacitor kharab"
+  },
+  {
+    "k": "ac.dead.issue.1.cause",
+    "ru": "start capacitor fail ho gaya hai, is liye compressor start hi nahi ho raha"
+  },
+  {
+    "k": "ac.dead.issue.2.title",
+    "ru": "PCB / Control board dead"
+  },
+  {
+    "k": "ac.dead.issue.2.cause",
+    "ru": "control board hi kaam nahi kar raha, unit koi command nahi le rahi"
+  },
+  {
+    "k": "ac.water_leak.label",
+    "ru": "Indoor unit se pani tapak raha hai"
+  },
+  {
+    "k": "ac.water_leak.checks.0",
+    "ru": "Drain pipe ka bahar wala sira dekhein — pani aa raha hai ya bilkul ruk gaya hai?"
+  },
+  {
+    "k": "ac.water_leak.checks.1",
+    "ru": "Drain pipe ko halka pressure/blow de kar saaf karein — 90% cases mein blockage hi wajah hoti hai."
+  },
+  {
+    "k": "ac.water_leak.checks.2",
+    "ru": "Indoor unit seedhi (level) lagi hai? Tedhi hone se pani galat side gir jata hai."
+  },
+  {
+    "k": "ac.water_leak.checks.3",
+    "ru": "Coil par barf jami hai? Yeh gandi filter ya kam gas ki nishani hai."
+  },
+  {
+    "k": "ac.water_leak.checks.4",
+    "ru": "Pani kisi socket, switch board ya extension ke qareeb gir raha ho to us hisse ka MCB foran band karein."
+  },
+  {
+    "k": "ac.water_leak.safety.0",
+    "ru": "Tapakne wale pani ke neeche baalti rakhein aur farsh sukha rakhein — phisalne ka khatra hai."
+  },
+  {
+    "k": "ac.water_leak.issue.0.title",
+    "ru": "Drain pipe blockage"
+  },
+  {
+    "k": "ac.water_leak.issue.0.cause",
+    "ru": "nikaas wali pipe mein mitti/algae jam gai hai is liye pani wapas indoor mein aa raha hai"
+  },
+  {
+    "k": "ac.water_leak.issue.1.title",
+    "ru": "Drain pan crack / choke"
+  },
+  {
+    "k": "ac.water_leak.issue.1.cause",
+    "ru": "pani jama karne wali tray tooti ya choke ho gai hai"
+  },
+  {
+    "k": "ac.noise.label",
+    "ru": "Awaz / vibration aa rahi hai"
+  },
+  {
+    "k": "ac.noise.checks.0",
+    "ru": "Awaz indoor se aa rahi hai ya outdoor se — pehle yeh confirm karein."
+  },
+  {
+    "k": "ac.noise.checks.1",
+    "ru": "Outdoor unit ke fan ke aas paas patte, kachra ya koi cheez phansi hai? Band karke dekhein."
+  },
+  {
+    "k": "ac.noise.checks.2",
+    "ru": "Outdoor unit ka bracket/stand hil raha hai? Screws dheele ho sakte hain."
+  },
+  {
+    "k": "ac.noise.checks.3",
+    "ru": "Indoor blower se 'khat khat' aaye to blower wheel par jama mitti wajah hoti hai."
+  },
+  {
+    "k": "ac.noise.checks.4",
+    "ru": "Awaz ke saath jalne ki smell bhi ho to AC foran band karein aur khud kuch mat karein."
+  },
+  {
+    "k": "ac.noise.issue.0.title",
+    "ru": "Outdoor unit ka bracket dheela"
+  },
+  {
+    "k": "ac.noise.issue.0.cause",
+    "ru": "mounting bracket dheela hone se poora unit vibrate kar raha hai"
+  },
+  {
+    "k": "ac.noise.issue.1.title",
+    "ru": "Outdoor fan motor kharab"
+  },
+  {
+    "k": "ac.noise.issue.1.cause",
+    "ru": "fan motor ki bearing kharab hai, is liye ghoomte waqt awaz aa rahi hai"
+  },
+  {
+    "k": "ac.error_code.label",
+    "ru": "Error code / blinking light"
+  },
+  {
+    "k": "ac.error_code.checks.0",
+    "ru": "Blinking pattern ya display par likha code note karein — technician isi se fault pakarta hai."
+  },
+  {
+    "k": "ac.error_code.checks.1",
+    "ru": "MCB 2 minute off karke ek dafa power cycle karein."
+  },
+  {
+    "k": "ac.error_code.checks.2",
+    "ru": "Remote ke cell badal kar dekhein."
+  },
+  {
+    "k": "ac.error_code.checks.3",
+    "ru": "Code phir bhi aaye to AC chalana band karein — PCB/sensor fault hai."
+  },
+  {
+    "k": "ac.error_code.issue.0.title",
+    "ru": "Temperature sensor kharab"
+  },
+  {
+    "k": "ac.error_code.issue.0.cause",
+    "ru": "sensor galat reading de raha hai is liye board error dikha raha hai"
+  },
+  {
+    "k": "ac.error_code.issue.1.title",
+    "ru": "PCB / Control board fault"
+  },
+  {
+    "k": "ac.error_code.issue.1.cause",
+    "ru": "main control board mein fault hai, repair ya replacement chahiye"
+  },
+  {
+    "k": "ac.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / spark"
+  },
+  {
+    "k": "ac.burnt.checks.0",
+    "ru": "AC aur uska MCB foran band karein — dobara ON na karein."
+  },
+  {
+    "k": "ac.burnt.checks.1",
+    "ru": "Smell/dhuwa indoor se hai ya outdoor se, door se dekh kar note karein."
+  },
+  {
+    "k": "ac.burnt.checks.2",
+    "ru": "Us circuit par doosra bhaari appliance bhi na lagayein."
+  },
+  {
+    "k": "ac.burnt.issue.0.title",
+    "ru": "Capacitor jal gaya"
+  },
+  {
+    "k": "ac.burnt.issue.0.cause",
+    "ru": "capacitor phat ya jal gaya hai — is se dhuwa aur smell aati hai"
+  },
+  {
+    "k": "ac.burnt.issue.1.title",
+    "ru": "PCB jal gaya"
+  },
+  {
+    "k": "ac.burnt.issue.1.cause",
+    "ru": "control board par carbon/jalne ke nishan hain"
+  },
+  {
+    "k": "ac.burnt.issue.2.title",
+    "ru": "Compressor winding jal gai"
+  },
+  {
+    "k": "ac.burnt.issue.2.cause",
+    "ru": "compressor ki winding short ho gai hai — sab se bara nuksan"
+  },
+  {
+    "k": "fridge.common_safety.0",
+    "ru": "Fridge ka plug nikaal kar hi peechay ya andar koi cheez check karein."
+  },
+  {
+    "k": "fridge.common_safety.1",
+    "ru": "Peechay lagi black coil (condenser) garam hoti hai — chhote bachon ko door rakhein."
+  },
+  {
+    "k": "fridge.common_safety.2",
+    "ru": "Fridge ko deewar se 4–6 inch door rakhein warna compressor par load barhta hai."
+  },
+  {
+    "k": "fridge.cooling_weak.label",
+    "ru": "Thanda nahi kar raha"
+  },
+  {
+    "k": "fridge.cooling_weak.checks.0",
+    "ru": "Thermostat/temperature knob check karein — kahin 0 ya 'min' par set na ho."
+  },
+  {
+    "k": "fridge.cooling_weak.checks.1",
+    "ru": "Freezer thanda hai magar neeche wala hissa nahi? To yeh fan/air-flow ka masla hai, gas ka nahi."
+  },
+  {
+    "k": "fridge.cooling_weak.checks.2",
+    "ru": "Door ki rubber (gasket) check karein — kaghaz darwaze mein daba kar kheenchein, aasani se nikal jaye to gasket dheeli hai."
+  },
+  {
+    "k": "fridge.cooling_weak.checks.3",
+    "ru": "Peechay lagi coil aur fan par jami mitti saaf karein (plug nikaal kar)."
+  },
+  {
+    "k": "fridge.cooling_weak.checks.4",
+    "ru": "Fridge zaroorat se zyada bhara hua hai? Andar hawa ka guzar hona zaroori hai."
+  },
+  {
+    "k": "fridge.cooling_weak.checks.5",
+    "ru": "Plug nikaal kar 4 ghante band rakhein (defrost), phir chala kar 6–8 ghante baad dobara check karein."
+  },
+  {
+    "k": "fridge.cooling_weak.issue.0.title",
+    "ru": "Coil safai + general service"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.0.cause",
+    "ru": "condenser coil aur fan par jami mitti se cooling gir jati hai"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.1.title",
+    "ru": "Gas kam ho gai — Refill"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.1.cause",
+    "ru": "refrigerant kam hai ya line mein slow leak hai"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.2.title",
+    "ru": "Thermostat / sensor kharab"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.2.cause",
+    "ru": "thermostat compressor ko chalne ka signal theek se nahi de raha"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.3.title",
+    "ru": "Compressor weak / kharab"
+  },
+  {
+    "k": "fridge.cooling_weak.issue.3.cause",
+    "ru": "compressor pressure nahi bana raha — sab se mehnga case"
+  },
+  {
+    "k": "fridge.dead.label",
+    "ru": "Bilkul chal nahi raha"
+  },
+  {
+    "k": "fridge.dead.checks.0",
+    "ru": "Socket mein doosra appliance laga kar dekhein ke point mein current hai."
+  },
+  {
+    "k": "fridge.dead.checks.1",
+    "ru": "Fridge ka plug aur wire kahin jala ya pighla hua nahi?"
+  },
+  {
+    "k": "fridge.dead.checks.2",
+    "ru": "Andar ki light jal rahi hai magar compressor nahi chal raha? To supply theek hai, fault andar hai."
+  },
+  {
+    "k": "fridge.dead.checks.3",
+    "ru": "Stabilizer laga ho to usay bypass karke direct socket par try karein."
+  },
+  {
+    "k": "fridge.dead.issue.0.title",
+    "ru": "Socket / point kharab"
+  },
+  {
+    "k": "fridge.dead.issue.0.cause",
+    "ru": "jis socket par fridge laga hai wahan supply nahi aa rahi"
+  },
+  {
+    "k": "fridge.dead.issue.1.title",
+    "ru": "Relay / capacitor kharab"
+  },
+  {
+    "k": "fridge.dead.issue.1.cause",
+    "ru": "compressor ka starting relay ya capacitor fail ho gaya hai"
+  },
+  {
+    "k": "fridge.dead.issue.2.title",
+    "ru": "Compressor seize ho gaya"
+  },
+  {
+    "k": "fridge.dead.issue.2.cause",
+    "ru": "compressor jam ho gaya hai, sirf hum ki awaz aati hai"
+  },
+  {
+    "k": "fridge.ice_forming.label",
+    "ru": "Zyada barf jam rahi hai"
+  },
+  {
+    "k": "fridge.ice_forming.checks.0",
+    "ru": "Plug nikaal kar poori barf pighalne dein (manual defrost) — barf khurchne ke liye chaqu/screwdriver KABHI istemaal na karein."
+  },
+  {
+    "k": "fridge.ice_forming.checks.1",
+    "ru": "Door gasket theek band ho raha hai? Garam nam hawa andar aaye to barf zyada jamti hai."
+  },
+  {
+    "k": "fridge.ice_forming.checks.2",
+    "ru": "Freezer mein garam khana ya khuli cheezain rakhna barf barha deta hai."
+  },
+  {
+    "k": "fridge.ice_forming.checks.3",
+    "ru": "Defrost ke baad bhi 24 ghante mein wapas barf jame to defrost system ka fault hai."
+  },
+  {
+    "k": "fridge.ice_forming.issue.0.title",
+    "ru": "Defrost timer / heater kharab"
+  },
+  {
+    "k": "fridge.ice_forming.issue.0.cause",
+    "ru": "auto-defrost system kaam nahi kar raha is liye barf jamti ja rahi hai"
+  },
+  {
+    "k": "fridge.ice_forming.issue.1.title",
+    "ru": "Door gasket replace"
+  },
+  {
+    "k": "fridge.ice_forming.issue.1.cause",
+    "ru": "darwaze ki rubber dheeli hone se nam hawa andar aa rahi hai"
+  },
+  {
+    "k": "fridge.water_leak.label",
+    "ru": "Fridge se pani nikal raha hai"
+  },
+  {
+    "k": "fridge.water_leak.checks.0",
+    "ru": "Fridge ke andar peechay neeche wala drain hole check karein — usmein barf ya kachra jam jata hai."
+  },
+  {
+    "k": "fridge.water_leak.checks.1",
+    "ru": "Peechay neeche rakhi drip tray bhari hui ya darari wali hai?"
+  },
+  {
+    "k": "fridge.water_leak.checks.2",
+    "ru": "Pani farsh par bijli ke socket ya extension ke paas jama ho to us hisse ka MCB band karein."
+  },
+  {
+    "k": "fridge.water_leak.checks.3",
+    "ru": "Fridge level (seedha) khara hai? Tedha hone se pani ghalat side behta hai."
+  },
+  {
+    "k": "fridge.water_leak.issue.0.title",
+    "ru": "Drain line blockage"
+  },
+  {
+    "k": "fridge.water_leak.issue.0.cause",
+    "ru": "defrost ka pani nikalne wali line barf/kachre se band hai"
+  },
+  {
+    "k": "fridge.water_leak.issue.1.title",
+    "ru": "Drip tray crack / replace"
+  },
+  {
+    "k": "fridge.water_leak.issue.1.cause",
+    "ru": "pani jama karne wali tray toot gai hai"
+  },
+  {
+    "k": "fridge.noise.label",
+    "ru": "Awaz aa rahi hai"
+  },
+  {
+    "k": "fridge.noise.checks.0",
+    "ru": "Fridge ke chaar paun barabar farsh par hain? Tedha hone se vibration hoti hai."
+  },
+  {
+    "k": "fridge.noise.checks.1",
+    "ru": "Peechay compressor ke rubber mounts dheele ho sakte hain — plug nikaal kar dekhein."
+  },
+  {
+    "k": "fridge.noise.checks.2",
+    "ru": "Freezer ke andar fan se 'khat khat' aa rahi ho to blade par barf lagi hoti hai."
+  },
+  {
+    "k": "fridge.noise.checks.3",
+    "ru": "Fridge deewar se rag raha ho to 4–6 inch door karein."
+  },
+  {
+    "k": "fridge.noise.issue.0.title",
+    "ru": "Compressor mounts / general service"
+  },
+  {
+    "k": "fridge.noise.issue.0.cause",
+    "ru": "compressor ke rubber mounts ghis gaye hain"
+  },
+  {
+    "k": "fridge.noise.issue.1.title",
+    "ru": "Freezer fan motor kharab"
+  },
+  {
+    "k": "fridge.noise.issue.1.cause",
+    "ru": "andar wale fan ki bearing kharab hai"
+  },
+  {
+    "k": "fridge.burnt.label",
+    "ru": "Dhuwa / jalne ki smell"
+  },
+  {
+    "k": "fridge.burnt.checks.0",
+    "ru": "Plug foran nikaal dein aur us socket ka MCB band karein."
+  },
+  {
+    "k": "fridge.burnt.checks.1",
+    "ru": "Fridge dobara ON na karein — khana doosri jagah shift kar lein."
+  },
+  {
+    "k": "fridge.burnt.checks.2",
+    "ru": "Peechay ke hisse ko haath na lagayein, garam ho sakta hai."
+  },
+  {
+    "k": "fridge.burnt.issue.0.title",
+    "ru": "Relay / capacitor jal gaya"
+  },
+  {
+    "k": "fridge.burnt.issue.0.cause",
+    "ru": "starting relay ya capacitor short ho kar jal gaya hai"
+  },
+  {
+    "k": "fridge.burnt.issue.1.title",
+    "ru": "Compressor winding jal gai"
+  },
+  {
+    "k": "fridge.burnt.issue.1.cause",
+    "ru": "compressor ki winding short ho gai hai"
+  },
+  {
+    "k": "fan.common_safety.0",
+    "ru": "Fan ka switch aur uska MCB dono band karein — sirf regulator off karna kaafi nahi."
+  },
+  {
+    "k": "fan.common_safety.1",
+    "ru": "Chhat wala fan check karne ke liye mazboot seerhi aur kisi doosre banday ki madad lein."
+  },
+  {
+    "k": "fan.common_safety.2",
+    "ru": "Fan ghoomte waqt blade ke qareeb haath ya jharoo mat le jayein."
+  },
+  {
+    "k": "fan.slow.label",
+    "ru": "Slow chal raha hai / speed kam hai"
+  },
+  {
+    "k": "fan.slow.checks.0",
+    "ru": "Regulator ko full par karke dekhein — kya speed mein koi farq aata hai?"
+  },
+  {
+    "k": "fan.slow.checks.1",
+    "ru": "Blade par jami mitti geele kapre se saaf karein — bhaari mitti se speed ganti hai."
+  },
+  {
+    "k": "fan.slow.checks.2",
+    "ru": "Fan ke center (motor) ko haath laga kar dekhein — zyada garam hai to motor par load hai."
+  },
+  {
+    "k": "fan.slow.checks.3",
+    "ru": "Ghar ke doosre fan bhi slow hain? To yeh voltage ka masla hai, fan ka nahi."
+  },
+  {
+    "k": "fan.slow.checks.4",
+    "ru": "Fan ko haath se ghumayein (switch OFF karke) — free na ghoome to bearing jam ho rahi hai."
+  },
+  {
+    "k": "fan.slow.checks.5",
+    "ru": "Fan start hone mein waqt le raha hai ya hum karta hai? Yeh capacitor weak hone ki classic nishani hai."
+  },
+  {
+    "k": "fan.slow.issue.0.title",
+    "ru": "Bearing dry — oiling / servicing"
+  },
+  {
+    "k": "fan.slow.issue.0.cause",
+    "ru": "motor ki bearing sookh gai hai is liye motor poori speed nahi utha raha"
+  },
+  {
+    "k": "fan.slow.issue.1.title",
+    "ru": "Capacitor weak / kharab"
+  },
+  {
+    "k": "fan.slow.issue.1.cause",
+    "ru": "starting capacitor ki value gir gai hai — sab se aam wajah"
+  },
+  {
+    "k": "fan.slow.issue.2.title",
+    "ru": "Regulator / Dimmer kharab"
+  },
+  {
+    "k": "fan.slow.issue.2.cause",
+    "ru": "regulator andar se kharab hai is liye poora voltage pass nahi kar raha"
+  },
+  {
+    "k": "fan.slow.issue.3.title",
+    "ru": "Motor rewinding"
+  },
+  {
+    "k": "fan.slow.issue.3.cause",
+    "ru": "motor ki winding weak ho gai hai, dobara winding karwani paregi"
+  },
+  {
+    "k": "fan.dead.label",
+    "ru": "Bilkul nahi ghoom raha"
+  },
+  {
+    "k": "fan.dead.checks.0",
+    "ru": "Deewar ka switch aur regulator dono ON hain? Ek ek karke check karein."
+  },
+  {
+    "k": "fan.dead.checks.1",
+    "ru": "Ussi board ka doosra switch (light) kaam kar raha hai? Nahi to poora point dead hai."
+  },
+  {
+    "k": "fan.dead.checks.2",
+    "ru": "Switch OFF karke fan ko haath se ghumayein — jam hai ya free ghoomta hai?"
+  },
+  {
+    "k": "fan.dead.checks.3",
+    "ru": "Fan se hum ki halki awaz aati hai magar ghoomta nahi? To capacitor gaya hua hai."
+  },
+  {
+    "k": "fan.dead.checks.4",
+    "ru": "MCB check karein — kahin fan wala circuit trip na ho gaya ho."
+  },
+  {
+    "k": "fan.dead.issue.0.title",
+    "ru": "Capacitor kharab"
+  },
+  {
+    "k": "fan.dead.issue.0.cause",
+    "ru": "capacitor fail hone se motor ko starting torque nahi mil raha"
+  },
+  {
+    "k": "fan.dead.issue.1.title",
+    "ru": "Switch / point kharab"
+  },
+  {
+    "k": "fan.dead.issue.1.cause",
+    "ru": "deewar ka switch ya point fault hai, fan tak supply nahi pohanch rahi"
+  },
+  {
+    "k": "fan.dead.issue.2.title",
+    "ru": "Motor jam / replace"
+  },
+  {
+    "k": "fan.dead.issue.2.cause",
+    "ru": "motor seize ho gaya hai, naya motor lagana paregi"
+  },
+  {
+    "k": "fan.dead.issue.3.title",
+    "ru": "Poora fan replace"
+  },
+  {
+    "k": "fan.dead.issue.3.cause",
+    "ru": "fan purana hai, repair se zyada nayi unit behtar rahegi"
+  },
+  {
+    "k": "fan.noise.label",
+    "ru": "Awaz aa rahi hai"
+  },
+  {
+    "k": "fan.noise.checks.0",
+    "ru": "Awaz motor se aa rahi hai ya blade/bracket se? Fan slow speed par chala kar suno."
+  },
+  {
+    "k": "fan.noise.checks.1",
+    "ru": "Blade ke screws aur bracket ke nuts tight karein (fan band karke)."
+  },
+  {
+    "k": "fan.noise.checks.2",
+    "ru": "Blade ke kinare kisi cheez se rag rahe hain? Chhat/light shade se clearance dekhein."
+  },
+  {
+    "k": "fan.noise.checks.3",
+    "ru": "'Chuun chuun' jaisi awaz bearing sookhne ki nishani hai."
+  },
+  {
+    "k": "fan.noise.checks.4",
+    "ru": "Awaz ke saath jalne ki smell bhi aaye to fan foran band karein."
+  },
+  {
+    "k": "fan.noise.issue.0.title",
+    "ru": "Bearing oiling / tightening"
+  },
+  {
+    "k": "fan.noise.issue.0.cause",
+    "ru": "bearing sookhi hui hai ya screws dheele hain"
+  },
+  {
+    "k": "fan.noise.issue.1.title",
+    "ru": "Motor bearing replace"
+  },
+  {
+    "k": "fan.noise.issue.1.cause",
+    "ru": "bearing ghis chuki hai, motor unit badalni paregi"
+  },
+  {
+    "k": "fan.wobble.label",
+    "ru": "Hil raha hai / jhool raha hai"
+  },
+  {
+    "k": "fan.wobble.checks.0",
+    "ru": "Fan band karke chaaron blade ke screws tight karein."
+  },
+  {
+    "k": "fan.wobble.checks.1",
+    "ru": "Har blade ka chhat se faasla naapein — koi blade neeche/ooper ho to usay halka mod kar barabar karein."
+  },
+  {
+    "k": "fan.wobble.checks.2",
+    "ru": "Down-rod aur canopy ke nuts check karein — hook par fan dheela na latka ho."
+  },
+  {
+    "k": "fan.wobble.checks.3",
+    "ru": "Blade ek ek kar ke saaf karein — ek blade par zyada mitti bhi wobble karti hai."
+  },
+  {
+    "k": "fan.wobble.checks.4",
+    "ru": "Chhat ka hook ya bracket hilta mehsoos ho to fan foran band karein — girne ka khatra hai."
+  },
+  {
+    "k": "fan.wobble.safety.0",
+    "ru": "Zyada jhoolne wale fan ke neeche na baithein aur usay band rakhein jab tak theek na ho."
+  },
+  {
+    "k": "fan.wobble.issue.0.title",
+    "ru": "Blade balancing + tightening"
+  },
+  {
+    "k": "fan.wobble.issue.0.cause",
+    "ru": "blade barabar nahi hain ya screws dheele hain"
+  },
+  {
+    "k": "fan.wobble.issue.1.title",
+    "ru": "Down-rod / bracket ki dobara fitting"
+  },
+  {
+    "k": "fan.wobble.issue.1.cause",
+    "ru": "chhat ka bracket ya down-rod dheela hai — girne ka khatra"
+  },
+  {
+    "k": "fan.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / spark"
+  },
+  {
+    "k": "fan.burnt.checks.0",
+    "ru": "Fan ka switch aur uska MCB dono foran band karein."
+  },
+  {
+    "k": "fan.burnt.checks.1",
+    "ru": "Fan dobara ON na karein, chahe smell chali jaye."
+  },
+  {
+    "k": "fan.burnt.checks.2",
+    "ru": "Deewar ka switch board bhi garam ya kala pad gaya hai? Us circuit ka MCB band rakhein."
+  },
+  {
+    "k": "fan.burnt.issue.0.title",
+    "ru": "Capacitor jal gaya"
+  },
+  {
+    "k": "fan.burnt.issue.0.cause",
+    "ru": "capacitor short ho kar jal gaya hai — dhuwa aur smell ki aam wajah"
+  },
+  {
+    "k": "fan.burnt.issue.1.title",
+    "ru": "Motor winding jal gai — Rewinding"
+  },
+  {
+    "k": "fan.burnt.issue.1.cause",
+    "ru": "motor ki winding short ho gai hai"
+  },
+  {
+    "k": "fan.burnt.issue.2.title",
+    "ru": "Point ki wiring jal gai"
+  },
+  {
+    "k": "fan.burnt.issue.2.cause",
+    "ru": "fan ke point ki wiring overheat ho kar jal gai hai"
+  },
+  {
+    "k": "exhaust_fan.common_safety.0",
+    "ru": "Exhaust fan ka switch aur MCB band karke hi haath lagayein."
+  },
+  {
+    "k": "exhaust_fan.common_safety.1",
+    "ru": "Bathroom/kitchen mein namee hoti hai — geele haath se switch mat chhuein."
+  },
+  {
+    "k": "exhaust_fan.common_safety.2",
+    "ru": "Bahar wali side chhat/deewar par ho to bina safety us tak mat pohanchein."
+  },
+  {
+    "k": "exhaust_fan.dead.label",
+    "ru": "Bilkul chal nahi raha"
+  },
+  {
+    "k": "exhaust_fan.dead.checks.0",
+    "ru": "Uska switch ON hai? Bathroom mein aksar light ke saath ka doosra switch hota hai."
+  },
+  {
+    "k": "exhaust_fan.dead.checks.1",
+    "ru": "Switch OFF karke blade ko haath se ghumayein — namee se bearing jam ho jati hai."
+  },
+  {
+    "k": "exhaust_fan.dead.checks.2",
+    "ru": "Blade aur shutter par jama chikni mitti/grease saaf karein."
+  },
+  {
+    "k": "exhaust_fan.dead.checks.3",
+    "ru": "Ussi board ke doosre switch kaam kar rahe hain? Nahi to point dead hai."
+  },
+  {
+    "k": "exhaust_fan.dead.issue.0.title",
+    "ru": "Switch / point kharab"
+  },
+  {
+    "k": "exhaust_fan.dead.issue.0.cause",
+    "ru": "switch ya point fault hai, fan tak supply nahi ja rahi"
+  },
+  {
+    "k": "exhaust_fan.dead.issue.1.title",
+    "ru": "Capacitor kharab"
+  },
+  {
+    "k": "exhaust_fan.dead.issue.1.cause",
+    "ru": "capacitor fail hone se motor start nahi ho raha"
+  },
+  {
+    "k": "exhaust_fan.dead.issue.2.title",
+    "ru": "Motor jam / replace"
+  },
+  {
+    "k": "exhaust_fan.dead.issue.2.cause",
+    "ru": "namee se motor jam ho gaya hai, nayi unit chahiye"
+  },
+  {
+    "k": "exhaust_fan.weak.label",
+    "ru": "Hawa kam kheench raha hai"
+  },
+  {
+    "k": "exhaust_fan.weak.checks.0",
+    "ru": "Blade aur jaali par jami grease/mitti detergent se saaf karein — yeh sab se bari wajah hai."
+  },
+  {
+    "k": "exhaust_fan.weak.checks.1",
+    "ru": "Bahar wale shutter/louver khul rahe hain? Aksar wo jam ho jate hain."
+  },
+  {
+    "k": "exhaust_fan.weak.checks.2",
+    "ru": "Fan ka rukh sahi hai? Ghalat direction par laga fan hawa andar kheenchta hai."
+  },
+  {
+    "k": "exhaust_fan.weak.checks.3",
+    "ru": "Kamre ka darwaza thora khula rakhein — hawa aane ka raasta na ho to exhaust kaam nahi karta."
+  },
+  {
+    "k": "exhaust_fan.weak.issue.0.title",
+    "ru": "Safai + shutter servicing"
+  },
+  {
+    "k": "exhaust_fan.weak.issue.0.cause",
+    "ru": "blade aur shutter par grease jam gai hai"
+  },
+  {
+    "k": "exhaust_fan.weak.issue.1.title",
+    "ru": "Capacitor weak"
+  },
+  {
+    "k": "exhaust_fan.weak.issue.1.cause",
+    "ru": "capacitor weak hone se speed gir gai hai"
+  },
+  {
+    "k": "exhaust_fan.noise.label",
+    "ru": "Awaz aa rahi hai"
+  },
+  {
+    "k": "exhaust_fan.noise.checks.0",
+    "ru": "Fan band karke frame ke screws tight karein."
+  },
+  {
+    "k": "exhaust_fan.noise.checks.1",
+    "ru": "Blade kisi taraf frame se rag raha hai? Ghumakar dekhein."
+  },
+  {
+    "k": "exhaust_fan.noise.checks.2",
+    "ru": "Shutter hawa se 'khat khat' kar raha ho to usay halka tight karein."
+  },
+  {
+    "k": "exhaust_fan.noise.checks.3",
+    "ru": "Awaz motor se ho aur saath garmi/smell ho to foran band karein."
+  },
+  {
+    "k": "exhaust_fan.noise.issue.0.title",
+    "ru": "Frame tightening / servicing"
+  },
+  {
+    "k": "exhaust_fan.noise.issue.0.cause",
+    "ru": "frame ya blade dheele hain"
+  },
+  {
+    "k": "exhaust_fan.noise.issue.1.title",
+    "ru": "Motor bearing replace"
+  },
+  {
+    "k": "exhaust_fan.noise.issue.1.cause",
+    "ru": "bearing ghis chuki hai"
+  },
+  {
+    "k": "exhaust_fan.burnt.label",
+    "ru": "Dhuwa / jalne ki smell"
+  },
+  {
+    "k": "exhaust_fan.burnt.checks.0",
+    "ru": "Switch aur MCB foran band karein."
+  },
+  {
+    "k": "exhaust_fan.burnt.checks.1",
+    "ru": "Dobara chalu na karein — motor short ho sakta hai."
+  },
+  {
+    "k": "exhaust_fan.burnt.checks.2",
+    "ru": "Namee wali jagah hai, is liye khud wiring ko haath na lagayein."
+  },
+  {
+    "k": "exhaust_fan.burnt.issue.0.title",
+    "ru": "Capacitor jal gaya"
+  },
+  {
+    "k": "exhaust_fan.burnt.issue.0.cause",
+    "ru": "capacitor short ho gaya hai"
+  },
+  {
+    "k": "exhaust_fan.burnt.issue.1.title",
+    "ru": "Motor jal gaya — replace"
+  },
+  {
+    "k": "exhaust_fan.burnt.issue.1.cause",
+    "ru": "motor winding short ho gai hai"
+  },
+  {
+    "k": "air_cooler.common_safety.0",
+    "ru": "Cooler mein pani aur bijli saath hoti hai — plug nikaal kar hi pani daalein ya safai karein."
+  },
+  {
+    "k": "air_cooler.common_safety.1",
+    "ru": "Cooler ka plug 3-pin earthed socket mein hi lagayein."
+  },
+  {
+    "k": "air_cooler.common_safety.2",
+    "ru": "Geele haath se cooler ka switch ya plug kabhi na chhuein."
+  },
+  {
+    "k": "air_cooler.dead.label",
+    "ru": "Bilkul chal nahi raha"
+  },
+  {
+    "k": "air_cooler.dead.checks.0",
+    "ru": "Socket mein doosra appliance laga kar dekhein ke current aa raha hai."
+  },
+  {
+    "k": "air_cooler.dead.checks.1",
+    "ru": "Cooler ka wire aur plug kahin kata ya jala hua nahi?"
+  },
+  {
+    "k": "air_cooler.dead.checks.2",
+    "ru": "Plug nikaal kar blower/fan ko haath se ghumayein — jam ho sakta hai."
+  },
+  {
+    "k": "air_cooler.dead.checks.3",
+    "ru": "Cooler ke apne switch (fan + pump alag hote hain) dono check karein."
+  },
+  {
+    "k": "air_cooler.dead.issue.0.title",
+    "ru": "Plug / wire / socket kharab"
+  },
+  {
+    "k": "air_cooler.dead.issue.0.cause",
+    "ru": "supply hi cooler tak nahi pohanch rahi"
+  },
+  {
+    "k": "air_cooler.dead.issue.1.title",
+    "ru": "Capacitor kharab"
+  },
+  {
+    "k": "air_cooler.dead.issue.1.cause",
+    "ru": "capacitor fail hone se blower motor start nahi ho raha"
+  },
+  {
+    "k": "air_cooler.dead.issue.2.title",
+    "ru": "Blower motor kharab"
+  },
+  {
+    "k": "air_cooler.dead.issue.2.cause",
+    "ru": "motor jam ya jal gaya hai"
+  },
+  {
+    "k": "air_cooler.cooling_weak.label",
+    "ru": "Thandi hawa nahi de raha"
+  },
+  {
+    "k": "air_cooler.cooling_weak.checks.0",
+    "ru": "Tank mein pani poora hai? Kam pani par pump hawa kheenchne lagta hai."
+  },
+  {
+    "k": "air_cooler.cooling_weak.checks.1",
+    "ru": "Pads (grass/honeycomb) geele ho rahe hain? Sookhe pads bilkul cooling nahi dete."
+  },
+  {
+    "k": "air_cooler.cooling_weak.checks.2",
+    "ru": "Pani ki chhoti motor chal rahi hai? Uski halki hum ki awaz sunein."
+  },
+  {
+    "k": "air_cooler.cooling_weak.checks.3",
+    "ru": "Pads par jama safed calcium/mitti saaf karein ya pads badlein."
+  },
+  {
+    "k": "air_cooler.cooling_weak.checks.4",
+    "ru": "Cooler khirki ke paas rakhein — band kamre mein cooler kaam nahi karta."
+  },
+  {
+    "k": "air_cooler.cooling_weak.issue.0.title",
+    "ru": "Pads safai / replace + servicing"
+  },
+  {
+    "k": "air_cooler.cooling_weak.issue.0.cause",
+    "ru": "pads par calcium jam gaya hai ya pads purane ho gaye hain"
+  },
+  {
+    "k": "air_cooler.cooling_weak.issue.1.title",
+    "ru": "Pani ki chhoti motor (pump) kharab"
+  },
+  {
+    "k": "air_cooler.cooling_weak.issue.1.cause",
+    "ru": "cooler ka water pump pani ooper nahi pohancha raha"
+  },
+  {
+    "k": "air_cooler.water_leak.label",
+    "ru": "Pani leak ho raha hai"
+  },
+  {
+    "k": "air_cooler.water_leak.checks.0",
+    "ru": "Cooler ka plug FORAN nikaal dein — pani aur bijli ka combination khatarnak hai."
+  },
+  {
+    "k": "air_cooler.water_leak.checks.1",
+    "ru": "Pani socket, extension ya wire ke qareeb pohancha hai? Us circuit ka MCB band karein."
+  },
+  {
+    "k": "air_cooler.water_leak.checks.2",
+    "ru": "Tank ke neeche ya kinare par darar dekhein."
+  },
+  {
+    "k": "air_cooler.water_leak.checks.3",
+    "ru": "Farsh sukha karein — phisalne aur current dono ka khatra hai."
+  },
+  {
+    "k": "air_cooler.water_leak.issue.0.title",
+    "ru": "Tank / body leak repair"
+  },
+  {
+    "k": "air_cooler.water_leak.issue.0.cause",
+    "ru": "tank ya joint se pani ris raha hai"
+  },
+  {
+    "k": "air_cooler.water_leak.issue.1.title",
+    "ru": "Socket / point ka nuqsan"
+  },
+  {
+    "k": "air_cooler.water_leak.issue.1.cause",
+    "ru": "pani socket tak pohanchne se point kharab ho sakta hai"
+  },
+  {
+    "k": "air_cooler.noise.label",
+    "ru": "Awaz aa rahi hai"
+  },
+  {
+    "k": "air_cooler.noise.checks.0",
+    "ru": "Plug nikaal kar blower wheel ke aas paas koi cheez phansi hai, check karein."
+  },
+  {
+    "k": "air_cooler.noise.checks.1",
+    "ru": "Cooler barabar farsh par khara hai? Tedha hone se vibration hoti hai."
+  },
+  {
+    "k": "air_cooler.noise.checks.2",
+    "ru": "Body ke screws tight karein."
+  },
+  {
+    "k": "air_cooler.noise.checks.3",
+    "ru": "Awaz ke saath jalne ki smell aaye to plug foran nikaalein."
+  },
+  {
+    "k": "air_cooler.noise.issue.0.title",
+    "ru": "Body tightening / servicing"
+  },
+  {
+    "k": "air_cooler.noise.issue.0.cause",
+    "ru": "screws dheele hain ya blower mein kachra hai"
+  },
+  {
+    "k": "air_cooler.noise.issue.1.title",
+    "ru": "Blower motor bearing"
+  },
+  {
+    "k": "air_cooler.noise.issue.1.cause",
+    "ru": "motor ki bearing ghis chuki hai"
+  },
+  {
+    "k": "air_cooler.shock.label",
+    "ru": "Current / shock lag raha hai"
+  },
+  {
+    "k": "air_cooler.shock.checks.0",
+    "ru": "Cooler ko haath na lagayein — pehle us circuit ka MCB band karein, phir plug nikaalein."
+  },
+  {
+    "k": "air_cooler.shock.checks.1",
+    "ru": "Cooler ko khud chalane ki koshish na karein."
+  },
+  {
+    "k": "air_cooler.shock.checks.2",
+    "ru": "Ghar mein earthing aur RCCB hai ya nahi, technician se zaroor puchein."
+  },
+  {
+    "k": "air_cooler.shock.issue.0.title",
+    "ru": "Earthing na hona"
+  },
+  {
+    "k": "air_cooler.shock.issue.0.cause",
+    "ru": "cooler ki body leakage current le rahi hai aur earthing nahi hai"
+  },
+  {
+    "k": "air_cooler.shock.issue.1.title",
+    "ru": "RCCB / safety breaker lagana"
+  },
+  {
+    "k": "air_cooler.shock.issue.1.cause",
+    "ru": "leakage current par supply kaatne wala protection mojood nahi"
+  },
+  {
+    "k": "air_cooler.shock.issue.2.title",
+    "ru": "Motor winding leakage"
+  },
+  {
+    "k": "air_cooler.shock.issue.2.cause",
+    "ru": "motor ki winding body ko touch kar rahi hai"
+  },
+  {
+    "k": "light.common_safety.0",
+    "ru": "Bulb ya tube badalne se pehle deewar ka switch AUR us kamre ka MCB dono band karein."
+  },
+  {
+    "k": "light.common_safety.1",
+    "ru": "Holder ke andar dhaat wale hisse ko ungli se mat chhuein, chahe switch off ho."
+  },
+  {
+    "k": "light.common_safety.2",
+    "ru": "Seerhi mazboot jagah par rakhein — chhat ki light akele khare ho kar mat badlein."
+  },
+  {
+    "k": "light.dead.label",
+    "ru": "Jal nahi rahi"
+  },
+  {
+    "k": "light.dead.checks.0",
+    "ru": "Wahi bulb kisi doosre holder mein laga kar dekhein — bulb kharab hai ya point?"
+  },
+  {
+    "k": "light.dead.checks.1",
+    "ru": "Us board ka doosra switch (fan) kaam kar raha hai? Nahi to poora point dead hai."
+  },
+  {
+    "k": "light.dead.checks.2",
+    "ru": "Holder ke andar kaala/jala nishan ya dheela contact nazar aata hai? (switch OFF karke dekhein)"
+  },
+  {
+    "k": "light.dead.checks.3",
+    "ru": "Tube light hai to uske sire kaale pad gaye hain? Yeh tube khatam hone ki nishani hai."
+  },
+  {
+    "k": "light.dead.checks.4",
+    "ru": "MCB board check karein — kahin light wala circuit trip na ho."
+  },
+  {
+    "k": "light.dead.issue.0.title",
+    "ru": "Bulb / Tube khatam — replace"
+  },
+  {
+    "k": "light.dead.issue.0.cause",
+    "ru": "bulb ya tube ki life poori ho gai hai"
+  },
+  {
+    "k": "light.dead.issue.1.title",
+    "ru": "Tube light unit replace"
+  },
+  {
+    "k": "light.dead.issue.1.cause",
+    "ru": "tube ke saath driver/choke bhi kaam nahi kar raha"
+  },
+  {
+    "k": "light.dead.issue.2.title",
+    "ru": "Switch kharab"
+  },
+  {
+    "k": "light.dead.issue.2.cause",
+    "ru": "deewar ka switch andar se kharab hai"
+  },
+  {
+    "k": "light.dead.issue.3.title",
+    "ru": "Point ki wiring kharab"
+  },
+  {
+    "k": "light.dead.issue.3.cause",
+    "ru": "light ke point ki wiring kat gai hai ya joint khul gaya hai"
+  },
+  {
+    "k": "light.flicker.label",
+    "ru": "Jhilmila rahi hai / baar baar bujhti hai"
+  },
+  {
+    "k": "light.flicker.checks.0",
+    "ru": "Bulb ko holder mein halka tight karein (switch OFF karke) — dheela contact sab se aam wajah hai."
+  },
+  {
+    "k": "light.flicker.checks.1",
+    "ru": "Ghar ki baqi lights bhi jhilmila rahi hain? To yeh voltage ka masla hai."
+  },
+  {
+    "k": "light.flicker.checks.2",
+    "ru": "Ek naya bulb laga kar test karein."
+  },
+  {
+    "k": "light.flicker.checks.3",
+    "ru": "Switch dabate waqt light ka behaviour badalta hai? To switch ka contact ghis gaya hai."
+  },
+  {
+    "k": "light.flicker.checks.4",
+    "ru": "Jhilmilane ke saath 'tik tik' ki awaz ya jalne ki smell ho to us circuit ka MCB band karein."
+  },
+  {
+    "k": "light.flicker.issue.0.title",
+    "ru": "Bulb / holder replace"
+  },
+  {
+    "k": "light.flicker.issue.0.cause",
+    "ru": "bulb weak hai ya holder ka contact dheela hai"
+  },
+  {
+    "k": "light.flicker.issue.1.title",
+    "ru": "Switch replace"
+  },
+  {
+    "k": "light.flicker.issue.1.cause",
+    "ru": "switch ka andar ka contact ghis gaya hai"
+  },
+  {
+    "k": "light.flicker.issue.2.title",
+    "ru": "Point ka loose connection"
+  },
+  {
+    "k": "light.flicker.issue.2.cause",
+    "ru": "point ke joint dheele hain — yeh aage chal kar spark bhi kar sakta hai"
+  },
+  {
+    "k": "light.weak.label",
+    "ru": "Roshni kam ho gai hai"
+  },
+  {
+    "k": "light.weak.checks.0",
+    "ru": "Bulb aur shade par jami mitti saaf karein — 20–30% roshni wapas aa jati hai."
+  },
+  {
+    "k": "light.weak.checks.1",
+    "ru": "Bulb ka watt kam hai? Kamre ke size ke hisab se 12–18W LED behtar hai."
+  },
+  {
+    "k": "light.weak.checks.2",
+    "ru": "Purana LED hai to uske andar ka driver weak ho jata hai — naya bulb laga kar compare karein."
+  },
+  {
+    "k": "light.weak.checks.3",
+    "ru": "Ghar ki saari lights dim hain? To voltage/supply ka masla hai."
+  },
+  {
+    "k": "light.weak.issue.0.title",
+    "ru": "Bulb replace (zyada watt)"
+  },
+  {
+    "k": "light.weak.issue.0.cause",
+    "ru": "bulb purana ya kam watt ka hai"
+  },
+  {
+    "k": "light.weak.issue.1.title",
+    "ru": "Tube light unit replace"
+  },
+  {
+    "k": "light.weak.issue.1.cause",
+    "ru": "tube light ka driver weak ho gaya hai"
+  },
+  {
+    "k": "light.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / spark"
+  },
+  {
+    "k": "light.burnt.checks.0",
+    "ru": "Us kamre ka MCB foran band karein — switch off karna kaafi nahi."
+  },
+  {
+    "k": "light.burnt.checks.1",
+    "ru": "Light dobara ON na karein."
+  },
+  {
+    "k": "light.burnt.checks.2",
+    "ru": "Holder ya board ke qareeb koi kapra/parda ho to hata dein."
+  },
+  {
+    "k": "light.burnt.issue.0.title",
+    "ru": "Holder / fitting jal gai"
+  },
+  {
+    "k": "light.burnt.issue.0.cause",
+    "ru": "holder ke andar carbon jam gaya hai aur short ho raha hai"
+  },
+  {
+    "k": "light.burnt.issue.1.title",
+    "ru": "Point ki wiring jal gai"
+  },
+  {
+    "k": "light.burnt.issue.1.cause",
+    "ru": "point ki wiring overheat ho kar jal gai hai"
+  },
+  {
+    "k": "switch_socket.common_safety.0",
+    "ru": "Kisi bhi switch/socket par kaam se pehle us circuit ka MCB band karein — switch off karna kaafi nahi hota."
+  },
+  {
+    "k": "switch_socket.common_safety.1",
+    "ru": "Geele haath se socket ya switch kabhi na chhuein."
+  },
+  {
+    "k": "switch_socket.common_safety.2",
+    "ru": "Socket mein kaali ya jali nishani ho to usmein koi appliance na lagayein."
+  },
+  {
+    "k": "switch_socket.dead.label",
+    "ru": "Kaam nahi kar raha / current nahi aa raha"
+  },
+  {
+    "k": "switch_socket.dead.checks.0",
+    "ru": "Us socket mein koi doosra appliance laga kar confirm karein ke masla socket ka hai."
+  },
+  {
+    "k": "switch_socket.dead.checks.1",
+    "ru": "Ussi board ke baqi switch kaam kar rahe hain? Nahi to poore board ka feed gaya hua hai."
+  },
+  {
+    "k": "switch_socket.dead.checks.2",
+    "ru": "MCB board check karein — us kamre ka MCB trip na ho."
+  },
+  {
+    "k": "switch_socket.dead.checks.3",
+    "ru": "Socket mein plug dheela lag raha hai? To andar ke contacts ghis chuke hain."
+  },
+  {
+    "k": "switch_socket.dead.checks.4",
+    "ru": "Plate par kaala nishan ya pighla plastic dikhe to us circuit ka MCB band rakhein."
+  },
+  {
+    "k": "switch_socket.dead.issue.0.title",
+    "ru": "Switch replace"
+  },
+  {
+    "k": "switch_socket.dead.issue.0.cause",
+    "ru": "switch andar se kharab ho gaya hai"
+  },
+  {
+    "k": "switch_socket.dead.issue.1.title",
+    "ru": "Socket replace"
+  },
+  {
+    "k": "switch_socket.dead.issue.1.cause",
+    "ru": "socket ke andar ke contacts ghis chuke hain"
+  },
+  {
+    "k": "switch_socket.dead.issue.2.title",
+    "ru": "Point ki wiring dobara"
+  },
+  {
+    "k": "switch_socket.dead.issue.2.cause",
+    "ru": "board tak aane wali wiring ya joint kharab hai"
+  },
+  {
+    "k": "switch_socket.spark.label",
+    "ru": "Spark / chingari nikal rahi hai"
+  },
+  {
+    "k": "switch_socket.spark.checks.0",
+    "ru": "Us circuit ka MCB FORAN band karein — socket ko haath na lagayein."
+  },
+  {
+    "k": "switch_socket.spark.checks.1",
+    "ru": "Us socket mein laga appliance MCB band karne ke baad hi nikaalein."
+  },
+  {
+    "k": "switch_socket.spark.checks.2",
+    "ru": "Plate kaali ya pighli hui hai? Photo bana lein, technician ko dikhayein."
+  },
+  {
+    "k": "switch_socket.spark.checks.3",
+    "ru": "Us point ko istemaal karna bilkul band kar dein."
+  },
+  {
+    "k": "switch_socket.spark.issue.0.title",
+    "ru": "Socket replace"
+  },
+  {
+    "k": "switch_socket.spark.issue.0.cause",
+    "ru": "socket ke contacts jal chuke hain is liye arc ho raha hai"
+  },
+  {
+    "k": "switch_socket.spark.issue.1.title",
+    "ru": "Loose connection / short circuit fix"
+  },
+  {
+    "k": "switch_socket.spark.issue.1.cause",
+    "ru": "board ke andar joint dheela hai jis se arcing ho rahi hai"
+  },
+  {
+    "k": "switch_socket.spark.issue.2.title",
+    "ru": "RCCB safety breaker lagana"
+  },
+  {
+    "k": "switch_socket.spark.issue.2.cause",
+    "ru": "aisi fault par supply kaatne wala protection mojood nahi"
+  },
+  {
+    "k": "switch_socket.overheat.label",
+    "ru": "Garam ho raha hai / pighal raha hai"
+  },
+  {
+    "k": "switch_socket.overheat.checks.0",
+    "ru": "Us circuit ka MCB band karein aur laga hua appliance hata dein."
+  },
+  {
+    "k": "switch_socket.overheat.checks.1",
+    "ru": "Us socket par AC, geyser, motor jaisa bhaari load laga hua tha? Wo dobara na lagayein."
+  },
+  {
+    "k": "switch_socket.overheat.checks.2",
+    "ru": "Socket ya plug ka plastic pighla hua hai to usay istemaal na karein."
+  },
+  {
+    "k": "switch_socket.overheat.issue.0.title",
+    "ru": "Socket replace (heavy duty)"
+  },
+  {
+    "k": "switch_socket.overheat.issue.0.cause",
+    "ru": "socket load bardaasht nahi kar raha, contacts garam ho rahe hain"
+  },
+  {
+    "k": "switch_socket.overheat.issue.1.title",
+    "ru": "Motai wali wiring dobara"
+  },
+  {
+    "k": "switch_socket.overheat.issue.1.cause",
+    "ru": "point ki wire load ke hisab se patli hai"
+  },
+  {
+    "k": "switch_socket.overheat.issue.2.title",
+    "ru": "Alag dedicated circuit"
+  },
+  {
+    "k": "switch_socket.overheat.issue.2.cause",
+    "ru": "bhaari appliance ke liye alag circuit banwana zaroori hai"
+  },
+  {
+    "k": "switch_socket.shock.label",
+    "ru": "Current / shock lag raha hai"
+  },
+  {
+    "k": "switch_socket.shock.checks.0",
+    "ru": "Us circuit ka MCB foran band karein — board ko haath na lagayein."
+  },
+  {
+    "k": "switch_socket.shock.checks.1",
+    "ru": "Ghar mein RCCB (safety breaker) laga hai ya nahi, yeh technician se zaroor puchein."
+  },
+  {
+    "k": "switch_socket.shock.checks.2",
+    "ru": "Bachon ko us jagah se door rakhein aur socket par tape/cover laga dein."
+  },
+  {
+    "k": "switch_socket.shock.issue.0.title",
+    "ru": "Earthing na hona / kharab earthing"
+  },
+  {
+    "k": "switch_socket.shock.issue.0.cause",
+    "ru": "earthing na hone se leakage current body tak aa raha hai"
+  },
+  {
+    "k": "switch_socket.shock.issue.1.title",
+    "ru": "RCCB lagana"
+  },
+  {
+    "k": "switch_socket.shock.issue.1.cause",
+    "ru": "leakage par supply kaatne wala protection mojood nahi"
+  },
+  {
+    "k": "switch_socket.shock.issue.2.title",
+    "ru": "Wiring leakage fix"
+  },
+  {
+    "k": "switch_socket.shock.issue.2.cause",
+    "ru": "wire ki insulation kharab hai aur live wire deewar/box ko touch kar raha hai"
+  },
+  {
+    "k": "wiring.common_safety.0",
+    "ru": "DB board ka main switch band karke hi koi kaam karein — aur ho sake to poora meter side isolate karein."
+  },
+  {
+    "k": "wiring.common_safety.1",
+    "ru": "DB board ka cover khud mat kholein — andar live busbar hoti hai."
+  },
+  {
+    "k": "wiring.common_safety.2",
+    "ru": "Kabhi bhi MCB ki jagah taar ya keel (fuse jumper) mat lagayein — yeh aag ki seedhi wajah banti hai."
+  },
+  {
+    "k": "wiring.tripping.label",
+    "ru": "MCB / breaker trip ho raha hai"
+  },
+  {
+    "k": "wiring.tripping.checks.0",
+    "ru": "Note karein: trip kis waqt hota hai — kisi khaas appliance ke on karte waqt?"
+  },
+  {
+    "k": "wiring.tripping.checks.1",
+    "ru": "Ek ek appliance nikaal kar MCB dobara chadhayein taake culprit pakra jaye."
+  },
+  {
+    "k": "wiring.tripping.checks.2",
+    "ru": "Trip foran hota hai ya kuch minute chal kar? Foran = short circuit, kuch der baad = overload."
+  },
+  {
+    "k": "wiring.tripping.checks.3",
+    "ru": "Ek hi MCB baar baar trip ho raha hai to usay zabardasti bar bar ON na karein."
+  },
+  {
+    "k": "wiring.tripping.checks.4",
+    "ru": "MCB ke saath jalne ki smell ya awaz aaye to main switch band karein."
+  },
+  {
+    "k": "wiring.tripping.issue.0.title",
+    "ru": "Overload — MCB rating theek karna"
+  },
+  {
+    "k": "wiring.tripping.issue.0.cause",
+    "ru": "circuit par load zyada hai, MCB apna kaam kar raha hai"
+  },
+  {
+    "k": "wiring.tripping.issue.1.title",
+    "ru": "MCB khud kharab"
+  },
+  {
+    "k": "wiring.tripping.issue.1.cause",
+    "ru": "MCB purana ho kar weak ho gaya hai aur bina load bhi trip karta hai"
+  },
+  {
+    "k": "wiring.tripping.issue.2.title",
+    "ru": "Short circuit dhoondna aur theek karna"
+  },
+  {
+    "k": "wiring.tripping.issue.2.cause",
+    "ru": "kisi point ya appliance mein short hai — usay dhoondna paregi"
+  },
+  {
+    "k": "wiring.tripping.issue.3.title",
+    "ru": "Bhaari appliance ke liye alag circuit"
+  },
+  {
+    "k": "wiring.tripping.issue.3.cause",
+    "ru": "AC/motor jaisa load usi purane circuit par hai"
+  },
+  {
+    "k": "wiring.short_circuit.label",
+    "ru": "Short circuit ho gaya hai"
+  },
+  {
+    "k": "wiring.short_circuit.checks.0",
+    "ru": "Main switch FORAN band karein aur us waqt tak ON na karein jab tak technician na dekhe."
+  },
+  {
+    "k": "wiring.short_circuit.checks.1",
+    "ru": "Jahan se awaz/spark aayi thi us jagah ko yaad rakhein — technician ko batayein."
+  },
+  {
+    "k": "wiring.short_circuit.checks.2",
+    "ru": "Us hisse mein koi appliance dobara na lagayein."
+  },
+  {
+    "k": "wiring.short_circuit.checks.3",
+    "ru": "Jalne ki smell ho to kamra ventilate karein aur pani se aag bujhane ki koshish na karein."
+  },
+  {
+    "k": "wiring.short_circuit.issue.0.title",
+    "ru": "Short circuit diagnosis + repair"
+  },
+  {
+    "k": "wiring.short_circuit.issue.0.cause",
+    "ru": "phase aur neutral kahin milne lage hain"
+  },
+  {
+    "k": "wiring.short_circuit.issue.1.title",
+    "ru": "Jali hui wiring replace (per point)"
+  },
+  {
+    "k": "wiring.short_circuit.issue.1.cause",
+    "ru": "us point ki wiring jal chuki hai, nayi daalni paregi"
+  },
+  {
+    "k": "wiring.short_circuit.issue.2.title",
+    "ru": "MCB + RCCB dobara lagana"
+  },
+  {
+    "k": "wiring.short_circuit.issue.2.cause",
+    "ru": "protection devices bhi is fault se kharab ho jate hain"
+  },
+  {
+    "k": "wiring.burnt.label",
+    "ru": "Wire / DB jal raha hai — dhuwa ya smell"
+  },
+  {
+    "k": "wiring.burnt.checks.0",
+    "ru": "Ghar ka MAIN switch foran band karein."
+  },
+  {
+    "k": "wiring.burnt.checks.1",
+    "ru": "Aag lag rahi ho to pani NA daalein — bijli ki aag par pani khatarnak hai; ghar khali karein aur 16 par call karein."
+  },
+  {
+    "k": "wiring.burnt.checks.2",
+    "ru": "DB board ke qareeb kaghaz, kapra ya plastic ho to door karein."
+  },
+  {
+    "k": "wiring.burnt.checks.3",
+    "ru": "Poora circuit tab tak band rakhein jab tak technician na aaye."
+  },
+  {
+    "k": "wiring.burnt.issue.0.title",
+    "ru": "Jali hui wiring replace"
+  },
+  {
+    "k": "wiring.burnt.issue.0.cause",
+    "ru": "wire ki insulation pighal chuki hai"
+  },
+  {
+    "k": "wiring.burnt.issue.1.title",
+    "ru": "DB board replace"
+  },
+  {
+    "k": "wiring.burnt.issue.1.cause",
+    "ru": "DB board ke andar busbar/terminals jal chuke hain"
+  },
+  {
+    "k": "wiring.burnt.issue.2.title",
+    "ru": "Ghar ki rewiring (us hisse ki)"
+  },
+  {
+    "k": "wiring.burnt.issue.2.cause",
+    "ru": "purani wiring poori load nahi utha rahi"
+  },
+  {
+    "k": "wiring.shock.label",
+    "ru": "Deewar / nal / body se current aa raha hai"
+  },
+  {
+    "k": "wiring.shock.checks.0",
+    "ru": "Main switch band karein — jis cheez se current aa raha hai usay haath na lagayein."
+  },
+  {
+    "k": "wiring.shock.checks.1",
+    "ru": "Bathroom/kitchen mein ho to us hisse ka paani istemaal na karein aur bachon ko door rakhein."
+  },
+  {
+    "k": "wiring.shock.checks.2",
+    "ru": "Ghar mein earthing aur RCCB hai ya nahi, technician se pehli baat yeh puchein."
+  },
+  {
+    "k": "wiring.shock.checks.3",
+    "ru": "Yeh jaan lewa fault hai — khud tester/screwdriver se check karne ki koshish na karein."
+  },
+  {
+    "k": "wiring.shock.issue.0.title",
+    "ru": "Earthing system lagana"
+  },
+  {
+    "k": "wiring.shock.issue.0.cause",
+    "ru": "ghar mein proper earthing mojood nahi"
+  },
+  {
+    "k": "wiring.shock.issue.1.title",
+    "ru": "RCCB (safety breaker) lagana"
+  },
+  {
+    "k": "wiring.shock.issue.1.cause",
+    "ru": "leakage current par supply kaatne wala device nahi laga"
+  },
+  {
+    "k": "wiring.shock.issue.2.title",
+    "ru": "Leakage wali wiring dhoond kar theek karna"
+  },
+  {
+    "k": "wiring.shock.issue.2.cause",
+    "ru": "kahin live wire deewar ki namee ya pipe ko touch kar raha hai"
+  },
+  {
+    "k": "wiring.no_power.label",
+    "ru": "Ghar / kamre mein bijli nahi aa rahi"
+  },
+  {
+    "k": "wiring.no_power.checks.0",
+    "ru": "Pehle confirm karein ke load-shedding nahi hai — parosi ke ghar bijli hai?"
+  },
+  {
+    "k": "wiring.no_power.checks.1",
+    "ru": "DB board par dekhein koi MCB neeche (OFF) position par hai — usay poora neeche kar ke phir ooper karein."
+  },
+  {
+    "k": "wiring.no_power.checks.2",
+    "ru": "Sirf ek kamra affected hai ya poora ghar?"
+  },
+  {
+    "k": "wiring.no_power.checks.3",
+    "ru": "Meter par light/display aa rahi hai?"
+  },
+  {
+    "k": "wiring.no_power.checks.4",
+    "ru": "MCB ooper karte hi wapas neeche gir jata hai to zabardasti na karein — short circuit hai."
+  },
+  {
+    "k": "wiring.no_power.issue.0.title",
+    "ru": "MCB replace"
+  },
+  {
+    "k": "wiring.no_power.issue.0.cause",
+    "ru": "MCB kharab ho gaya hai aur supply pass nahi kar raha"
+  },
+  {
+    "k": "wiring.no_power.issue.1.title",
+    "ru": "Main feed / joint fault"
+  },
+  {
+    "k": "wiring.no_power.issue.1.cause",
+    "ru": "main supply ka joint ya wire kat gaya hai"
+  },
+  {
+    "k": "wiring.no_power.issue.2.title",
+    "ru": "DB board repair / replace"
+  },
+  {
+    "k": "wiring.no_power.issue.2.cause",
+    "ru": "DB board ke andar terminal dheela ya jala hua hai"
+  },
+  {
+    "k": "ups.common_safety.0",
+    "ru": "Battery ke terminals par kabhi dono taraf ek saath dhaat (screwdriver/spanner) mat rakhein — spark hota hai."
+  },
+  {
+    "k": "ups.common_safety.1",
+    "ru": "Battery se nikalne wali gas jalne wali hoti hai — us ke paas maachis/lighter na jalayein."
+  },
+  {
+    "k": "ups.common_safety.2",
+    "ru": "UPS ka input MCB band karke hi wiring ko haath lagayein — UPS output bhi 220V hota hai."
+  },
+  {
+    "k": "ups.no_backup.label",
+    "ru": "Backup nahi de raha / jaldi khatam ho jata hai"
+  },
+  {
+    "k": "ups.no_backup.checks.0",
+    "ru": "Battery kitni purani hai? 2–3 saal se zyada purani battery ka backup aadha reh jata hai."
+  },
+  {
+    "k": "ups.no_backup.checks.1",
+    "ru": "Battery ke terminals par safed/neela powder (corrosion) jama hai? Garam pani se saaf karein (UPS off karke)."
+  },
+  {
+    "k": "ups.no_backup.checks.2",
+    "ru": "Terminals dheele hain? Halka tight karein — dheela terminal backup kha jata hai."
+  },
+  {
+    "k": "ups.no_backup.checks.3",
+    "ru": "Battery ka pani (distilled water) level plates se ooper hai? Kam ho to distilled water daalein, nal ka pani NAHI."
+  },
+  {
+    "k": "ups.no_backup.checks.4",
+    "ru": "UPS par kitna load laga hai? 2 fan + 3 light se zyada load choti UPS nahi utha sakti."
+  },
+  {
+    "k": "ups.no_backup.checks.5",
+    "ru": "Bijli aane par UPS charging kar raha hai? Charging light/display check karein."
+  },
+  {
+    "k": "ups.no_backup.issue.0.title",
+    "ru": "Terminal safai + service"
+  },
+  {
+    "k": "ups.no_backup.issue.0.cause",
+    "ru": "corrosion aur dheele terminal ki wajah se current pass nahi ho raha"
+  },
+  {
+    "k": "ups.no_backup.issue.1.title",
+    "ru": "Battery khatam — replace"
+  },
+  {
+    "k": "ups.no_backup.issue.1.cause",
+    "ru": "battery ki life poori ho gai hai, cells charge nahi rakh rahe"
+  },
+  {
+    "k": "ups.no_backup.issue.2.title",
+    "ru": "UPS ka charging section kharab"
+  },
+  {
+    "k": "ups.no_backup.issue.2.cause",
+    "ru": "UPS battery ko charge hi nahi kar raha — board ka fault hai"
+  },
+  {
+    "k": "ups.not_charging.label",
+    "ru": "Charge nahi ho raha"
+  },
+  {
+    "k": "ups.not_charging.checks.0",
+    "ru": "UPS ka input plug/socket check karein — usmein current aa raha hai?"
+  },
+  {
+    "k": "ups.not_charging.checks.1",
+    "ru": "UPS ka input MCB ON hai?"
+  },
+  {
+    "k": "ups.not_charging.checks.2",
+    "ru": "UPS ki display/LED par charging ka indication aata hai?"
+  },
+  {
+    "k": "ups.not_charging.checks.3",
+    "ru": "Battery ke terminals tight aur saaf hain?"
+  },
+  {
+    "k": "ups.not_charging.checks.4",
+    "ru": "Battery bohat garam ho rahi ho to UPS foran band kar dein."
+  },
+  {
+    "k": "ups.not_charging.issue.0.title",
+    "ru": "Input socket / point kharab"
+  },
+  {
+    "k": "ups.not_charging.issue.0.cause",
+    "ru": "UPS tak input supply hi nahi pohanch rahi"
+  },
+  {
+    "k": "ups.not_charging.issue.1.title",
+    "ru": "Battery dead — replace"
+  },
+  {
+    "k": "ups.not_charging.issue.1.cause",
+    "ru": "battery itni gir chuki hai ke charge lena band kar diya"
+  },
+  {
+    "k": "ups.not_charging.issue.2.title",
+    "ru": "UPS board repair"
+  },
+  {
+    "k": "ups.not_charging.issue.2.cause",
+    "ru": "UPS ka charging circuit kharab hai"
+  },
+  {
+    "k": "ups.noise.label",
+    "ru": "Beep / alarm baj raha hai"
+  },
+  {
+    "k": "ups.noise.checks.0",
+    "ru": "Beep ka pattern note karein — mustaqil beep aksar 'low battery' ya 'overload' hota hai."
+  },
+  {
+    "k": "ups.noise.checks.1",
+    "ru": "Load kam karein (extra fan/light band karein) aur dekhein beep rukti hai."
+  },
+  {
+    "k": "ups.noise.checks.2",
+    "ru": "Battery ke terminals check karein."
+  },
+  {
+    "k": "ups.noise.checks.3",
+    "ru": "Beep ke saath UPS garam ho ya smell aaye to foran band karein."
+  },
+  {
+    "k": "ups.noise.issue.0.title",
+    "ru": "Overload — load kam karna / service"
+  },
+  {
+    "k": "ups.noise.issue.0.cause",
+    "ru": "UPS apni capacity se zyada load utha raha hai"
+  },
+  {
+    "k": "ups.noise.issue.1.title",
+    "ru": "Battery weak — replace"
+  },
+  {
+    "k": "ups.noise.issue.1.cause",
+    "ru": "low battery alarm baj raha hai kyunke battery charge nahi rakh rahi"
+  },
+  {
+    "k": "ups.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / battery phool gai"
+  },
+  {
+    "k": "ups.burnt.checks.0",
+    "ru": "UPS ka input MCB foran band karein aur battery ke terminals ko haath na lagayein."
+  },
+  {
+    "k": "ups.burnt.checks.1",
+    "ru": "Kamra ventilate karein — battery se nikli gas jalne wali hoti hai, koi shola/cigarette na ho."
+  },
+  {
+    "k": "ups.burnt.checks.2",
+    "ru": "Battery phool gai hai ya acid bahar aa raha hai to us ke paas na jayein."
+  },
+  {
+    "k": "ups.burnt.checks.3",
+    "ru": "UPS dobara ON na karein."
+  },
+  {
+    "k": "ups.burnt.issue.0.title",
+    "ru": "Battery phool gai / short — replace"
+  },
+  {
+    "k": "ups.burnt.issue.0.cause",
+    "ru": "battery ke cells short ho kar phool gaye hain — yeh phatne ka khatra hai"
+  },
+  {
+    "k": "ups.burnt.issue.1.title",
+    "ru": "UPS ki wiring jal gai"
+  },
+  {
+    "k": "ups.burnt.issue.1.cause",
+    "ru": "battery ki motai wali wire overheat ho kar jal gai hai"
+  },
+  {
+    "k": "ups.burnt.issue.2.title",
+    "ru": "UPS unit jal gai"
+  },
+  {
+    "k": "ups.burnt.issue.2.cause",
+    "ru": "UPS ka andar ka board jal chuka hai"
+  },
+  {
+    "k": "washing_machine.common_safety.0",
+    "ru": "Machine ka plug nikaal kar hi koi cheez check karein — pani aur bijli saath hain."
+  },
+  {
+    "k": "washing_machine.common_safety.1",
+    "ru": "Machine ka plug 3-pin earthed socket mein hona chahiye; extension par bhaari machine na lagayein."
+  },
+  {
+    "k": "washing_machine.common_safety.2",
+    "ru": "Drum ghoomte waqt usmein haath na daalein, chahe halka lag raha ho."
+  },
+  {
+    "k": "washing_machine.dead.label",
+    "ru": "Bilkul chal nahi rahi"
+  },
+  {
+    "k": "washing_machine.dead.checks.0",
+    "ru": "Socket mein doosra appliance laga kar dekhein ke current aa raha hai."
+  },
+  {
+    "k": "washing_machine.dead.checks.1",
+    "ru": "Machine ka plug aur wire kahin kata ya jala hua nahi?"
+  },
+  {
+    "k": "washing_machine.dead.checks.2",
+    "ru": "Darwaza/lid theek band hai? Kai machines lid band na hone par start nahi hoti."
+  },
+  {
+    "k": "washing_machine.dead.checks.3",
+    "ru": "Timer/knob ghumakar dekhein — purani machines mein timer aksar kharab hota hai."
+  },
+  {
+    "k": "washing_machine.dead.checks.4",
+    "ru": "Machine ka apna fuse (peechay) check karwayein."
+  },
+  {
+    "k": "washing_machine.dead.issue.0.title",
+    "ru": "Socket / plug kharab"
+  },
+  {
+    "k": "washing_machine.dead.issue.0.cause",
+    "ru": "machine tak supply nahi pohanch rahi"
+  },
+  {
+    "k": "washing_machine.dead.issue.1.title",
+    "ru": "Timer / knob kharab"
+  },
+  {
+    "k": "washing_machine.dead.issue.1.cause",
+    "ru": "timer switch andar se kharab ho gaya hai"
+  },
+  {
+    "k": "washing_machine.dead.issue.2.title",
+    "ru": "Motor / capacitor kharab"
+  },
+  {
+    "k": "washing_machine.dead.issue.2.cause",
+    "ru": "wash motor ya uska capacitor fail ho gaya hai"
+  },
+  {
+    "k": "washing_machine.no_water.label",
+    "ru": "Pani nahi bhar rahi / nikal nahi raha"
+  },
+  {
+    "k": "washing_machine.no_water.checks.0",
+    "ru": "Machine ka inlet nal (tap) poora khula hai? Aur us mein pressure hai?"
+  },
+  {
+    "k": "washing_machine.no_water.checks.1",
+    "ru": "Inlet pipe ka filter/jaali nikaal kar saaf karein — usmein mitti jam jati hai."
+  },
+  {
+    "k": "washing_machine.no_water.checks.2",
+    "ru": "Drain pipe zameen par mor ke rakhi hai? Usay seedha aur neeche karein."
+  },
+  {
+    "k": "washing_machine.no_water.checks.3",
+    "ru": "Drain pipe ka sira nali mein bohat andar ghusa hua ho to bahar kheenchein."
+  },
+  {
+    "k": "washing_machine.no_water.checks.4",
+    "ru": "Nali khud jam hai? Bucket se pani daal kar dekhein ke nikaas ho raha hai."
+  },
+  {
+    "k": "washing_machine.no_water.issue.0.title",
+    "ru": "Nali / drain blockage clearing"
+  },
+  {
+    "k": "washing_machine.no_water.issue.0.cause",
+    "ru": "jis nali mein machine ka pani jata hai wo band hai"
+  },
+  {
+    "k": "washing_machine.no_water.issue.1.title",
+    "ru": "Inlet nal / connection repair"
+  },
+  {
+    "k": "washing_machine.no_water.issue.1.cause",
+    "ru": "machine ko pani dene wala nal ya connection kharab hai"
+  },
+  {
+    "k": "washing_machine.no_water.issue.2.title",
+    "ru": "Drain pump / valve kharab"
+  },
+  {
+    "k": "washing_machine.no_water.issue.2.cause",
+    "ru": "machine ka apna drain pump ya inlet valve kaam nahi kar raha"
+  },
+  {
+    "k": "washing_machine.water_leak.label",
+    "ru": "Pani leak ho raha hai"
+  },
+  {
+    "k": "washing_machine.water_leak.checks.0",
+    "ru": "Machine ka plug FORAN nikaalein — pani socket ya extension tak pohancha ho to pehle MCB band karein."
+  },
+  {
+    "k": "washing_machine.water_leak.checks.1",
+    "ru": "Leak inlet pipe se hai, drain pipe se, ya machine ke neeche se? Kapre se poonch kar dekhein."
+  },
+  {
+    "k": "washing_machine.water_leak.checks.2",
+    "ru": "Inlet pipe ke dono sire haath se tight karein."
+  },
+  {
+    "k": "washing_machine.water_leak.checks.3",
+    "ru": "Farsh sukha karein — phisalne aur current dono ka khatra hai."
+  },
+  {
+    "k": "washing_machine.water_leak.issue.0.title",
+    "ru": "Inlet / drain pipe joint repair"
+  },
+  {
+    "k": "washing_machine.water_leak.issue.0.cause",
+    "ru": "pipe ka joint dheela ya crack hai"
+  },
+  {
+    "k": "washing_machine.water_leak.issue.1.title",
+    "ru": "Machine ke andar se leak (tub/seal)"
+  },
+  {
+    "k": "washing_machine.water_leak.issue.1.cause",
+    "ru": "drum ki seal ya tub crack ho gaya hai"
+  },
+  {
+    "k": "washing_machine.noise.label",
+    "ru": "Awaz / vibration bohat hai"
+  },
+  {
+    "k": "washing_machine.noise.checks.0",
+    "ru": "Machine barabar farsh par khari hai? Tedhi machine bohat vibrate karti hai."
+  },
+  {
+    "k": "washing_machine.noise.checks.1",
+    "ru": "Kapre ek taraf jama ho gaye hain? Unhein barabar phailayein."
+  },
+  {
+    "k": "washing_machine.noise.checks.2",
+    "ru": "Drum mein sikka, keel ya button gir gaya hai? Plug nikaal kar drum ghumakar dekhein."
+  },
+  {
+    "k": "washing_machine.noise.checks.3",
+    "ru": "Awaz belt/gearbox se aa rahi ho to yeh mechanical fault hai."
+  },
+  {
+    "k": "washing_machine.noise.checks.4",
+    "ru": "Awaz ke saath jalne ki smell aaye to plug foran nikaalein."
+  },
+  {
+    "k": "washing_machine.noise.issue.0.title",
+    "ru": "Leveling + servicing"
+  },
+  {
+    "k": "washing_machine.noise.issue.0.cause",
+    "ru": "machine tedhi hai ya load barabar nahi"
+  },
+  {
+    "k": "washing_machine.noise.issue.1.title",
+    "ru": "Belt / gearbox / bearing repair"
+  },
+  {
+    "k": "washing_machine.noise.issue.1.cause",
+    "ru": "belt dheeli hai ya bearing ghis chuki hai"
+  },
+  {
+    "k": "washing_machine.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / shock"
+  },
+  {
+    "k": "washing_machine.burnt.checks.0",
+    "ru": "Us socket ka MCB band karein, PHIR plug nikaalein — machine ko geele haath se na chhuein."
+  },
+  {
+    "k": "washing_machine.burnt.checks.1",
+    "ru": "Machine dobara ON na karein."
+  },
+  {
+    "k": "washing_machine.burnt.checks.2",
+    "ru": "Machine ke aas paas pani ho to usay sukhayein magar machine ko haath na lagayein."
+  },
+  {
+    "k": "washing_machine.burnt.issue.0.title",
+    "ru": "Motor / capacitor jal gaya"
+  },
+  {
+    "k": "washing_machine.burnt.issue.0.cause",
+    "ru": "wash motor ya capacitor short ho gaya hai"
+  },
+  {
+    "k": "washing_machine.burnt.issue.1.title",
+    "ru": "Earthing / leakage protection"
+  },
+  {
+    "k": "washing_machine.burnt.issue.1.cause",
+    "ru": "body mein current aa raha hai aur earthing/RCCB nahi hai"
+  },
+  {
+    "k": "washing_machine.burnt.issue.2.title",
+    "ru": "Machine ki internal wiring jal gai"
+  },
+  {
+    "k": "washing_machine.burnt.issue.2.cause",
+    "ru": "andar ki wiring ya board jal chuka hai"
+  },
+  {
+    "k": "geyser.common_safety.0",
+    "ru": "Gas geyser hai to kaam se pehle gas ka valve band karein."
+  },
+  {
+    "k": "geyser.common_safety.1",
+    "ru": "Electric geyser hai to uska MCB band karein — pani aur 220V ka combination jaan lewa hai."
+  },
+  {
+    "k": "geyser.common_safety.2",
+    "ru": "Bathroom mein gas geyser ho to darwaza/roshan dan khula rakhein — band bathroom mein gas geyser dam ghutne ki wajah banta hai."
+  },
+  {
+    "k": "geyser.common_safety.3",
+    "ru": "Gas ki smell aane par bijli ka koi switch (on ya off) NA karein — spark se dhamaka ho sakta hai."
+  },
+  {
+    "k": "geyser.not_heating.label",
+    "ru": "Pani garam nahi kar raha"
+  },
+  {
+    "k": "geyser.not_heating.checks.0",
+    "ru": "Gas geyser hai to gas ka valve poora khula hai? Aur gas pressure theek hai (chulha jala kar dekhein)?"
+  },
+  {
+    "k": "geyser.not_heating.checks.1",
+    "ru": "Pilot flame jal rahi hai? Bujhi hui ho to instructions ke mutabiq dobara jalayein — agar gas ki smell ho to bilkul mat jalayein."
+  },
+  {
+    "k": "geyser.not_heating.checks.2",
+    "ru": "Thermostat/knob temperature poora barha kar 30–40 minute intezaar karein."
+  },
+  {
+    "k": "geyser.not_heating.checks.3",
+    "ru": "Electric geyser hai to uska MCB ON hai? Indicator light jal rahi hai?"
+  },
+  {
+    "k": "geyser.not_heating.checks.4",
+    "ru": "Nal se garam pani bilkul nahi aa raha ya thora garam aata hai? Thora garam = element/burner weak."
+  },
+  {
+    "k": "geyser.not_heating.checks.5",
+    "ru": "Geyser ke tank par safed calcium ki tehh (scale) ki shikayat purane geyser mein aam hai."
+  },
+  {
+    "k": "geyser.not_heating.issue.0.title",
+    "ru": "Servicing + scale safai"
+  },
+  {
+    "k": "geyser.not_heating.issue.0.cause",
+    "ru": "tank aur burner par calcium/scale jam gaya hai is liye heating slow hai"
+  },
+  {
+    "k": "geyser.not_heating.issue.1.title",
+    "ru": "Thermostat / element replace"
+  },
+  {
+    "k": "geyser.not_heating.issue.1.cause",
+    "ru": "thermostat ya heating element kaam nahi kar raha"
+  },
+  {
+    "k": "geyser.not_heating.issue.2.title",
+    "ru": "Poora geyser replace (6L instant)"
+  },
+  {
+    "k": "geyser.not_heating.issue.2.cause",
+    "ru": "geyser purana ho chuka hai, repair se zyada replace behtar hai"
+  },
+  {
+    "k": "geyser.gas_smell.label",
+    "ru": "Gas ki smell aa rahi hai"
+  },
+  {
+    "k": "geyser.gas_smell.checks.0",
+    "ru": "Gas ka valve FORAN band karein."
+  },
+  {
+    "k": "geyser.gas_smell.checks.1",
+    "ru": "Bijli ka koi switch, light ya exhaust fan ON ya OFF na karein — spark khatarnak hai."
+  },
+  {
+    "k": "geyser.gas_smell.checks.2",
+    "ru": "Darwaze aur khirkiyan khol dein aur ghar walon ko us hisse se hata dein."
+  },
+  {
+    "k": "geyser.gas_smell.checks.3",
+    "ru": "Maachis, lighter ya cigarette bilkul na jalayein."
+  },
+  {
+    "k": "geyser.gas_smell.checks.4",
+    "ru": "Smell tez ho to ghar se bahar nikal jayein aur bahar se Sui Gas emergency (1199) par call karein."
+  },
+  {
+    "k": "geyser.gas_smell.issue.0.title",
+    "ru": "Gas pipe / joint leak repair"
+  },
+  {
+    "k": "geyser.gas_smell.issue.0.cause",
+    "ru": "gas line ka joint ya pipe leak kar raha hai"
+  },
+  {
+    "k": "geyser.gas_smell.issue.1.title",
+    "ru": "Geyser ka gas valve / burner assembly"
+  },
+  {
+    "k": "geyser.gas_smell.issue.1.cause",
+    "ru": "geyser ka gas valve ya burner ka connection leak kar raha hai"
+  },
+  {
+    "k": "geyser.gas_smell.issue.2.title",
+    "ru": "Geyser replace"
+  },
+  {
+    "k": "geyser.gas_smell.issue.2.cause",
+    "ru": "purana geyser leak kar raha hai, naya lagana behtar hai"
+  },
+  {
+    "k": "geyser.water_leak.label",
+    "ru": "Geyser se pani leak ho raha hai"
+  },
+  {
+    "k": "geyser.water_leak.checks.0",
+    "ru": "Leak pipe ke joint se hai ya tank ki body se? Kapra bandh kar 10 minute baad dekhein."
+  },
+  {
+    "k": "geyser.water_leak.checks.1",
+    "ru": "Electric geyser ke neeche pani gir raha hai to uska MCB foran band karein."
+  },
+  {
+    "k": "geyser.water_leak.checks.2",
+    "ru": "Inlet/outlet ke nuts haath se halka tight karein (pani band kar ke)."
+  },
+  {
+    "k": "geyser.water_leak.checks.3",
+    "ru": "Safety/pressure valve se thora pani tapakna normal hota hai — magar mustaqil behna nahi."
+  },
+  {
+    "k": "geyser.water_leak.checks.4",
+    "ru": "Tank ki body se pani aa raha hai to tank khud gal gaya hai — repair nahi hota."
+  },
+  {
+    "k": "geyser.water_leak.issue.0.title",
+    "ru": "Joint / connection repair"
+  },
+  {
+    "k": "geyser.water_leak.issue.0.cause",
+    "ru": "inlet ya outlet ka joint dheela hai"
+  },
+  {
+    "k": "geyser.water_leak.issue.1.title",
+    "ru": "Hot water pipe replace"
+  },
+  {
+    "k": "geyser.water_leak.issue.1.cause",
+    "ru": "garam pani wali PPRC pipe crack ho gai hai"
+  },
+  {
+    "k": "geyser.water_leak.issue.2.title",
+    "ru": "Tank gal gaya — geyser replace"
+  },
+  {
+    "k": "geyser.water_leak.issue.2.cause",
+    "ru": "tank ke andar se rust ho kar sooraakh ho gaya hai"
+  },
+  {
+    "k": "geyser.overheat.label",
+    "ru": "Pani bohat zyada garam / pressure ban raha hai"
+  },
+  {
+    "k": "geyser.overheat.checks.0",
+    "ru": "Gas valve ya MCB foran band karein aur geyser ko thanda hone dein."
+  },
+  {
+    "k": "geyser.overheat.checks.1",
+    "ru": "Garam pani ka nal khol kar pressure release karein (haath door rakhein, bhaap se jal sakte hain)."
+  },
+  {
+    "k": "geyser.overheat.checks.2",
+    "ru": "Geyser se 'ubalne' ya khatakne ki awaz aana pressure banne ki nishani hai — yeh phatne ka khatra hai."
+  },
+  {
+    "k": "geyser.overheat.checks.3",
+    "ru": "Geyser dobara ON na karein."
+  },
+  {
+    "k": "geyser.overheat.issue.0.title",
+    "ru": "Safety / pressure valve replace"
+  },
+  {
+    "k": "geyser.overheat.issue.0.cause",
+    "ru": "safety valve jam ho gaya hai is liye pressure release nahi ho raha"
+  },
+  {
+    "k": "geyser.overheat.issue.1.title",
+    "ru": "Thermostat kharab"
+  },
+  {
+    "k": "geyser.overheat.issue.1.cause",
+    "ru": "thermostat cut-off nahi kar raha is liye pani ubal raha hai"
+  },
+  {
+    "k": "geyser.overheat.issue.2.title",
+    "ru": "Geyser replace"
+  },
+  {
+    "k": "geyser.overheat.issue.2.cause",
+    "ru": "geyser ka pressure system fail ho chuka hai"
+  },
+  {
+    "k": "water_pump.common_safety.0",
+    "ru": "Pump ka MCB ya plug band karke hi haath lagayein — pump ke paas pani hota hai."
+  },
+  {
+    "k": "water_pump.common_safety.1",
+    "ru": "Pump ki body se current mehsoos ho to bilkul haath na lagayein, pehle MCB band karein."
+  },
+  {
+    "k": "water_pump.common_safety.2",
+    "ru": "Pump ko khali (bina pani) der tak na chalayein — seal jal jati hai."
+  },
+  {
+    "k": "water_pump.dead.label",
+    "ru": "Pump chal nahi raha"
+  },
+  {
+    "k": "water_pump.dead.checks.0",
+    "ru": "Pump ka MCB / switch ON hai? Us point mein current hai (doosra appliance laga kar check karein)?"
+  },
+  {
+    "k": "water_pump.dead.checks.1",
+    "ru": "Pump se 'hum' ki awaz aati hai magar ghoomta nahi? To capacitor ya jam impeller ka masla hai."
+  },
+  {
+    "k": "water_pump.dead.checks.2",
+    "ru": "MCB band karke pump ka fan/shaft haath se ghumayein — jam hai ya free?"
+  },
+  {
+    "k": "water_pump.dead.checks.3",
+    "ru": "Pump ki body bohat garam hai? Thanda hone dein — thermal cut-off ho sakta hai."
+  },
+  {
+    "k": "water_pump.dead.checks.4",
+    "ru": "Pump ka MCB baar baar trip kar raha hai to zabardasti ON na karein."
+  },
+  {
+    "k": "water_pump.dead.issue.0.title",
+    "ru": "Capacitor / starting fault"
+  },
+  {
+    "k": "water_pump.dead.issue.0.cause",
+    "ru": "capacitor kharab hone se motor start nahi ho raha"
+  },
+  {
+    "k": "water_pump.dead.issue.1.title",
+    "ru": "Impeller jam / replace"
+  },
+  {
+    "k": "water_pump.dead.issue.1.cause",
+    "ru": "impeller mein mitti jam gai hai ya toot gaya hai"
+  },
+  {
+    "k": "water_pump.dead.issue.2.title",
+    "ru": "Poora pump replace (1.0 HP)"
+  },
+  {
+    "k": "water_pump.dead.issue.2.cause",
+    "ru": "motor winding jal chuki hai, naya pump behtar rahega"
+  },
+  {
+    "k": "water_pump.no_water.label",
+    "ru": "Chalta hai magar pani nahi kheench raha"
+  },
+  {
+    "k": "water_pump.no_water.checks.0",
+    "ru": "Underground tank ya boring mein pani mojood hai? Pehle yeh confirm karein."
+  },
+  {
+    "k": "water_pump.no_water.checks.1",
+    "ru": "Pump ke ooper wale plug se pump mein pani bharein (priming) aur phir chalayein."
+  },
+  {
+    "k": "water_pump.no_water.checks.2",
+    "ru": "Suction line ke joints se hawa aa rahi hai? Hawa aane se pump pani nahi kheenchta."
+  },
+  {
+    "k": "water_pump.no_water.checks.3",
+    "ru": "Suction pipe ka jaali/strainer mitti se band ho sakta hai — nikaal kar saaf karein."
+  },
+  {
+    "k": "water_pump.no_water.checks.4",
+    "ru": "Delivery valve poora khula hai?"
+  },
+  {
+    "k": "water_pump.no_water.checks.5",
+    "ru": "Pump ki awaz normal hai magar pani nahi? Yeh foot valve ya impeller ki nishani hai."
+  },
+  {
+    "k": "water_pump.no_water.issue.0.title",
+    "ru": "Priming + suction joint sealing"
+  },
+  {
+    "k": "water_pump.no_water.issue.0.cause",
+    "ru": "suction line se hawa aa rahi hai is liye pump vacuum nahi bana raha"
+  },
+  {
+    "k": "water_pump.no_water.issue.1.title",
+    "ru": "Foot valve replace"
+  },
+  {
+    "k": "water_pump.no_water.issue.1.cause",
+    "ru": "neeche laga foot valve kharab hai is liye pani wapas gir jata hai"
+  },
+  {
+    "k": "water_pump.no_water.issue.2.title",
+    "ru": "Impeller ghis gaya — replace"
+  },
+  {
+    "k": "water_pump.no_water.issue.2.cause",
+    "ru": "impeller ghis chuka hai is liye pressure nahi ban raha"
+  },
+  {
+    "k": "water_pump.no_water.issue.3.title",
+    "ru": "Suction pipe replace"
+  },
+  {
+    "k": "water_pump.no_water.issue.3.cause",
+    "ru": "suction wali pipe crack hai ya usmein sooraakh hai"
+  },
+  {
+    "k": "water_pump.noise.label",
+    "ru": "Awaz / vibration aa rahi hai"
+  },
+  {
+    "k": "water_pump.noise.checks.0",
+    "ru": "Pump apne base par tight hai? Dheele bolts se poora pump vibrate karta hai."
+  },
+  {
+    "k": "water_pump.noise.checks.1",
+    "ru": "Pani ke saath hawa aa rahi hai (khat khat ki awaz)? To suction line leak kar rahi hai."
+  },
+  {
+    "k": "water_pump.noise.checks.2",
+    "ru": "MCB band karke shaft haath se ghumayein — 'garrr' ki awaz bearing ki nishani hai."
+  },
+  {
+    "k": "water_pump.noise.checks.3",
+    "ru": "Awaz ke saath pump bohat garam ho ya smell aaye to foran band karein."
+  },
+  {
+    "k": "water_pump.noise.issue.0.title",
+    "ru": "Base tightening + servicing"
+  },
+  {
+    "k": "water_pump.noise.issue.0.cause",
+    "ru": "pump ke bolts dheele hain ya alignment theek nahi"
+  },
+  {
+    "k": "water_pump.noise.issue.1.title",
+    "ru": "Bearing / impeller replace"
+  },
+  {
+    "k": "water_pump.noise.issue.1.cause",
+    "ru": "bearing ya impeller ghis chuka hai"
+  },
+  {
+    "k": "water_pump.water_leak.label",
+    "ru": "Pump se pani leak ho raha hai"
+  },
+  {
+    "k": "water_pump.water_leak.checks.0",
+    "ru": "Leak shaft ke paas se hai (seal) ya pipe ke joint se? Kapre se poonch kar dekhein."
+  },
+  {
+    "k": "water_pump.water_leak.checks.1",
+    "ru": "Joints ko halka tight karein (pump band kar ke)."
+  },
+  {
+    "k": "water_pump.water_leak.checks.2",
+    "ru": "Pani pump ke motor wale hisse par ja raha ho to MCB band karein — shock ka khatra hai."
+  },
+  {
+    "k": "water_pump.water_leak.checks.3",
+    "ru": "Bohat pani beh raha ho to pump ka valve band karein."
+  },
+  {
+    "k": "water_pump.water_leak.issue.0.title",
+    "ru": "Joint / fitting repair"
+  },
+  {
+    "k": "water_pump.water_leak.issue.0.cause",
+    "ru": "pipe ka joint dheela ya crack hai"
+  },
+  {
+    "k": "water_pump.water_leak.issue.1.title",
+    "ru": "Mechanical seal replace"
+  },
+  {
+    "k": "water_pump.water_leak.issue.1.cause",
+    "ru": "shaft ki seal ghis gai hai is liye pani bahar aa raha hai"
+  },
+  {
+    "k": "water_pump.burnt.label",
+    "ru": "Dhuwa / jalne ki smell / shock"
+  },
+  {
+    "k": "water_pump.burnt.checks.0",
+    "ru": "Pump ka MCB FORAN band karein — pump ko haath na lagayein."
+  },
+  {
+    "k": "water_pump.burnt.checks.1",
+    "ru": "Pump dobara chalane ki koshish na karein."
+  },
+  {
+    "k": "water_pump.burnt.checks.2",
+    "ru": "Pump ke aas paas pani ho to us mein qadam na rakhein jab tak MCB band na ho."
+  },
+  {
+    "k": "water_pump.burnt.checks.3",
+    "ru": "Ghar mein RCCB laga hai ya nahi, technician se puchein."
+  },
+  {
+    "k": "water_pump.burnt.issue.0.title",
+    "ru": "Motor winding jal gai — pump replace"
+  },
+  {
+    "k": "water_pump.burnt.issue.0.cause",
+    "ru": "motor ki winding jal chuki hai"
+  },
+  {
+    "k": "water_pump.burnt.issue.1.title",
+    "ru": "Pump ki wiring / earthing fix"
+  },
+  {
+    "k": "water_pump.burnt.issue.1.cause",
+    "ru": "wiring jal gai hai aur body mein leakage aa gai hai"
+  },
+  {
+    "k": "water_pump.burnt.issue.2.title",
+    "ru": "RCCB / earthing lagana"
+  },
+  {
+    "k": "water_pump.burnt.issue.2.cause",
+    "ru": "pani wale appliance par leakage protection zaroori hai"
+  },
+  {
+    "k": "water_tank.common_safety.0",
+    "ru": "Chhat par tank check karne jayein to mazboot seerhi aur kisi ki madad lein — geeli chhat phisalti hai."
+  },
+  {
+    "k": "water_tank.common_safety.1",
+    "ru": "Underground tank mein KABHI na utrein — andar oxygen kam aur gas hoti hai, yeh jaan lewa hai."
+  },
+  {
+    "k": "water_tank.common_safety.2",
+    "ru": "Tank ke paas koi bijli ka point ho to us ka MCB pehle band karein."
+  },
+  {
+    "k": "water_tank.overflow.label",
+    "ru": "Tank bahta rehta hai / pani zaya ho raha hai"
+  },
+  {
+    "k": "water_tank.overflow.checks.0",
+    "ru": "Float (ball) valve ko haath se ooper uthayein — pani ruk jata hai? Ruk jaye to valve ka arm/adjustment theek karna hai."
+  },
+  {
+    "k": "water_tank.overflow.checks.1",
+    "ru": "Float ball mein pani bhar gaya hai? Hilakar dekhein — bhari lage to ball khud kharab hai."
+  },
+  {
+    "k": "water_tank.overflow.checks.2",
+    "ru": "Float valve ke aage safed calcium jam gaya hai? Usay saaf karein."
+  },
+  {
+    "k": "water_tank.overflow.checks.3",
+    "ru": "Auto motor system laga hai to uska switch check karein."
+  },
+  {
+    "k": "water_tank.overflow.checks.4",
+    "ru": "Filhaal zaya rokne ke liye tank ka inlet valve manually band kar dein."
+  },
+  {
+    "k": "water_tank.overflow.issue.0.title",
+    "ru": "Float valve replace"
+  },
+  {
+    "k": "water_tank.overflow.issue.0.cause",
+    "ru": "float (ball) valve pani band nahi kar raha"
+  },
+  {
+    "k": "water_tank.overflow.issue.1.title",
+    "ru": "Auto float switch lagana"
+  },
+  {
+    "k": "water_tank.overflow.issue.1.cause",
+    "ru": "tank bharne par motor ko khud band karne wala switch chahiye"
+  },
+  {
+    "k": "water_tank.overflow.issue.2.title",
+    "ru": "Inlet ball valve replace"
+  },
+  {
+    "k": "water_tank.overflow.issue.2.cause",
+    "ru": "inlet ka valve poora band nahi ho raha"
+  },
+  {
+    "k": "water_tank.no_water.label",
+    "ru": "Tank mein pani nahi bhar raha"
+  },
+  {
+    "k": "water_tank.no_water.checks.0",
+    "ru": "Main supply / boring mein pani hai? Ground floor ke nal se check karein."
+  },
+  {
+    "k": "water_tank.no_water.checks.1",
+    "ru": "Pump chal raha hai magar tank khali hai? To masla pump ya suction ka hai."
+  },
+  {
+    "k": "water_tank.no_water.checks.2",
+    "ru": "Tank ke inlet valve poore khule hain?"
+  },
+  {
+    "k": "water_tank.no_water.checks.3",
+    "ru": "Float valve jam ho kar band position mein atak gaya hai? Haath se hilakar dekhein."
+  },
+  {
+    "k": "water_tank.no_water.checks.4",
+    "ru": "Inlet pipe kahin choke ho sakti hai — pump se tank tak ka raasta check karwayein."
+  },
+  {
+    "k": "water_tank.no_water.issue.0.title",
+    "ru": "Float valve jam — replace"
+  },
+  {
+    "k": "water_tank.no_water.issue.0.cause",
+    "ru": "float valve band position par atak gaya hai"
+  },
+  {
+    "k": "water_tank.no_water.issue.1.title",
+    "ru": "Inlet pipe / valve chok"
+  },
+  {
+    "k": "water_tank.no_water.issue.1.cause",
+    "ru": "tank tak jane wali pipe ya valve band hai"
+  },
+  {
+    "k": "water_tank.no_water.issue.2.title",
+    "ru": "Pump / suction ka masla"
+  },
+  {
+    "k": "water_tank.no_water.issue.2.cause",
+    "ru": "pump pani ooper nahi pohancha raha"
+  },
+  {
+    "k": "water_tank.water_leak.label",
+    "ru": "Tank leak kar raha hai"
+  },
+  {
+    "k": "water_tank.water_leak.checks.0",
+    "ru": "Leak tank ki body se hai ya outlet/inlet ke joint se? Tank ko poonch kar 15 minute dekhein."
+  },
+  {
+    "k": "water_tank.water_leak.checks.1",
+    "ru": "Joint se ho to nuts halka tight karein (pani band kar ke)."
+  },
+  {
+    "k": "water_tank.water_leak.checks.2",
+    "ru": "Chhat par pani jama ho raha hai to seepage se deewar/chhat kharab hoti hai — jaldi karwayein."
+  },
+  {
+    "k": "water_tank.water_leak.checks.3",
+    "ru": "Neeche bijli ka koi point ya wiring geeli ho rahi ho to us circuit ka MCB band karein."
+  },
+  {
+    "k": "water_tank.water_leak.checks.4",
+    "ru": "Plastic tank ki body crack ho to wo repair nahi hoti, replace hoti hai."
+  },
+  {
+    "k": "water_tank.water_leak.issue.0.title",
+    "ru": "Inlet / outlet joint repair"
+  },
+  {
+    "k": "water_tank.water_leak.issue.0.cause",
+    "ru": "tank ke connection ka joint dheela ya crack hai"
+  },
+  {
+    "k": "water_tank.water_leak.issue.1.title",
+    "ru": "Tank replace (1000L)"
+  },
+  {
+    "k": "water_tank.water_leak.issue.1.cause",
+    "ru": "tank ki body crack ho chuki hai, repair mumkin nahi"
+  },
+  {
+    "k": "water_tank.smell.label",
+    "ru": "Pani ganda / boo aa rahi hai"
+  },
+  {
+    "k": "water_tank.smell.checks.0",
+    "ru": "Tank ka cover theek band hai? Khula tank sab se bari wajah hoti hai."
+  },
+  {
+    "k": "water_tank.smell.checks.1",
+    "ru": "Tank ke andar deewaron par kai (green/black) jami hai? Chhat par nazar daalein (andar na utrein)."
+  },
+  {
+    "k": "water_tank.smell.checks.2",
+    "ru": "Tank ki safai kab hui thi? Har 4–6 mahine mein safai zaroori hai."
+  },
+  {
+    "k": "water_tank.smell.checks.3",
+    "ru": "Sirf ek nal ka pani ganda hai ya sab? Ek nal = us line ka masla."
+  },
+  {
+    "k": "water_tank.smell.checks.4",
+    "ru": "Sewerage ki boo aaye to yeh khatarnak hai — us pani ko peene ke liye istemaal na karein."
+  },
+  {
+    "k": "water_tank.smell.issue.0.title",
+    "ru": "Tank ki safai (cleaning + disinfect)"
+  },
+  {
+    "k": "water_tank.smell.issue.0.cause",
+    "ru": "tank mein kai aur mitti jam gai hai"
+  },
+  {
+    "k": "water_tank.smell.issue.1.title",
+    "ru": "Tank cover / lid theek karna"
+  },
+  {
+    "k": "water_tank.smell.issue.1.cause",
+    "ru": "cover khula hone se kachra aur keere andar ja rahe hain"
+  },
+  {
+    "k": "water_tank.smell.issue.2.title",
+    "ru": "RO / water filter lagana"
+  },
+  {
+    "k": "water_tank.smell.issue.2.cause",
+    "ru": "peene ke pani ke liye filter lagana behtar hoga"
+  },
+  {
+    "k": "tap.common_safety.0",
+    "ru": "Kaam se pehle us line ka valve ya main supply band karein."
+  },
+  {
+    "k": "tap.common_safety.1",
+    "ru": "Purane nal ko zyada zor se na kholein — chuda hua thread pipe ko tor deta hai."
+  },
+  {
+    "k": "tap.common_safety.2",
+    "ru": "Basin ke neeche kaam karte waqt neeche baalti rakhein aur farsh sukha rakhein."
+  },
+  {
+    "k": "tap.water_leak.label",
+    "ru": "Nal se pani tapak raha hai"
+  },
+  {
+    "k": "tap.water_leak.checks.0",
+    "ru": "Pani nal ki tonti se tapak raha hai ya handle/joint ke neeche se? Dono ka ilaj alag hai."
+  },
+  {
+    "k": "tap.water_leak.checks.1",
+    "ru": "Nal ko poora band kar ke halka aur tight karein — magar zor na lagayein."
+  },
+  {
+    "k": "tap.water_leak.checks.2",
+    "ru": "Tonti se tapak raha ho to andar ki rubber washer ghis gai hai (sab se aam wajah)."
+  },
+  {
+    "k": "tap.water_leak.checks.3",
+    "ru": "Deewar ke joint se ris raha ho to teflon tape dobara lagani paregi."
+  },
+  {
+    "k": "tap.water_leak.checks.4",
+    "ru": "Filhaal us line ka valve band karke pani zaya hona rok dein."
+  },
+  {
+    "k": "tap.water_leak.issue.0.title",
+    "ru": "Washer / cartridge repair"
+  },
+  {
+    "k": "tap.water_leak.issue.0.cause",
+    "ru": "nal ke andar ki washer ya cartridge ghis gai hai"
+  },
+  {
+    "k": "tap.water_leak.issue.1.title",
+    "ru": "Basin tap replace (pillar type)"
+  },
+  {
+    "k": "tap.water_leak.issue.1.cause",
+    "ru": "nal purana ho chuka hai, repair par barbar leak karega"
+  },
+  {
+    "k": "tap.water_leak.issue.2.title",
+    "ru": "Mixer tap replace (single lever)"
+  },
+  {
+    "k": "tap.water_leak.issue.2.cause",
+    "ru": "garam/thanda mixer ka cartridge kharab hai"
+  },
+  {
+    "k": "tap.no_water.label",
+    "ru": "Pani nahi aa raha / pressure kam hai"
+  },
+  {
+    "k": "tap.no_water.checks.0",
+    "ru": "Ghar ke baqi nal se pani aa raha hai? Sirf ek nal = us nal ka masla; sab band = tank/pump ka masla."
+  },
+  {
+    "k": "tap.no_water.checks.1",
+    "ru": "Tank mein pani hai? Chhat par check karein."
+  },
+  {
+    "k": "tap.no_water.checks.2",
+    "ru": "Nal ki tonti ke aage lagi jaali (aerator) khol kar saaf karein — usmein mitti jam jati hai."
+  },
+  {
+    "k": "tap.no_water.checks.3",
+    "ru": "Us line ka valve poora khula hai?"
+  },
+  {
+    "k": "tap.no_water.checks.4",
+    "ru": "Garam pani nahi aa raha to yeh geyser ka masla hai, nal ka nahi."
+  },
+  {
+    "k": "tap.no_water.issue.0.title",
+    "ru": "Aerator / nal safai + repair"
+  },
+  {
+    "k": "tap.no_water.issue.0.cause",
+    "ru": "nal ke andar mitti ya calcium jam gaya hai"
+  },
+  {
+    "k": "tap.no_water.issue.1.title",
+    "ru": "Line valve replace"
+  },
+  {
+    "k": "tap.no_water.issue.1.cause",
+    "ru": "us line ka ball valve jam ho gaya hai"
+  },
+  {
+    "k": "tap.no_water.issue.2.title",
+    "ru": "Nal replace"
+  },
+  {
+    "k": "tap.no_water.issue.2.cause",
+    "ru": "nal andar se choke ho chuka hai"
+  },
+  {
+    "k": "tap.blocked.label",
+    "ru": "Nal jam ho gaya hai / ghoomta nahi"
+  },
+  {
+    "k": "tap.blocked.checks.0",
+    "ru": "Handle par zyada zor mat lagayein — thread toot sakti hai aur bara kaam ban jayega."
+  },
+  {
+    "k": "tap.blocked.checks.1",
+    "ru": "Halka WD-40 ya sarson ka tel lagakar 10 minute chhorein, phir narmi se ghumayein."
+  },
+  {
+    "k": "tap.blocked.checks.2",
+    "ru": "Handle ke screw ke ooper lagi cap nikaal kar screw tight/dheela karein."
+  },
+  {
+    "k": "tap.blocked.checks.3",
+    "ru": "Nal ke around jama calcium ko sirke wale pani se saaf karein."
+  },
+  {
+    "k": "tap.blocked.issue.0.title",
+    "ru": "Nal servicing (khol kar safai)"
+  },
+  {
+    "k": "tap.blocked.issue.0.cause",
+    "ru": "andar calcium jam gaya hai is liye spindle nahi ghoom raha"
+  },
+  {
+    "k": "tap.blocked.issue.1.title",
+    "ru": "Nal replace"
+  },
+  {
+    "k": "tap.blocked.issue.1.cause",
+    "ru": "spindle/thread khatam ho gai hai"
+  },
+  {
+    "k": "tap.broken.label",
+    "ru": "Nal / shower toot gaya hai"
+  },
+  {
+    "k": "tap.broken.checks.0",
+    "ru": "Pani zaya ho raha ho to us line ka valve ya main supply FORAN band karein."
+  },
+  {
+    "k": "tap.broken.checks.1",
+    "ru": "Toota hua hissa deewar ke andar hi reh gaya hai? Usay zabardasti na nikaalein."
+  },
+  {
+    "k": "tap.broken.checks.2",
+    "ru": "Tooti dhaat ke kinare tez hote hain — bachon ko door rakhein."
+  },
+  {
+    "k": "tap.broken.checks.3",
+    "ru": "Farsh sukha rakhein."
+  },
+  {
+    "k": "tap.broken.issue.0.title",
+    "ru": "Nal replace"
+  },
+  {
+    "k": "tap.broken.issue.0.cause",
+    "ru": "nal ki body toot gai hai"
+  },
+  {
+    "k": "tap.broken.issue.1.title",
+    "ru": "Shower set replace (complete)"
+  },
+  {
+    "k": "tap.broken.issue.1.cause",
+    "ru": "shower ka arm ya head toot gaya hai"
+  },
+  {
+    "k": "tap.broken.issue.2.title",
+    "ru": "Deewar ke andar ki thread repair"
+  },
+  {
+    "k": "tap.broken.issue.2.cause",
+    "ru": "deewar ke andar wali fitting kharab ho gai hai"
+  },
+  {
+    "k": "pipe.common_safety.0",
+    "ru": "Pehle us line ka valve ya ghar ki main supply band karein."
+  },
+  {
+    "k": "pipe.common_safety.1",
+    "ru": "Pani deewar ke andar bijli ki wiring tak pohanch sakta hai — us hisse ka MCB band rakhein."
+  },
+  {
+    "k": "pipe.common_safety.2",
+    "ru": "Deewar todne wala kaam khud na karein — andar gas ya bijli ki line bhi ho sakti hai."
+  },
+  {
+    "k": "pipe.water_leak.label",
+    "ru": "Pipe se pani leak / ris raha hai"
+  },
+  {
+    "k": "pipe.water_leak.checks.0",
+    "ru": "Leak nazar aa rahi pipe se hai ya deewar/farsh se namee aa rahi hai? Chupi (concealed) leak mehnga kaam hoti hai."
+  },
+  {
+    "k": "pipe.water_leak.checks.1",
+    "ru": "Us line ka valve band karke pani zaya hona rok dein."
+  },
+  {
+    "k": "pipe.water_leak.checks.2",
+    "ru": "Joint se ris raha ho to teflon tape ya clamp arzi hal de sakta hai."
+  },
+  {
+    "k": "pipe.water_leak.checks.3",
+    "ru": "Deewar par gili patch ka size roz badal raha hai? Photo bana kar note karein."
+  },
+  {
+    "k": "pipe.water_leak.checks.4",
+    "ru": "Pani bijli ke board, socket ya wiring ke qareeb hai to us circuit ka MCB foran band karein."
+  },
+  {
+    "k": "pipe.water_leak.issue.0.title",
+    "ru": "Khula joint repair"
+  },
+  {
+    "k": "pipe.water_leak.issue.0.cause",
+    "ru": "nazar aane wale joint se pani ris raha hai"
+  },
+  {
+    "k": "pipe.water_leak.issue.1.title",
+    "ru": "Fitting / elbow replace"
+  },
+  {
+    "k": "pipe.water_leak.issue.1.cause",
+    "ru": "elbow ya coupling crack ho gaya hai"
+  },
+  {
+    "k": "pipe.water_leak.issue.2.title",
+    "ru": "Pipe ka hissa replace"
+  },
+  {
+    "k": "pipe.water_leak.issue.2.cause",
+    "ru": "pipe khud crack ho gai hai, us hisse ko badalna paregi"
+  },
+  {
+    "k": "pipe.water_leak.issue.3.title",
+    "ru": "Chupi (concealed) leak — deewar tor kar repair"
+  },
+  {
+    "k": "pipe.water_leak.issue.3.cause",
+    "ru": "leak deewar ke andar hai, is liye deewar todni paregi"
+  },
+  {
+    "k": "pipe.burst.label",
+    "ru": "Pipe phat gai hai / pani bhar gaya"
+  },
+  {
+    "k": "pipe.burst.checks.0",
+    "ru": "Ghar ki MAIN water supply aur motor FORAN band karein."
+  },
+  {
+    "k": "pipe.burst.checks.1",
+    "ru": "Us hisse ki bijli ka MCB band karein — farsh par pani aur bijli ka combination jaan lewa hai."
+  },
+  {
+    "k": "pipe.burst.checks.2",
+    "ru": "Qeemti saman aur electrical items pani se hata dein."
+  },
+  {
+    "k": "pipe.burst.checks.3",
+    "ru": "Pani nikaalne ki koshish karein magar geele farsh par bijli ke appliance istemaal na karein."
+  },
+  {
+    "k": "pipe.burst.checks.4",
+    "ru": "Pipe ko khud jorne ki koshish na karein — pressure line ka kaam technician ka hai."
+  },
+  {
+    "k": "pipe.burst.issue.0.title",
+    "ru": "Phati pipe ka hissa replace"
+  },
+  {
+    "k": "pipe.burst.issue.0.cause",
+    "ru": "pipe pressure se phat gai hai"
+  },
+  {
+    "k": "pipe.burst.issue.1.title",
+    "ru": "GI / PPRC pipe replace"
+  },
+  {
+    "k": "pipe.burst.issue.1.cause",
+    "ru": "purani GI pipe rust se gal kar phat gai hai"
+  },
+  {
+    "k": "pipe.burst.issue.2.title",
+    "ru": "Deewar ke andar ki line replace"
+  },
+  {
+    "k": "pipe.burst.issue.2.cause",
+    "ru": "phati pipe concealed hai, deewar tor kar nayi line daalni paregi"
+  },
+  {
+    "k": "pipe.blocked.label",
+    "ru": "Pipe band / choke ho gai hai"
+  },
+  {
+    "k": "pipe.blocked.checks.0",
+    "ru": "Blockage ek hi nal/nikaas par hai ya poore ghar mein? Ek jagah = local blockage."
+  },
+  {
+    "k": "pipe.blocked.checks.1",
+    "ru": "Nal ki jaali (aerator) aur valve khol kar saaf karein."
+  },
+  {
+    "k": "pipe.blocked.checks.2",
+    "ru": "Purani GI pipe hai to andar rust jam jata hai — pani ke saath bhoora rang aata hai?"
+  },
+  {
+    "k": "pipe.blocked.checks.3",
+    "ru": "Zyada kemikal (acid) khud na daalein — pipe ko nuqsan aur gas se aankhon ko khatra hai."
+  },
+  {
+    "k": "pipe.blocked.issue.0.title",
+    "ru": "Line flushing / valve safai"
+  },
+  {
+    "k": "pipe.blocked.issue.0.cause",
+    "ru": "valve ya nal ke aage mitti jam gai hai"
+  },
+  {
+    "k": "pipe.blocked.issue.1.title",
+    "ru": "Choke pipe ka hissa replace"
+  },
+  {
+    "k": "pipe.blocked.issue.1.cause",
+    "ru": "pipe andar se rust/scale se band ho chuki hai"
+  },
+  {
+    "k": "pipe.weak.label",
+    "ru": "Pani ka pressure kam ho gaya hai"
+  },
+  {
+    "k": "pipe.weak.checks.0",
+    "ru": "Tank mein pani ka level poora hai?"
+  },
+  {
+    "k": "pipe.weak.checks.1",
+    "ru": "Poore ghar mein pressure kam hai ya sirf ek nal par?"
+  },
+  {
+    "k": "pipe.weak.checks.2",
+    "ru": "Ghar ke saare valve poore khule hain?"
+  },
+  {
+    "k": "pipe.weak.checks.3",
+    "ru": "Chhat ka tank neeche laga hai? Kam height se pressure kam hota hai."
+  },
+  {
+    "k": "pipe.weak.checks.4",
+    "ru": "Purani GI line andar se choke ho sakti hai — is ki tabdeeli hi permanent hal hai."
+  },
+  {
+    "k": "pipe.weak.issue.0.title",
+    "ru": "Valve / line safai"
+  },
+  {
+    "k": "pipe.weak.issue.0.cause",
+    "ru": "valve poora nahi khul raha ya line mein mitti hai"
+  },
+  {
+    "k": "pipe.weak.issue.1.title",
+    "ru": "Purani line replace"
+  },
+  {
+    "k": "pipe.weak.issue.1.cause",
+    "ru": "purani pipe andar se choke ho chuki hai"
+  },
+  {
+    "k": "pipe.weak.issue.2.title",
+    "ru": "Pressure pump lagana"
+  },
+  {
+    "k": "pipe.weak.issue.2.cause",
+    "ru": "supply pressure kam hai, booster pump se hal hoga"
+  },
+  {
+    "k": "drain.common_safety.0",
+    "ru": "Sewerage ke pani mein bemari ke jarasim hote hain — dastane pehnein aur baad mein haath sabun se dhoein."
+  },
+  {
+    "k": "drain.common_safety.1",
+    "ru": "Manhole ka dhakkan khol kar andar KABHI na jhukein aur na utrein — gas se behoshi ho jati hai."
+  },
+  {
+    "k": "drain.common_safety.2",
+    "ru": "Tezaab (acid) khud na daalein — chhinta aankhon aur jild ke liye khatarnak hai aur pipe bhi gal jati hai."
+  },
+  {
+    "k": "drain.blocked.label",
+    "ru": "Nali band ho gai hai / pani nahi nikal raha"
+  },
+  {
+    "k": "drain.blocked.checks.0",
+    "ru": "Nali ke ooper lagi jaali nikaal kar baal, kachra aur chikni mail nikaalein — 70% cases yahin theek ho jate hain."
+  },
+  {
+    "k": "drain.blocked.checks.1",
+    "ru": "Ek baalti garam (khaulta hua nahi) pani tez raftaar se daalein — chiknai pighal jati hai."
+  },
+  {
+    "k": "drain.blocked.checks.2",
+    "ru": "Baking soda + sirka daal kar 20 minute chhorein, phir garam pani daalein."
+  },
+  {
+    "k": "drain.blocked.checks.3",
+    "ru": "Rubber plunger se 10–15 dafa pump karein."
+  },
+  {
+    "k": "drain.blocked.checks.4",
+    "ru": "Blockage sirf ek jagah hai ya poore ghar ki nikaas slow hai? Poora ghar = main line block."
+  },
+  {
+    "k": "drain.blocked.checks.5",
+    "ru": "Kitchen mein tel/ghee nali mein daalna band karein — yahi jamta hai."
+  },
+  {
+    "k": "drain.blocked.issue.0.title",
+    "ru": "Nali blockage clearing"
+  },
+  {
+    "k": "drain.blocked.issue.0.cause",
+    "ru": "nali mein baal, mail ya chiknai jam gai hai"
+  },
+  {
+    "k": "drain.blocked.issue.1.title",
+    "ru": "Nahani trap replace"
+  },
+  {
+    "k": "drain.blocked.issue.1.cause",
+    "ru": "bathroom ka trap andar se choke aur toot chuka hai"
+  },
+  {
+    "k": "drain.blocked.issue.2.title",
+    "ru": "Basin ka bottle trap replace"
+  },
+  {
+    "k": "drain.blocked.issue.2.cause",
+    "ru": "basin ke neeche wala trap mail se band hai"
+  },
+  {
+    "k": "drain.blocked.issue.3.title",
+    "ru": "Main line / gully trap clearing"
+  },
+  {
+    "k": "drain.blocked.issue.3.cause",
+    "ru": "bahar wali main line ya gully trap block hai"
+  },
+  {
+    "k": "drain.smell.label",
+    "ru": "Nali se badbu aa rahi hai"
+  },
+  {
+    "k": "drain.smell.checks.0",
+    "ru": "Nali mein pani daal kar dekhein — trap sookh gaya ho to gas seedhi ooper aati hai (aksar kam istemaal wale bathroom mein)."
+  },
+  {
+    "k": "drain.smell.checks.1",
+    "ru": "Nali ki jaali ke neeche jama mail nikaal kar saaf karein."
+  },
+  {
+    "k": "drain.smell.checks.2",
+    "ru": "Bathroom/kitchen ka exhaust fan chala kar hawa nikaalein."
+  },
+  {
+    "k": "drain.smell.checks.3",
+    "ru": "Sewerage jaisi tez badbu ho to yeh sehat ke liye nuqsan deh hai — jaldi karwayein."
+  },
+  {
+    "k": "drain.smell.checks.4",
+    "ru": "Gas (LPG/sui gas) jaisi smell ho to yeh nali ka masla NAHI — gas valve band karein aur koi switch na chhuein."
+  },
+  {
+    "k": "drain.smell.issue.0.title",
+    "ru": "Nali safai + trap mein pani"
+  },
+  {
+    "k": "drain.smell.issue.0.cause",
+    "ru": "trap sookha hai ya mail jama hai is liye gas ooper aa rahi hai"
+  },
+  {
+    "k": "drain.smell.issue.1.title",
+    "ru": "Nahani trap replace"
+  },
+  {
+    "k": "drain.smell.issue.1.cause",
+    "ru": "trap ki water-seal kaam nahi kar rahi"
+  },
+  {
+    "k": "drain.smell.issue.2.title",
+    "ru": "Gully trap lagana / theek karna"
+  },
+  {
+    "k": "drain.smell.issue.2.cause",
+    "ru": "bahar wale gully trap ki seal kharab hai"
+  },
+  {
+    "k": "drain.overflow.label",
+    "ru": "Gandha pani wapas aa raha hai / bah raha hai"
+  },
+  {
+    "k": "drain.overflow.checks.0",
+    "ru": "Us bathroom/kitchen ka pani istemaal FORAN band karein — jitna pani daalenge utna wapas aayega."
+  },
+  {
+    "k": "drain.overflow.checks.1",
+    "ru": "Flush bilkul na chalayein."
+  },
+  {
+    "k": "drain.overflow.checks.2",
+    "ru": "Gandha pani bijli ke socket ya extension tak pohanch raha ho to us circuit ka MCB band karein."
+  },
+  {
+    "k": "drain.overflow.checks.3",
+    "ru": "Bachon aur khane peene ki cheezon ko us hisse se door rakhein."
+  },
+  {
+    "k": "drain.overflow.checks.4",
+    "ru": "Ghar walon ko batayein ke us bathroom ka istemaal band hai."
+  },
+  {
+    "k": "drain.overflow.issue.0.title",
+    "ru": "Main sewerage line clearing"
+  },
+  {
+    "k": "drain.overflow.issue.0.cause",
+    "ru": "ghar ki main line block hai is liye pani wapas aa raha hai"
+  },
+  {
+    "k": "drain.overflow.issue.1.title",
+    "ru": "Gully trap / manhole clearing"
+  },
+  {
+    "k": "drain.overflow.issue.1.cause",
+    "ru": "bahar wala trap ya manhole bhar chuka hai"
+  },
+  {
+    "k": "drain.overflow.issue.2.title",
+    "ru": "Sewerage pipe replace"
+  },
+  {
+    "k": "drain.overflow.issue.2.cause",
+    "ru": "sewerage ki pipe toot ya baith gai hai"
+  },
+  {
+    "k": "flush_tank.common_safety.0",
+    "ru": "Flush tank ka cover dono haathon se seedha ooper uthayein — porcelain cover bhaari aur nazuk hota hai."
+  },
+  {
+    "k": "flush_tank.common_safety.1",
+    "ru": "Tank ka inlet valve band karke hi andar haath daalein."
+  },
+  {
+    "k": "flush_tank.common_safety.2",
+    "ru": "Toilet ka pani gandha hota hai — kaam ke baad haath sabun se dhoein."
+  },
+  {
+    "k": "flush_tank.not_flushing.label",
+    "ru": "Flush kaam nahi kar raha"
+  },
+  {
+    "k": "flush_tank.not_flushing.checks.0",
+    "ru": "Tank mein pani bhar raha hai? Bilkul khali ho to masla inlet ka hai."
+  },
+  {
+    "k": "flush_tank.not_flushing.checks.1",
+    "ru": "Cover uthakar dekhein: button/handle ka link ya chain toot kar utar gai hai?"
+  },
+  {
+    "k": "flush_tank.not_flushing.checks.2",
+    "ru": "Flapper (neeche wali rubber) seedhi baithi hai? Tedhi ho to haath se seedha karein."
+  },
+  {
+    "k": "flush_tank.not_flushing.checks.3",
+    "ru": "Float ball dabakar dekhein ke pani aata hai — inlet valve jam ho sakta hai."
+  },
+  {
+    "k": "flush_tank.not_flushing.checks.4",
+    "ru": "Poora pani bharne mein kitna waqt lagta hai? 5 minute se zyada = inlet weak."
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.0.title",
+    "ru": "Flush valve / flapper kit replace"
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.0.cause",
+    "ru": "flapper ya flush mechanism kharab ho gaya hai"
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.1.title",
+    "ru": "Float valve replace"
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.1.cause",
+    "ru": "tank mein pani bharne wala valve jam ho gaya hai"
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.2.title",
+    "ru": "Poora flush tank replace"
+  },
+  {
+    "k": "flush_tank.not_flushing.issue.2.cause",
+    "ru": "tank aur uska mechanism purana ho chuka hai"
+  },
+  {
+    "k": "flush_tank.overflow.label",
+    "ru": "Pani mustaqil behta rehta hai"
+  },
+  {
+    "k": "flush_tank.overflow.checks.0",
+    "ru": "Awaz mustaqil aa rahi hai? Yeh mahine mein hazaron litre pani zaya karti hai."
+  },
+  {
+    "k": "flush_tank.overflow.checks.1",
+    "ru": "Cover uthakar float ball ko haath se ooper karein — pani ruk jata hai to valve adjust karna hai."
+  },
+  {
+    "k": "flush_tank.overflow.checks.2",
+    "ru": "Flapper ke neeche mail ya calcium jama hai? Usay saaf karein."
+  },
+  {
+    "k": "flush_tank.overflow.checks.3",
+    "ru": "Overflow pipe se pani ja raha hai to float valve band nahi ho raha."
+  },
+  {
+    "k": "flush_tank.overflow.checks.4",
+    "ru": "Filhaal tank ka inlet valve band kar dein."
+  },
+  {
+    "k": "flush_tank.overflow.issue.0.title",
+    "ru": "Flapper safai / replace"
+  },
+  {
+    "k": "flush_tank.overflow.issue.0.cause",
+    "ru": "flapper theek seal nahi kar rahi is liye pani leak ho raha hai"
+  },
+  {
+    "k": "flush_tank.overflow.issue.1.title",
+    "ru": "Float valve replace"
+  },
+  {
+    "k": "flush_tank.overflow.issue.1.cause",
+    "ru": "float valve pani band nahi kar raha"
+  },
+  {
+    "k": "flush_tank.water_leak.label",
+    "ru": "Flush tank se pani leak ho raha hai"
+  },
+  {
+    "k": "flush_tank.water_leak.checks.0",
+    "ru": "Leak tank ke neeche joint se hai ya body/crack se? Poonch kar 15 minute dekhein."
+  },
+  {
+    "k": "flush_tank.water_leak.checks.1",
+    "ru": "Inlet pipe ka nut halka tight karein (valve band kar ke)."
+  },
+  {
+    "k": "flush_tank.water_leak.checks.2",
+    "ru": "Deewar par lagi tank ke bracket check karein."
+  },
+  {
+    "k": "flush_tank.water_leak.checks.3",
+    "ru": "Farsh sukha rakhein — bathroom mein phisalne ka khatra hai."
+  },
+  {
+    "k": "flush_tank.water_leak.checks.4",
+    "ru": "Body crack ho to repair nahi hoti, tank replace hota hai."
+  },
+  {
+    "k": "flush_tank.water_leak.issue.0.title",
+    "ru": "Joint / washer repair"
+  },
+  {
+    "k": "flush_tank.water_leak.issue.0.cause",
+    "ru": "inlet ya outlet ka washer ghis gaya hai"
+  },
+  {
+    "k": "flush_tank.water_leak.issue.1.title",
+    "ru": "Flush tank replace"
+  },
+  {
+    "k": "flush_tank.water_leak.issue.1.cause",
+    "ru": "tank ki body crack ho gai hai"
+  },
+  {
+    "k": "flush_tank.blocked.label",
+    "ru": "Commode band / pani wapas aa raha hai"
+  },
+  {
+    "k": "flush_tank.blocked.checks.0",
+    "ru": "Flush baar baar na chalayein — pani bahar aa jayega."
+  },
+  {
+    "k": "flush_tank.blocked.checks.1",
+    "ru": "Rubber plunger se 10–15 dafa zor se pump karein."
+  },
+  {
+    "k": "flush_tank.blocked.checks.2",
+    "ru": "Ek baalti garam (khaulta nahi) pani ooper se tez daalein."
+  },
+  {
+    "k": "flush_tank.blocked.checks.3",
+    "ru": "Kya koi cheez (kapra, wipes, khilona) gir gai thi? Batayein — yeh mechanical blockage hoti hai."
+  },
+  {
+    "k": "flush_tank.blocked.checks.4",
+    "ru": "Ghar ke doosre bathroom bhi block hain? To main line ka masla hai."
+  },
+  {
+    "k": "flush_tank.blocked.checks.5",
+    "ru": "Tezaab khud na daalein — porcelain aur pipe dono ko nuqsan hota hai."
+  },
+  {
+    "k": "flush_tank.blocked.issue.0.title",
+    "ru": "Commode blockage clearing"
+  },
+  {
+    "k": "flush_tank.blocked.issue.0.cause",
+    "ru": "commode ke trap mein kachra phansa hua hai"
+  },
+  {
+    "k": "flush_tank.blocked.issue.1.title",
+    "ru": "Main sewerage line clearing"
+  },
+  {
+    "k": "flush_tank.blocked.issue.1.cause",
+    "ru": "ghar ki main sewerage line block hai"
+  },
+  {
+    "k": "water_filter.common_safety.0",
+    "ru": "Filter kholne se pehle uska inlet valve band karein aur electric RO ho to plug nikaalein."
+  },
+  {
+    "k": "water_filter.common_safety.1",
+    "ru": "Cartridge badalte waqt haath saaf hon — ganda haath naye filter ko kharab kar deta hai."
+  },
+  {
+    "k": "water_filter.common_safety.2",
+    "ru": "Filter ke aas paas pani jama na hone dein, khaas tor par agar qareeb bijli ka point ho."
+  },
+  {
+    "k": "water_filter.no_water.label",
+    "ru": "Pani nahi aa raha / bohat slow hai"
+  },
+  {
+    "k": "water_filter.no_water.checks.0",
+    "ru": "Inlet valve poora khula hai? Aur main supply mein pressure hai?"
+  },
+  {
+    "k": "water_filter.no_water.checks.1",
+    "ru": "Pehla (sediment) cartridge nikaal kar dekhein — bhoora/kaala ho gaya ho to chok hai."
+  },
+  {
+    "k": "water_filter.no_water.checks.2",
+    "ru": "Cartridge kitne mahine purane hain? 6–12 mahine se zyada purane ho to change zaroori hai."
+  },
+  {
+    "k": "water_filter.no_water.checks.3",
+    "ru": "Electric RO hai to uski chhoti motor chal rahi hai (halki awaz)?"
+  },
+  {
+    "k": "water_filter.no_water.checks.4",
+    "ru": "Storage tank khali hai to bharne mein 1–2 ghante lagte hain — intezaar karein."
+  },
+  {
+    "k": "water_filter.no_water.issue.0.title",
+    "ru": "Cartridge / candle replace + service"
+  },
+  {
+    "k": "water_filter.no_water.issue.0.cause",
+    "ru": "filter cartridge choke ho gaye hain"
+  },
+  {
+    "k": "water_filter.no_water.issue.1.title",
+    "ru": "Inlet fitting / valve repair"
+  },
+  {
+    "k": "water_filter.no_water.issue.1.cause",
+    "ru": "filter tak pani laane wali fitting choke hai"
+  },
+  {
+    "k": "water_filter.no_water.issue.2.title",
+    "ru": "Poora RO unit replace"
+  },
+  {
+    "k": "water_filter.no_water.issue.2.cause",
+    "ru": "membrane aur housing dono khatam ho chuke hain"
+  },
+  {
+    "k": "water_filter.smell.label",
+    "ru": "Pani ka taste / smell theek nahi"
+  },
+  {
+    "k": "water_filter.smell.checks.0",
+    "ru": "Cartridge kab badle the? Purana carbon filter ulta boo paida karta hai."
+  },
+  {
+    "k": "water_filter.smell.checks.1",
+    "ru": "Housing khol kar andar dekhein — kai (slime) jami hai?"
+  },
+  {
+    "k": "water_filter.smell.checks.2",
+    "ru": "Storage tank khali kar ke saaf karein."
+  },
+  {
+    "k": "water_filter.smell.checks.3",
+    "ru": "Filter se pehle wala pani (direct nal) bhi kharab hai? To masla tank/supply ka hai, filter ka nahi."
+  },
+  {
+    "k": "water_filter.smell.checks.4",
+    "ru": "Aisa pani peene ke liye istemaal na karein jab tak theek na ho jaye."
+  },
+  {
+    "k": "water_filter.smell.issue.0.title",
+    "ru": "Cartridge replace + housing safai"
+  },
+  {
+    "k": "water_filter.smell.issue.0.cause",
+    "ru": "carbon cartridge khatam ho gaya hai aur housing mein kai hai"
+  },
+  {
+    "k": "water_filter.smell.issue.1.title",
+    "ru": "Membrane replace / unit replace"
+  },
+  {
+    "k": "water_filter.smell.issue.1.cause",
+    "ru": "RO membrane apni life poori kar chuka hai"
+  },
+  {
+    "k": "water_filter.smell.issue.2.title",
+    "ru": "Tank ki safai bhi zaroori"
+  },
+  {
+    "k": "water_filter.smell.issue.2.cause",
+    "ru": "ghar ke water tank se hi ganda pani aa raha hai"
+  },
+  {
+    "k": "water_filter.water_leak.label",
+    "ru": "Filter se pani leak ho raha hai"
+  },
+  {
+    "k": "water_filter.water_leak.checks.0",
+    "ru": "Inlet valve band karein taake pani zaya na ho."
+  },
+  {
+    "k": "water_filter.water_leak.checks.1",
+    "ru": "Leak housing ke dhaage se hai ya pipe ke joint se? Poonch kar dekhein."
+  },
+  {
+    "k": "water_filter.water_leak.checks.2",
+    "ru": "Housing haath se halka tight karein — zyada zor se plastic chatak jata hai."
+  },
+  {
+    "k": "water_filter.water_leak.checks.3",
+    "ru": "Electric RO ho aur pani motor/plug ke qareeb ho to plug nikaalein (haath sukha rakh kar)."
+  },
+  {
+    "k": "water_filter.water_leak.checks.4",
+    "ru": "O-ring (rubber ring) apni jagah par seedhi baithi hai?"
+  },
+  {
+    "k": "water_filter.water_leak.issue.0.title",
+    "ru": "O-ring / housing sealing"
+  },
+  {
+    "k": "water_filter.water_leak.issue.0.cause",
+    "ru": "housing ki rubber O-ring ghis gai hai"
+  },
+  {
+    "k": "water_filter.water_leak.issue.1.title",
+    "ru": "Fitting / tubing replace"
+  },
+  {
+    "k": "water_filter.water_leak.issue.1.cause",
+    "ru": "filter ki chhoti pipe ya fitting crack hai"
+  },
+  {
+    "k": "water_filter.water_leak.issue.2.title",
+    "ru": "Poora unit replace"
+  },
+  {
+    "k": "water_filter.water_leak.issue.2.cause",
+    "ru": "housing crack ho chuki hai"
+  }
+]

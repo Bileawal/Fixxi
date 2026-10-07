@@ -26,6 +26,21 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
     super.dispose();
   }
 
+  Future<void> _showErrorDialog(Object error) async {
+    final message = friendlyApiError(error);
+    if (!mounted) return;
+    await showDialog<void>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(isFirebaseAuthConfigError(error) ? 'Firebase Setup Required' : 'Login failed'),
+        content: SingleChildScrollView(child: Text(message)),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: const Text('OK')),
+        ],
+      ),
+    );
+  }
+
   Future<void> _login() async {
     if (_emailCtrl.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -43,17 +58,6 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
     setState(() => _loading = true);
     try {
       final app = context.read<AppState>();
-      if (!app.serverOnline) {
-        final ok = await app.retryServerConnection();
-        if (!ok && mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Backend server is not running. Please run npm run dev first.'),
-            ),
-          );
-          return;
-        }
-      }
       final result = await app.api.login(
         _emailCtrl.text.trim(),
         _passCtrl.text,
@@ -63,24 +67,24 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
       if (!mounted) return;
       Navigator.of(context).popUntil((route) => route.isFirst);
     } catch (e) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(friendlyApiError(e))),
-        );
-      }
+      if (mounted) await _showErrorDialog(e);
     } finally {
       if (mounted) setState(() => _loading = false);
     }
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('${AppConstants.appName} Admin')),
+      appBar: AppBar(title: const Text('${AppConstants.appName} Admin')),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+
             TextField(
               controller: _emailCtrl,
               keyboardType: TextInputType.emailAddress,
@@ -113,6 +117,7 @@ class _AdminLoginScreenState extends State<AdminLoginScreen> {
                     )
                   : const Text('Admin Login'),
             ),
+
           ],
         ),
       ),

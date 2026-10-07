@@ -74,6 +74,3 @@ local.properties
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
-# Firebase / secrets
-*.json
-*.env

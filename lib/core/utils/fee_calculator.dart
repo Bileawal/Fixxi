@@ -1,10 +1,14 @@
 import '../constants/app_constants.dart';
 
-/// Check fee: Rs 300 within 4 km, Rs 500 from 4 km up to 8 km.
+/// Check fee based on distance:
+/// 0 - 3 km: Rs 200
+/// 3 - 7 km: Rs 400
+/// 7 - 10 km: Rs 600
+/// > 10 km: Rs 600
 int checkFeeForDistanceKm(double distanceKm) {
-  if (distanceKm <= 4) return AppConstants.checkFeeWithin4Km;
-  if (distanceKm <= 8) return AppConstants.checkFee4To8Km;
-  return AppConstants.checkFee4To8Km;
+  if (distanceKm <= 3) return 200;
+  if (distanceKm <= 7) return 400;
+  return 600;
 }
 
 String checkFeeLabel(double distanceKm) {

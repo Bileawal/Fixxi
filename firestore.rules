@@ -1,0 +1,129 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function userDoc() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isAdmin() {
+      return signedIn()
+        && exists(/databases/$(database)/documents/users/$(request.auth.uid))
+        && userDoc().role == 'admin';
+    }
+
+    function protectedUserFields() {
+      return ['role', 'isSuspended', 'suspensionType', 'suspendedUntil', 'suspensionReason', 'rating', 'reviewCount'];
+    }
+
+    function technicianTestFieldsOnly() {
+      return request.resource.data.diff(resource.data).affectedKeys()
+          .hasOnly(['testScore', 'status', 'testTries', 'testPassedAt']);
+    }
+
+    function allowedTechnicianTestStatus() {
+      return request.resource.data.status in ['pending_test', 'pending_admin', 'test_locked'];
+    }
+
+    match /users/{userId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.auth.uid == userId
+        && request.resource.data.role in ['customer', 'technician', 'admin'];
+      allow update: if signedIn() && (
+        isAdmin() ||
+        (request.auth.uid == userId
+          && !request.resource.data.diff(resource.data).affectedKeys().hasAny(protectedUserFields()))
+      );
+      allow delete: if isAdmin();
+    }
+
+    match /technician_profiles/{profileId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && request.auth.uid == profileId;
+      allow update: if signedIn() && (
+        isAdmin() || request.auth.uid == profileId
+      );
+      allow delete: if isAdmin();
+    }
+
+    match /service_requests/{requestId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.resource.data.customerId == request.auth.uid;
+      allow update: if signedIn() && (
+        isAdmin() ||
+        resource.data.customerId == request.auth.uid ||
+        resource.data.technicianId == request.auth.uid
+      );
+      allow delete: if isAdmin();
+    }
+
+    match /chat_messages/{messageId} {
+      allow read, create: if signedIn();
+      allow update, delete: if isAdmin();
+    }
+
+    match /reviews/{reviewId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+        && request.resource.data.customerId == request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+
+    match /reports/{reportId} {
+      allow read: if signedIn() && (
+        isAdmin() ||
+        resource.data.reporterId == request.auth.uid ||
+        resource.data.reportedUserId == request.auth.uid
+      );
+      allow create: if signedIn()
+        && request.resource.data.reporterId == request.auth.uid
+        && request.resource.data.reportedUserId != request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+
+    match /notifications/{notificationId} {
+      allow read, update: if signedIn() && resource.data.userId == request.auth.uid;
+      allow create: if signedIn();
+      allow delete: if isAdmin();
+    }
+
+    // OTP records — client-side access allowed for FYP
+    match /otp_verifications/{email} {
+      allow read, write: if true;
+    }
+
+    match /otps/{email} {
+      allow read, write: if false;
+    }
+
+    match /test_questions/{questionId} {
+      allow read: if signedIn();
+      allow write: if isAdmin();
+    }
+
+    match /admin_messages/{messageId} {
+      allow create: if signedIn()
+        && request.resource.data.senderId == request.auth.uid;
+      allow read: if isAdmin()
+        || (signedIn() && resource.data.senderId == request.auth.uid);
+      allow update: if isAdmin();
+    }
+
+    match /ai_learning_data/{entryId} {
+      allow read: if signedIn();
+      allow create, update: if signedIn();
+      allow delete: if isAdmin();
+    }
+
+    match /ai_diagnosis_logs/{logId} {
+      allow read: if isAdmin();
+      allow create: if signedIn();
+      allow update, delete: if isAdmin();
+    }
+  }
+}

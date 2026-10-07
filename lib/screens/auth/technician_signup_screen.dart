@@ -66,15 +66,6 @@ class _TechnicianSignupScreenState extends State<TechnicianSignupScreen> {
     setState(() => _loading = true);
     try {
       final app = context.read<AppState>();
-      if (!app.serverOnline) {
-        final ok = await app.retryServerConnection();
-        if (!ok && mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Backend server is not running.')),
-          );
-          return;
-        }
-      }
       final result = await app.api.registerTechnician(
         name: _nameCtrl.text.trim(),
         fatherName: _fatherCtrl.text.trim(),
@@ -178,7 +169,7 @@ class _TechnicianSignupScreenState extends State<TechnicianSignupScreen> {
                             width: 22,
                             child: CircularProgressIndicator(strokeWidth: 2),
                           )
-                        : Text(_step < 3 ? 'Next' : 'Submit for Approval'),
+                        : Text(_step < 3 ? 'Next' : 'Submit & Proceed to Test'),
                   ),
                 ),
               ],
@@ -235,7 +226,7 @@ class _TechnicianSignupScreenState extends State<TechnicianSignupScreen> {
               child: ListTile(
                 leading: Icon(Icons.info_outline),
                 title: Text('Skill test'),
-                subtitle: Text('After admin approves your profile, you will take a test in the app.'),
+                subtitle: Text('After completing the sign-up, you will take a skill test. You must pass to be sent for admin approval.'),
               ),
             ),
           ],

@@ -46,19 +46,14 @@ class _CustomerSignupScreenState extends State<CustomerSignupScreen> {
     setState(() => _loading = true);
     try {
       final app = context.read<AppState>();
-      if (!app.serverOnline) {
-        final ok = await app.retryServerConnection();
-        if (!ok && mounted) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text('Backend server is not running.')),
-          );
-          return;
-        }
-      }
-      await app.api.sendCustomerOtp(_emailCtrl.text.trim());
+      final result = await app.api.sendCustomerOtp(_emailCtrl.text.trim());
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('OTP sent to ${_emailCtrl.text.trim()}')),
+        SnackBar(
+          content: Text(result['message'] as String? ?? 'OTP sent to ${_emailCtrl.text.trim()}'),
+          duration: const Duration(seconds: 5),
+          backgroundColor: const Color(0xFF15803D),
+        ),
       );
       Navigator.push(
         context,

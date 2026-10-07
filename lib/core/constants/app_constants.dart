@@ -5,12 +5,9 @@ class AppConstants {
   static const maxDistanceKm = 8.0;
 
   static const categories = [
-    'Plumbing',
-    'Electrical',
-    'AC / HVAC',
-    'Carpentry',
-    'Appliance Repair',
-    'General Maintenance',
+    'Plumber',
+    'Electrician',
+    'AC & Refrigerator Mechanic',
   ];
 
   static const demoCustomerEmail = 'customer@fixxi.com';

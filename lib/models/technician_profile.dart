@@ -9,6 +9,7 @@ class TechnicianProfile {
     required this.status,
     this.rejectionReason,
     this.testScore,
+    this.testTries = 0,
   });
 
   final String id;
@@ -20,11 +21,14 @@ class TechnicianProfile {
   final String status;
   final String? rejectionReason;
   final double? testScore;
+  final int testTries;
 
   bool get isPendingAdmin => status == 'pending_admin';
   bool get isRejected => status == 'rejected';
-  bool get needsTest => status == 'approved' || status == 'test_failed';
-  bool get isActive => status == 'test_passed';
+  bool get needsTest => status == 'pending_test';
+  bool get isTestLocked => status == 'test_locked' || testTries >= 3;
+  bool get canTakeTest => needsTest && !isTestLocked;
+  bool get isActive => status == 'approved';
 
   factory TechnicianProfile.fromJson(Map<String, dynamic> json) =>
       TechnicianProfile(
@@ -40,5 +44,6 @@ class TechnicianProfile {
         status: json['status'] as String? ?? 'pending_admin',
         rejectionReason: json['rejectionReason'] as String?,
         testScore: (json['testScore'] as num?)?.toDouble(),
+        testTries: json['testTries'] as int? ?? 0,
       );
 }

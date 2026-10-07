@@ -29,7 +29,6 @@ class _CustomerShellState extends State<CustomerShell> {
 
     return Scaffold(
       body: pages[_index],
-      floatingActionButton: _index == 0 ? const AiComingSoonButton() : null,
       bottomNavigationBar: NavigationBar(
         selectedIndex: _index,
         onDestinationSelected: (i) => setState(() => _index = i),

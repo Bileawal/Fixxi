@@ -1,3 +1,5 @@
+import '../core/utils/firestore_helpers.dart';
+
 class AppNotification {
   AppNotification({
     required this.id,
@@ -33,7 +35,7 @@ class AppNotification {
         userId: json['userId'] as String,
         title: json['title'] as String,
         body: json['body'] as String,
-        createdAt: DateTime.parse(json['createdAt'] as String),
+        createdAt: parseFirestoreDate(json['createdAt']),
         read: json['read'] as bool? ?? false,
         requestId: json['requestId'] as String?,
       );

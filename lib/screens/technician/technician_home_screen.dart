@@ -87,10 +87,11 @@ class _TechnicianHomeScreenState extends State<TechnicianHomeScreen> {
                   ),
                   value: tech.isAvailable,
                   onChanged: (v) async {
+                    final appState = context.read<AppState>();
                     try {
-                      await context.read<AppState>().api.setAvailability(v);
-                      final me = await context.read<AppState>().api.getMe();
-                      context.read<AppState>().updateUser(me.user);
+                      await appState.api.setAvailability(v);
+                      final me = await appState.api.getMe();
+                      appState.updateUser(me.user);
                     } catch (e) {
                       if (context.mounted) {
                         ScaffoldMessenger.of(context).showSnackBar(

@@ -23,6 +23,7 @@ class ReviewsListWidget extends StatelessWidget {
     String technicianId, {
     String? reviewId,
   }) async {
+    final api = context.read<AppState>().api;
     final reasonCtrl = TextEditingController();
     final ok = await showDialog<bool>(
       context: context,
@@ -38,7 +39,7 @@ class ReviewsListWidget extends StatelessWidget {
         ),
         actions: [
           TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text('Cancel')),
-          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Submit')),
+          FilledButton(onPressed: () => Navigator.pop(ctx, true), child: const Text('Report')),
         ],
       ),
     );
@@ -47,7 +48,7 @@ class ReviewsListWidget extends StatelessWidget {
       return;
     }
     try {
-      await context.read<AppState>().api.submitReport(
+      await api.submitReport(
             reportedUserId: technicianId,
             reason: reasonCtrl.text.trim(),
             reviewId: reviewId,
@@ -55,7 +56,7 @@ class ReviewsListWidget extends StatelessWidget {
       reasonCtrl.dispose();
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Report submitted')),
+          const SnackBar(content: Text('Report sent to admin')),
         );
       }
     } catch (e) {
@@ -99,13 +100,6 @@ class ReviewsListWidget extends StatelessWidget {
                           Text(r.customerName, style: const TextStyle(fontWeight: FontWeight.w600)),
                           RatingStars(rating: r.rating, size: 14),
                         ],
-                      ),
-                    ),
-                    Text(
-                      'Rs ${r.repairCost.toStringAsFixed(0)}',
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.primary,
-                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],

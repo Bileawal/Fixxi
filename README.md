@@ -1,79 +1,110 @@
-# Fixxi (FYP)
+# Fixxi — Home Repair & Technician Booking (FYP)
 
-Home repair booking app — Flutter + Node.js/Express + MongoDB.
+Flutter app backed by **Firebase** (Auth, Firestore, FCM) + **Cloudinary** (ID card images).
 
-## Project structure
+## Requirements
 
-- `lib/` — Flutter app
-- `backend/` — REST API
-- `assets/logo.png` — App logo (replace with your own)
+- Flutter SDK
+- Android Studio / VS Code
+- Internet connection (mobile data or Wi‑Fi)
+- Firebase project: `fixxi-f0d1c`
+- Cloudinary account (free tier works)
 
-## Backend setup
+**No local backend, MongoDB, or PC server required.**
 
-1. Install [MongoDB](https://www.mongodb.com/try/download/community) and [Node.js](https://nodejs.org/)
-2. Terminal:
+## Firebase Console setup (one time)
 
-```bash
-cd backend
-copy .env.example .env
-npm install
-npm run seed
-npm run dev
+1. Open [Firebase Console](https://console.firebase.google.com) → project **fixxi-f0d1c**
+2. **Authentication** → Get started → **Email/Password** → Enable → Save
+3. **Firestore Database** → Create database (if not created)
+4. **Firestore → Rules** → paste content from `firestore.rules` → **Publish**
+
+## Cloudinary setup (images — Step 3)
+
+Technician ID cards upload to **Cloudinary**, not Firebase Storage.
+
+1. Sign up / login: [https://cloudinary.com](https://cloudinary.com)
+2. **Dashboard** → copy your **Cloud name** (e.g. `dabc123xyz`)
+3. **Settings** (gear) → **Upload** tab → **Add upload preset**
+   - **Preset name:** `fixxi_unsigned` (or any name you like)
+   - **Signing mode:** **Unsigned**
+   - **Folder:** optional `fixxi/id_cards`
+   - Save preset
+4. Open `lib/core/constants/cloudinary_config.dart` and set:
+
+```dart
+static const cloudName = 'YOUR_CLOUD_NAME';
+static const uploadPreset = 'fixxi_unsigned';
 ```
 
-API runs at `http://localhost:3000`
+5. Save file → run `flutter pub get` → rebuild app
 
-### `.env` (important)
+Admin will see ID card images via Cloudinary URLs in the admin technician detail screen.
 
-- `MONGODB_URI` — MongoDB connection
-- `JWT_SECRET` — random secret string
-- `SMTP_*` — Gmail app password for customer OTP emails  
-  If SMTP is empty, OTP is printed in the **server console** (dev mode) and returned in API as `devOtp`.
+## Admin account (first time)
 
-**Default admin:** `admin@fixxi.com` / `admin123`
+1. Run the app → Welcome screen → top-left **admin icon**
+2. Email: `bilawal22204@gmail.com`
+3. Password: `Bilawal1122`
+4. Tap **Create Admin Account (First Time)**
+5. Next time use **Admin Login** only
 
-## Flutter setup
+Passwords are stored in **Firebase Authentication** (hashed by Google), not in the app or Firestore.
 
-1. Install Flutter SDK
-2. Start backend + MongoDB first
-3. Terminal:
+## Run the app
 
-```bash
+```powershell
+cd C:\Users\Bilaw\androidStudioProjects\fixxi
 flutter pub get
 flutter run
 ```
 
-### API URL (physical device)
+## Customer signup OTP (Firebase Cloud Functions)
 
-Edit [`lib/core/constants/api_config.dart`](lib/core/constants/api_config.dart):
+OTP is sent by Cloud Functions via Gmail SMTP — not stored on the client.
 
-- Emulator: `http://10.0.2.2:3000` (default)
-- Real phone: `http://YOUR_PC_IP:3000` (same Wi‑Fi)
+### 1. Gmail App Password
 
-## User flows
+1. Use a Gmail account (e.g. `bilawal22204@gmail.com`)
+2. Google Account → **Security** → enable **2-Step Verification**
+3. Security → **App passwords** → create app → name it `Fixxi OTP`
+4. Copy the 16-character password (spaces don't matter)
 
-### Customer
-1. Sign up → name, phone, address, email → OTP → password
-2. Login → book technicians, requests, chat, reviews
+### 2. Deploy Cloud Functions
 
-### Technician
-1. Sign up (4 steps) → personal info, skills, ID front/back, password
-2. Wait for **admin approval**
-3. Take **skill test** (pass ≥ 60%)
-4. Full app access
-
-### Admin
-1. Login → Pending technicians → view profile + ID images → Approve/Reject
-2. View all technicians and test scores
-
-## Logo
-
-Replace `assets/logo.png` with your logo (square PNG recommended), then:
-
-```bash
-flutter pub get
+```powershell
+cd C:\Users\bilaw\AndroidStudioProjects\fixxi\functions
+npm install
+cd ..
+firebase login
+firebase use fixxi-f0d1c
+firebase functions:secrets:set SMTP_USER
+firebase functions:secrets:set SMTP_PASS
+firebase deploy --only functions,firestore:rules
 ```
 
-## AI module
+When prompted for secrets, enter your Gmail address and App Password.
 
-Icon only — “Coming soon” (no backend AI yet).
+Alternatively for local testing, set env vars before deploy:
+`SMTP_USER=your@gmail.com` and `SMTP_PASS=your-app-password`
+
+### 3. OTP rules
+
+- 6-digit code, expires in **5 minutes**
+- Max **5** wrong verify attempts
+- Max **3** send requests per email per **15 minutes**
+- Resend cooldown in app: **60 seconds**
+
+## Project structure
+
+- `lib/services/fixxi_api.dart` — Auth + Firestore data
+- `lib/services/cloudinary_service.dart` — ID card image uploads
+- `lib/core/constants/cloudinary_config.dart` — your Cloudinary keys
+- `lib/firebase_options.dart` — Firebase config
+- `functions/` — Cloud Functions (`sendOtp`, `verifyOtp`)
+- `firestore.rules` — Firestore security rules (deploy to Console)
+- `backend/` — legacy Node/MongoDB API (unused; safe to delete)
+
+## Works anywhere?
+
+Yes. Any phone with internet can use the app. Data on Firebase Cloud; images on Cloudinary.

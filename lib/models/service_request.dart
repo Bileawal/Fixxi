@@ -1,3 +1,5 @@
+import '../core/utils/firestore_helpers.dart';
+
 enum RequestType { urgent, scheduled }
 
 enum RequestStatus {
@@ -71,10 +73,10 @@ class ServiceRequest {
         technicianId: json['technicianId'] as String?,
         technicianName: json['technicianName'] as String?,
         scheduledAt: json['scheduledAt'] != null
-            ? DateTime.parse(json['scheduledAt'] as String)
+            ? parseFirestoreDate(json['scheduledAt'])
             : null,
         status: RequestStatus.values.byName(json['status'] as String),
-        createdAt: DateTime.parse(json['createdAt'] as String),
+        createdAt: parseFirestoreDate(json['createdAt']),
         address: json['address'] as String?,
         distanceKm: (json['distanceKm'] as num?)?.toDouble() ?? 2.5,
       );

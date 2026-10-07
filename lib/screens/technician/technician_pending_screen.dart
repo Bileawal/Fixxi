@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../../providers/app_state.dart';
-import 'technician_rejected_screen.dart';
-import 'technician_test_screen.dart';
 
 class TechnicianPendingScreen extends StatefulWidget {
   const TechnicianPendingScreen({super.key});
@@ -22,18 +20,9 @@ class _TechnicianPendingScreenState extends State<TechnicianPendingScreen> {
       final result = await app.api.getMe();
       app.setSession(result);
       if (!mounted) return;
-      final profile = result.technicianProfile;
-      if (profile == null) return;
-
-      if (profile.isRejected) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const TechnicianRejectedScreen()),
-        );
-      } else if (profile.needsTest) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const TechnicianTestScreen()),
-        );
-      }
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Status updated')),
+      );
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -47,6 +36,9 @@ class _TechnicianPendingScreenState extends State<TechnicianPendingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final profile = context.watch<AppState>().technicianProfile;
+    final testScore = profile?.testScore;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Application Status'),
@@ -55,9 +47,6 @@ class _TechnicianPendingScreenState extends State<TechnicianPendingScreen> {
             icon: const Icon(Icons.logout),
             onPressed: () async {
               await context.read<AppState>().logout();
-              if (context.mounted) {
-                Navigator.of(context).pushNamedAndRemoveUntil('/', (_) => false);
-              }
             },
           ),
         ],
@@ -76,11 +65,21 @@ class _TechnicianPendingScreenState extends State<TechnicianPendingScreen> {
             ),
             const SizedBox(height: 12),
             Text(
-              'Your profile and ID documents are being reviewed. '
-              'You will be notified once approved to take the skill test.',
+              'You have passed the skill test. Your profile, ID documents, and test score '
+              'are being reviewed by admin. You will be notified once approved.',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.bodyMedium,
             ),
+            if (testScore != null) ...[
+              const SizedBox(height: 16),
+              Card(
+                child: ListTile(
+                  leading: const Icon(Icons.verified, color: Colors.green),
+                  title: const Text('Test passed'),
+                  subtitle: Text('Your score: ${testScore.round()}%'),
+                ),
+              ),
+            ],
             const SizedBox(height: 32),
             FilledButton.icon(
               onPressed: _checking ? null : _refreshStatus,

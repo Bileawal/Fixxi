@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 
+import '../../core/utils/firestore_helpers.dart';
 import '../../providers/app_state.dart';
 import '../../services/api_error.dart';
 
@@ -17,6 +18,7 @@ class AdminUserDetailScreen extends StatefulWidget {
 class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
   Map<String, dynamic>? _data;
   bool _loading = true;
+  String _activityFilter = '1 Week';
 
   @override
   void initState() {
@@ -42,6 +44,7 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
   }
 
   Future<void> _suspend() async {
+    final api = context.read<AppState>().api;
     final reasonCtrl = TextEditingController();
     String duration = 'week';
     final ok = await showDialog<bool>(
@@ -80,7 +83,7 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
       return;
     }
     try {
-      await context.read<AppState>().api.adminSuspendUser(
+      await api.adminSuspendUser(
             widget.userId,
             duration: duration,
             reason: reasonCtrl.text.trim(),
@@ -121,6 +124,7 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
   }
 
   Future<void> _notify() async {
+    final api = context.read<AppState>().api;
     final titleCtrl = TextEditingController(text: 'Message from Fixxi Admin');
     final bodyCtrl = TextEditingController();
     final ok = await showDialog<bool>(
@@ -150,7 +154,7 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
       return;
     }
     try {
-      await context.read<AppState>().api.adminNotifyUser(
+      await api.adminNotifyUser(
             widget.userId,
             title: titleCtrl.text.trim(),
             body: bodyCtrl.text.trim(),
@@ -181,13 +185,16 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
   Widget _requestTile(Map<String, dynamic> r) {
     final status = r['status'] as String? ?? '';
     final type = r['type'] as String? ?? '';
-    final created = r['createdAt'] as String?;
+    final created = r['createdAt'];
+    final createdLabel = created != null
+        ? DateFormat('dd MMM yyyy').format(parseFirestoreDate(created))
+        : null;
     return Card(
       margin: const EdgeInsets.only(bottom: 8),
       child: ListTile(
         title: Text('${r['category']} • $status'),
         subtitle: Text(
-          'Customer: ${r['customerName'] ?? '?'}\nTechnician: ${r['technicianName'] ?? 'Unassigned'}\n${r['description']}\nType: $type${created != null ? ' • ${DateFormat('dd MMM yyyy').format(DateTime.parse(created))}' : ''}',
+          'Customer: ${r['customerName'] ?? '?'}\nTechnician: ${r['technicianName'] ?? 'Unassigned'}\n${r['description']}\nType: $type${createdLabel != null ? ' • $createdLabel' : ''}',
         ),
         isThreeLine: true,
       ),
@@ -224,16 +231,73 @@ class _AdminUserDetailScreenState extends State<AdminUserDetailScreen> {
 
     final user = _data!['user'] as Map<String, dynamic>;
     final activities = _data!['activities'] as Map<String, dynamic>;
-    final requests = (activities['requests'] as List?)?.cast<Map<String, dynamic>>() ?? [];
-    final reviews = (activities['reviews'] as List?)?.cast<Map<String, dynamic>>() ?? [];
-    final reportsAgainst =
+    final allRequests = (activities['requests'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final allReviews = (activities['reviews'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+    final allReportsAgainst =
         (activities['reportsAgainst'] as List?)?.cast<Map<String, dynamic>>() ?? [];
+        
+    DateTime now = DateTime.now();
+    DateTime cutoff;
+    if (_activityFilter == '1 Week') {
+      cutoff = now.subtract(const Duration(days: 7));
+    } else if (_activityFilter == '1 Month') {
+      cutoff = DateTime(now.year, now.month - 1, now.day);
+    } else {
+      cutoff = DateTime(now.year - 1, now.month, now.day);
+    }
+
+    bool isWithinFilter(dynamic timestamp) {
+      if (timestamp == null) return true;
+      try {
+         final dt = parseFirestoreDate(timestamp);
+         return dt.isAfter(cutoff);
+      } catch (_) {
+         return true;
+      }
+    }
+
+    final requests = allRequests.where((r) => isWithinFilter(r['createdAt'])).toList();
+    final reviews = allReviews.where((r) => isWithinFilter(r['createdAt'])).toList();
+    final reportsAgainst = allReportsAgainst.where((r) => isWithinFilter(r['createdAt'])).toList();
+
     final completed =
         requests.where((r) => r['status'] == 'completed').toList();
-    final suspended = user['isSuspendedFlag'] == true;
+    final suspended = user['isSuspendedFlag'] == true || user['isSuspended'] == true;
 
     return Scaffold(
-      appBar: AppBar(title: Text(user['name'] as String? ?? 'Profile')),
+      appBar: AppBar(
+        title: Text(user['name'] as String? ?? 'Profile'),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: DropdownButton<String>(
+              value: _activityFilter,
+              dropdownColor: Theme.of(context).cardColor,
+              underline: const SizedBox(),
+              icon: const Icon(Icons.filter_list, color: Colors.white),
+              selectedItemBuilder: (BuildContext context) {
+                return ['1 Week', '1 Month', '1 Year'].map((String value) {
+                  return Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      value,
+                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                    ),
+                  );
+                }).toList();
+              },
+              items: const [
+                DropdownMenuItem(value: '1 Week', child: Text('1 Week')),
+                DropdownMenuItem(value: '1 Month', child: Text('1 Month')),
+                DropdownMenuItem(value: '1 Year', child: Text('1 Year')),
+              ],
+              onChanged: (v) {
+                if (v != null) setState(() => _activityFilter = v);
+              },
+            ),
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
