@@ -44,10 +44,7 @@ Admin will see ID card images via Cloudinary URLs in the admin technician detail
 ## Admin account (first time)
 
 1. Run the app → Welcome screen → top-left **admin icon**
-2. Email: `bilawal22204@gmail.com`
-3. Password: `Bilawal1122`
-4. Tap **Create Admin Account (First Time)**
-5. Next time use **Admin Login** only
+   
 
 Passwords are stored in **Firebase Authentication** (hashed by Google), not in the app or Firestore.
 
@@ -65,7 +62,7 @@ OTP is sent by Cloud Functions via Gmail SMTP — not stored on the client.
 
 ### 1. Gmail App Password
 
-1. Use a Gmail account (e.g. `bilawal22204@gmail.com`)
+1. Use a Gmail account 
 2. Google Account → **Security** → enable **2-Step Verification**
 3. Security → **App passwords** → create app → name it `Fixxi OTP`
 4. Copy the 16-character password (spaces don't matter)
@@ -105,6 +102,3 @@ Alternatively for local testing, set env vars before deploy:
 - `firestore.rules` — Firestore security rules (deploy to Console)
 - `backend/` — legacy Node/MongoDB API (unused; safe to delete)
 
-## Works anywhere?
-
-Yes. Any phone with internet can use the app. Data on Firebase Cloud; images on Cloudinary.
